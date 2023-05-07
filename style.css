@@ -166,6 +166,40 @@ blockquote{
 	display: inline;
 }
 
+#left .box {
+	width: 280px;
+	background: #F6F9FB;
+	border: 1px solid #E1E1E1;
+	padding:10px 10px 15px 10px;
+	float: left;
+}
+
+#left .box h2 {
+	font-size: 1.1em;
+	margin: 0px 0 0px 0;
+	padding:0px 0 5px 0;
+}
+
+#left .box a {
+	margin: 10px 0 10px 0;
+	color: #56677C;
+	font-size: 10px;
+}
+
+#left .box p {
+	margin: 5px 0 10px 0;
+	line-height: 15px;
+}
+
+#left .box ul {
+	padding: 0 0 7px 20px;
+	margin:10px 0 10px 0;
+}
+
+#left .box li {
+	margin-top:5px;
+}
+
 
 /**** Sidebar ***/
 
