@@ -7,7 +7,7 @@ Table of contents
 04. header
 05. banner
 06. features
-07. quotes-fav
+07. testimonials
 08. contact
 09. footer
 
@@ -664,7 +664,7 @@ Banner Style
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 170px 0px 120px 0px;
+  padding: 170px 0px 10px 0px;
 }
 
 .main-banner .item-1 {
@@ -1206,17 +1206,17 @@ Team Style
 
 /* 
 ---------------------------------------------
-quotes-fav Style
+Testimonials Style
 --------------------------------------------- 
 */
 
-.quotes-fav {
+.testimonials {
   position: relative;
-  padding: 80px 0px;
-  margin-top: 150px;
+  padding: 0px 0px;
+  margin-top: 0px;
 }
 
-.quotes-fav:before {
+.testimonials:before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1230,53 +1230,52 @@ quotes-fav Style
   border-bottom-left-radius: 500px;
 }
 
-.quotes-fav .section-heading {
+.testimonials .section-heading {
   margin-bottom: 0px;
   margin-left: 60px;
   vertical-align: middle;
 }
 
-.quotes-fav .section-heading p {
-  margin-top: 50px;
+.testimonials .section-heading p {
+  margin-top: 0px;
 }
 
-.quotes-fav .item {
+.testimonials .item {
+  display: inline-block;
   background-color: #14ad00;
   border-radius: 25px;
-  padding: 80px;
+  padding-top: 10px;
+  padfing-buttom: 10px;
 }
 
-.quotes-fav .item p {
-  font-size: 18px;
-  line-height: 40px;
-  color: #fff;
-  font-style: italic;
-  font-weight: 300;
-  margin-bottom: 40px;
-}
-
-.quotes-fav .item img {
-  border-radius: 50%;
-  max-width: 100px;
-  float: left;
-  margin-right: 25px;
-}
-
-.quotes-fav .item span {
+.testimonials .item p {
   display: inline-block;
-  margin-top: 20px;
+  font-size: 18px;
+  line-height: 0px;
+  color: #fff;
+  padding-bottom: 90px;
+  padding-top: -90px;
+}
+
+.testimonials .item ul {
   font-size: 15px;
   color: #fff;
+  padding-left: 10px;
 }
 
-.quotes-fav .item h4 {
+.testimonials .item ul li {
+  list-style-type: disc;
+  float: left;
+}
+
+.testimonials .item h4 {
   color: #fff;
   font-size: 22px;
   font-weight: 600;
   margin-top: 8px;
 }
 
-.quotes-fav .owl-nav {
+.testimonials .owl-nav {
   position: absolute;
   top: 50%;
   transform: translateY(-5px);
@@ -1284,8 +1283,8 @@ quotes-fav Style
   text-align: right;
 }
 
-.quotes-fav .owl-nav .owl-prev i,
-.quotes-fav .owl-nav .owl-next i {
+.testimonials .owl-nav .owl-prev i,
+.testimonials .owl-nav .owl-next i {
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -1299,13 +1298,13 @@ quotes-fav Style
   transition: all .3s;
 }
 
-.quotes-fav .owl-nav .owl-prev i {
+.testimonials .owl-nav .owl-prev i {
   position: absolute;
   bottom: 65px;
 }
 
-.quotes-fav .owl-nav .owl-prev i:hover,
-.quotes-fav .owl-nav .owl-next i:hover {
+.testimonials .owl-nav .owl-prev i:hover,
+.testimonials .owl-nav .owl-next i:hover {
   opacity: 1;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
@@ -1689,7 +1688,7 @@ body {
     border-right: none;
   }
   .main-banner .item {
-    padding: 80px 30px 120px 30px !important;
+    padding: 80px 30px 120px 30px;
   }
   .main-banner .owl-nav {
     left: 30px !important;
@@ -1770,12 +1769,12 @@ body {
     margin-top: 120px;
   }
   .about-us::before,
-  .quotes-fav::before,
+  .testimonials::before,
   .contact-us::before {
     display: none;
   }
   .about-us .section-heading p,
-  .quotes-fav .section-heading p,
+  .testimonials .section-heading p,
   .contact-us .section-heading p {
     margin-top: 30px;
   }
@@ -1805,28 +1804,28 @@ body {
   .team-manager {
     margin-bottom: 140px;
   }
-  .quotes-fav {
+  .testimonials {
     margin-top: -50px;
     padding: 0px;
   }
-  .quotes-fav .section-heading {
+  .testimonials .section-heading {
     margin-left: 0px;
     margin-top: 40px;
   }
-  .quotes-fav .item {
+  .testimonials .item {
     padding: 40px 40px 60px 40px;
   }
-  .quotes-fav .item h3 {
+  .testimonials .item h3 {
     font-size: 25px;
     color: #fff;
   }
-  .quotes-fav .item h4 {
+  .testimonials .item h4 {
     font-size: 17px;
   }
-  .quotes-fav .item img {
+  .testimonials .item img {
     margin-right: 15px;
   }
-  .quotes-fav .owl-nav {
+  .testimonials .owl-nav {
     display: none;
   }
   .events {

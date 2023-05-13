@@ -73,7 +73,7 @@
       }
 	});
 
-	$('.owl-testimonials').owlCarousel({
+	$('.owl-quotes-fav').owlCarousel({
 	  center: true,
       items:1,
       loop:true,
