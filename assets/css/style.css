@@ -848,13 +848,13 @@ About Style
 --------------------------------------------- 
 */
 
-.about-us {
+.team-us {
   position: relative;
   padding: 0px;
   margin-top: 130px;
 }
 
-.about-us:before {
+.team-us:before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -929,12 +929,12 @@ h2.accordion-header button {
   color: #4a4a4a;
 }
 
-.about-us .section-heading {
+.team-us .section-heading {
   margin-left: 60px;
   margin-bottom: 0px;
 }
 
-.about-us .section-heading .main-button {
+.team-us .section-heading .main-button {
   margin-top: 50px;
 }
 
@@ -1754,7 +1754,7 @@ body {
   .results {
     margin-top: 80px;
   }
-  .about-us {
+  .team-us {
     margin-top: 100px;
   }
   .accordion {
@@ -1765,24 +1765,24 @@ body {
     height: 170px;
     line-height: 170px;
   }
-  .about-us .section-heading {
+  .team-us .section-heading {
     margin-left: 0px;
     margin-top: 120px;
   }
-  .about-us::before,
+  .team-us::before,
   .quotes-fav::before,
   .contact-us::before {
     display: none;
   }
-  .about-us .section-heading p,
+  .team-us .section-heading p,
   .quotes-fav .section-heading p,
   .contact-us .section-heading p {
     margin-top: 30px;
   }
-  .about-us .section-heading .main-button {
+  .team-us .section-heading .main-button {
     margin-top: 30px;
   }
-  .about-us .main-button a {
+  .team-us .main-button a {
     background-color: #14ad00;
     color: #fff;
   }
