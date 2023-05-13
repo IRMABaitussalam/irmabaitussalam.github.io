@@ -1,0 +1,200 @@
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+/* 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+/* 
+---------------------------------------------
+Global Styles
+--------------------------------------------- 
+*/
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+  background: #14ad00;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #14ad00;
+  color: #fff;
+}
+
+.section {
+  padding-top: 80px;
+  margin-top: -400px;
+}
+
+.section-heading {
+  margin-bottom: 0;
+}
+
+.section-heading h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0 0;
+  line-height: 4px;
+}
+
+.section-heading h2 em {
+  color: #14ad00;
+  font-style: normal;
+}
+
+.section-heading h6 {
+  color: #14ad00;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* 
+---------------------------------------------
+Errors Style
+--------------------------------------------- 
+*/
+
+.errors {
+  position: relative;
+  padding: 120px 0px 80px 0px;
+  overflow: hidden;
+}
+
+.errors:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 95%;
+  height: 100%;
+  background-color: #14ad00;
+  content: '';
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+}
+
+.errors:after {
+  background: url(../images/contact-dec-01.png);
+  position: absolute;
+  left: 15%;
+  opacity: 0.5;
+  top: 0;
+  width: 318px;
+  height: 119px;
+  content: '';
+  z-index: 2;
+}
+
+.errors .counter {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.errors h2 {
+  color: #fff;
+  margin-top: 350px;
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.errors p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.errors .counter .buttons {
+  display: center;
+  margin-top: 150px;
+}
+
+.errors .counter .buttons .main-button {
+  text-align: center;
+}
+
+.errors .counter .buttons .main-button a {
+  font-size: 14px;
+  color: #14ad00;
+  background-color: #fff;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 25px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+.errors .counter .buttons .main-button a:hover {
+  background-color: #14ad00;
+  color: #fff;
+}
+
+/* 
+---------------------------------------------
+Footer Style
+--------------------------------------------- 
+*/
+
+footer {
+  margin-top: 30px;
+  position: relative;
+  background-color: #14ad00;
+  vertical-align: middle;
+  min-height: 150px;
+  border-radius: 100px 100px 0px 0px;
+}
+
+footer p {
+  text-align: center;
+  line-height: 150px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+footer p a {
+  color: #fff;
+  transition: all .3s;
+  position: relative;
+  z-index: 3;
+}
+
+footer p a:hover {
+  opacity: 0.75;
+}
+
+footer::before {
+  background: url(../images/contact-dec-01.png);
+  position: absolute;
+  left: 30px;
+  transform: rotate(180deg);
+  opacity: 1;
+  bottom: 0;
+  width: 318px;
+  height: 119px;
+  content: '';
+  z-index: 2;
+}
