@@ -1631,18 +1631,19 @@ Footer Style
 */
 
 footer {
-  margin-top: 150px;
+  margin-top: 30px;
   position: relative;
   background-color: #14ad00;
   vertical-align: middle;
   min-height: 150px;
-  border-radius: 150px 150px 0px 0px;
+  border-radius: 100px 100px 0px 0px;
 }
 
 footer p {
   text-align: center;
   line-height: 150px;
   color: #fff;
+  font-size: 13px;
   font-weight: 400;
 }
 
