@@ -930,13 +930,14 @@ Contact Style
 .contact-us .section-heading ul {
   padding-left: 30px;
   margin-top: 30px;
-  margin-bottom: 350px;
+  margin-bottom: 30px;
 }
 
 .contact-us .section-heading ul li {
   list-style-type: disc;
   float: left;
   text-decoration: none;
+  new-line: 3px;
 }
 
 .contact-us .section-heading ul li a {
