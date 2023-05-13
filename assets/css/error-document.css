@@ -107,6 +107,7 @@ Errors Style
 }
 
 .errors .counter {
+  display: center;
   position: center;
   text-align: center;
   margin-bottom: 150px;
@@ -161,7 +162,7 @@ Footer Style
 
 footer {
   margin-top: 30px;
-  position: buttom;
+  position: relative;
   background-color: #14ad00;
   vertical-align: middle;
   min-height: 150px;
