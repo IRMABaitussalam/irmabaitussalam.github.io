@@ -1,4 +1,4 @@
-[<div align="center"><img src="assets/images/logo.png" weight="150px" height="150px" alt="Logo"></div>](https://irmabaitussalam.github.io)
+<div align="center"><a href="https://irmabaitussalam.github.io"><img src="assets/images/logo.png" weight="150px" height="150px" alt="Logo"></a></div>
 
 <div align="center">
 
