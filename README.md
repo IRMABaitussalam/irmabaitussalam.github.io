@@ -1,4 +1,5 @@
 <div align="center"><img src="assets/images/logo.png" weight="150px" height="150px" alt="Logo"></div>
+
 <div align="center">
 
 [Facebook](https://www.facebook.com/p/100091427423487) | [Instagram](https://www.instagram.com/irmasman22garut_official) | [WhatsApp](https://wa.me/6283173511053) | [Twitter](https://www.twitter.com/irmasman22garut) | [TikTok](https://www.tiktok.com/@irmasman22garut_official) | [YouTube](https://www.youtube.com/@IRMABaitussalam) | [Email](mailto:irmabaitussalam22garut@gmail.com) | [Website](https://irmabaitussalam.github.io) | [License](https://github.com/IRMABaitussalam/irmabaitussalam.github.io/blob/master/LICENSE)
@@ -14,6 +15,8 @@ The repository contains the source code, design assets, and other relevant files
 Contributors to this repository are encouraged to adhere to best practices and follow the established coding guidelines to maintain a high standard of code quality. This includes utilizing appropriate technologies, adhering to responsive design principles, and implementing robust security measures.
 
 # License
+![Apache 2.0 License Logo](https://www.apache.org/foundation/press/kit/asf_logo.svg)
+
 The IRMA Baitussalam website ([irmabaitussalam.github.io](https://irmabaitussalam.github.io)) repository is licensed under the Apache 2.0 License, a widely recognized open-source license known for its permissive and flexible terms. This license grants users the freedom to use, modify, distribute, and sublicense the source code and any accompanying documentation within the repository.
 
 Under the Apache 2.0 License, contributors to the IRMA Baitussalam website repository retain their copyright ownership while granting a non-exclusive license to others. This license permits individuals and organizations to build upon, incorporate, and distribute derivative works based on the original codebase.
