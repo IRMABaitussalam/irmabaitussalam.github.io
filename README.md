@@ -16,7 +16,7 @@ Contributors to this repository are encouraged to adhere to best practices and f
 # License
 <div align="center">
 
-![Apache 2.0 License Logo](https://www.apache.org/foundation/press/kit/asf_logo.svg)</div>
+[![Apache 2.0 License Logo](https://www.apache.org/foundation/press/kit/asf_logo.svg)](https://www.apache.org/licenses/LICENSE-2.0)</div>
 
 The IRMA Baitussalam website ([irmabaitussalam.github.io](https://irmabaitussalam.github.io)) repository is licensed under the Apache 2.0 License, a widely recognized open-source license known for its permissive and flexible terms. This license grants users the freedom to use, modify, distribute, and sublicense the source code and any accompanying documentation within the repository.
 
@@ -30,7 +30,7 @@ As a contributor or user of the IRMA Baitussalam website repository, it is essen
 
 For detailed information about the rights and obligations conferred by the Apache 2.0 License, please refer to the LICENSE file in the repository.
 
-# Contributing Stats
+# Contributor Stats
 ### IRMA Baitussalam
 [![IRMA Baitussalam Stats](https://github-readme-stats.vercel.app/api?username=IRMABaitussalam&show_icons=true&bg_color=3,e96443,904e95&title_color=fff&text_color=fff&icon_color=fff)](https://github.com/IRMABaitussalam)
 ### Rangga Fajar Oktariansyah
