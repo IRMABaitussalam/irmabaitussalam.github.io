@@ -30,4 +30,10 @@ As a contributor or user of the IRMA Baitussalam website repository, it is essen
 
 For detailed information about the rights and obligations conferred by the Apache 2.0 License, please refer to the LICENSE file in the repository.
 
+# Contributing Stats
+**• IRMA Baitussalam**
+[![IRMA Baitussalam Stats](https://github-readme-stats.vercel.app/api?username=IRMABaitussalam&show_icons=true&bg_color=3,e96443,904e95&title_color=fff&text_color=fff&icon_color=fff)](https://github.com/IRMABaitussalam)
+**• Rangga Fajar Oktariansyah**
+[![Fajar Kim Stats](https://github-readme-stats.vercel.app/api?username=FajarKim&show_icons=true&bg_color=3,e96443,904e95&title_color=fff&text_color=fff&icon_color=fff)](https://github.com/FajarKim)
+
 <p align="center"><font face="Times New Roman" color="#8B8B8B" size="1.5px">Copyright © 2023 IRMA Baitussalam</font></p>
