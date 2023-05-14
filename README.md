@@ -30,4 +30,4 @@ As a contributor or user of the IRMA Baitussalam website repository, it is essen
 
 For detailed information about the rights and obligations conferred by the Apache 2.0 License, please refer to the LICENSE file in the repository.
 
-© 2023 IRMA Baitussalam
+<p align="center"><font face="Times New Roman" color="#8B8B8B" size="1.5px">Copyright © 2023 IRMA Baitussalam</font></p>
