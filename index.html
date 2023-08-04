@@ -1,352 +1,250 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="utf-8">
-    <title>IRMA Baitussalam SMAN 22 Garut</title>
+   <meta charset="utf-8">
+   <title>IRMA Baitussalam - Beranda</title>
 
-    <!-- mobile responsive meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <!-- mobile responsive meta -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+   <meta name="description" content="This is meta description">
+   <meta name="author" content="FajarKim">
+ 
+   <!-- theme meta -->
+   <meta name="theme-name" content="islamic-blog" />
 
-    <!-- ** Plugins Needed for the Project ** -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="./plugins/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./plugins/fontawesome/css/all.css">
-    <link rel="stylesheet" href="./plugins/fontawesome/scss/_animated.scss">
+   <!-- plugins -->
+   <link rel="preload" href="https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0bbck.woff2" style="font-display: optional;">
+   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:600%7cOpen&#43;Sans&amp;display=swap" media="screen">
 
-    <!-- Main Stylesheet -->
-    <link href="./css/style.css" rel="stylesheet">
+   <link rel="stylesheet" href="plugins/material/css/materialdesignicons.css">
+   <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+   <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+   <link rel="stylesheet" href="plugins/slick/slick.css">
 
-    <!--Favicon-->
-    <link rel="shortcut icon" href="./images/favicon.svg" type="./image/x-icon">
-    <link rel="icon" href="./images/favicon.svg" type="./image/x-icon">
+   <!-- Main Stylesheet -->
+   <link rel="stylesheet" href="css/style.css">
 
+   <!--Favicon-->
+   <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+   <link rel="icon" href="images/favicon.svg" type="image/x-icon">
 </head>
+
 <body>
-    <!-- START preloader-wrapper -->
-    <div class="preloader-wrapper">
-        <div class="preloader-inner">
-            <div class="spinner-border text-red"></div>
-        </div>
-    </div>
-    <!-- END preloader-wrapper -->
-    
-    <!-- START main-wrapper -->
-    <section class="d-flex">
-  
-<!-- start of sidenav -->
-<aside><div class="sidenav position-sticky d-flex flex-column justify-content-between">
-    <a class="navbar-brand" href="https://irmabaitussalam.github.io" class="logo">
-        <img src="./images/icon.svg" alt="Logo Banner">
-    </a>
-    <!-- end of navbar-brand -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v17.0&appId=1015230009800296&autoLogAppEvents=1" nonce="VTmP38r1"></script>
+<!-- navigation -->
+<header class="sticky-top bg-white border-bottom border-default">
+   <div class="container">
 
-    <div class="navbar navbar-dark my-4 p-0 font-primary">
-        <ul class="navbar-nav w-100">
-            <li class="nav-item active">
-                <a class="nav-link text-white px-0 pt-0" href="https://irmabaitussalam.github.io">Beranda</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link text-white px-0" href="https://irmabaitussalam.github.io/tentang">Tentang</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link text-white px-0" href="https://irmabaitussalam.github.io/kontak">Kontak</a>
-            </li>
-            <li class="nav-item  accordion">
-                <div id="drop-menu" class="drop-menu collapse">
-                    <a class="d-block " href="https://irmabaitussalam.github.io/quiz">Quiz</a>
-                    <a class="d-block " href="https://irmabaitussalam.github.io/quotes">Quotes</a>
-                    <a class="d-block " href="https://irmabaitussalam.github.io/blogs">Blog</a>
-                    <a class="d-block " href="https://irmabaitussalam.github.io/kebijakan-privasi">Kebijakan &amp; Privasi</a>
-                </div>
-                <a class="nav-link text-white" href="#!" role="button" data-toggle="collapse" data-target="#drop-menu" aria-expanded="false" aria-controls="drop-menu">Halaman</a>
-            </li>
-            <li class="nav-item mt-3">
-                <select class="custom-select bg-transparent rounded-0 text-white shadow-none" id="pick-lang" onchange="location = this.value;">
-                    <option selected value="https://irmabaitussalam.github.io">🇮🇩 ID</option>
-                    <option value="https://irmabaitussalam.github.io/en-uk">🇬🇧 EN</option>
-                    <option value="https://irmabaitussalam.github.io/en-us">🇺🇲 EN</option>
-                </select>
-            </li>
-        </ul>
-    </div>
-    <!-- end of navbar -->
+      <nav class="navbar navbar-expand-lg navbar-white">
+         <a class="navbar-brand" href="/">
+            <img class="img-fluid not-select" width="45px" src="images/logo.svg" alt="IRMA Baitussalam">
+         </a>
+         <div class="page-title navbar-brand expand-lg navbar-white"><h5 class="mt-2">IRMA Baitussalam</h5></div>
+         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+            <i class="mdi mdi-menu"></i>
+         </button>
 
-    <ul class="list-inline nml-2">
-        <li class="list-inline-item">
-            <a href="https://www.facebook.com/p/100091427423487" class="text-white text-primary-onHover pr-2">
-                <span class="fab fa-facebook-f"></span>
-            </a>
-        </li>
-        <li class="list-inline-item">
-            <a href="https://www.instagram.com/irmasman22garut_official" class="text-white text-primary-onHover p-2">
-                <span class="fab fa-instagram"></span>
-            </a>
-        </li>
-        <li class="list-inline-item">
-            <a href="https://tiktok.com/@irmasman22garut_official" class="text-white text-primary-onHover p-2">
-                <span class="fab fa-tiktok"></span>
-            </a>
-        </li>
-        <li class="list-inline-item">
-            <a href="https://www.youtube.com/@IRMABaitussalam" class="text-white text-primary-onHover p-2">
-                <span class="fab fa-youtube"></span>
-            </a>
-        </li>
-    </ul>
-    <!-- end of social-links -->
-</div></aside>
-<!-- end of sidenav -->
-    <div class="main-content">
-        <!-- start of mobile-nav -->
-<header class="mobile-nav pt-4">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-6">
-                <a href="https://irmabaitussalam.github.io">
-                    <img src="./images/logo.svg" alt="Logo Banner">
-                </a>
-            </div>
-            <div class="col-6 text-right">
-                <button class="nav-toggle bg-transparent border text-white">
-                    <span class="fas fa-bars"></span>
-                </button>
-            </div>
-        </div>
-    </div>
+         <div class="collapse navbar-collapse text-center" id="navigation">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link active" href="/">Beranda</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="tentang">Tentang</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="kontak">Kontak</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="pendaftaran-anggota-baru">Pendaftaran</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Halaman <i class="mdi mdi-chevron-down ml-1"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="quotes">Quotes</a>
+                     <a class="dropdown-item" href="quiz">Quiz</a>
+                     <a class="dropdown-item" href="blog">Blog</a>
+                     <a class="dropdown-item" href="kebijakan-privasi">Kebijakan Privasi</a>
+                     <a class="dropdown-item" href="syarat-ketentuan">Syarat Ketentuan</a>
+                  </div>
+               </li>
+            </ul>
+
+         </div>
+      </nav>
+   </div>
 </header>
-<div class="nav-toggle-overlay"></div>
-<!-- end of mobile-nav -->
+<!-- end navigation -->
 
-        <div class="container pt-4 mt-5">
-            <div class="row justify-content-between">
-                <div class="col-lg-7">
-                    <div class="card post-item bg-transparent border-0 mb-5">
-                        <a href="post-details.html">
-                            <img class="card-img-top rounded-0" src="./images/post/blogs/01.jpg" alt="">
-                        </a>
-                        <div class="card-body px-0">
-                            <h2 class="card-title">
-                                <a class="text-white opacity-75-onHover" href="post-details.html">Visi, Misi, dan Program Kerja IRMA Baitussalam</a>
-                            </h2>
-                            <ul class="post-meta mt-3">
-                                <li class="d-inline-block mr-3">
-                                    <span class="fas fa-clock text-primary"></span>
-                                    <a class="ml-1" href="#">24 Mei, 2023</a>
-                                </li>
-                                <li class="d-inline-block">
-                                    <span class="fas fa-list-alt text-primary"></span>
-                                    <a class="ml-1" href="#">Postingan</a>
-                                </li>
-                            </ul>
-                            <p class="card-text my-4">Ikatan Remaja Masjid (IRMA) Baitussalam adalah salah satu orgnasisai sekaligus ekstrakurikuler di SMAN 22 GARUT yang bergerak di bidang keagamaan. Sama halnya dengan organisasi pada umumnya, IRMA Baitussalam memiliki visi, misi, dan juga program kerja.</p>
-                            <a href="post-details.html" class="btn btn-primary">Baca Selengkapnya <img src="./images/arrow-right.svg" alt=""></a>
-                        </div>
-                    </div>
-                    <!-- end of post-item -->
-                    
-                    <div class="card post-item bg-transparent border-0 mb-5">
-                        <a href="post-details.html">
-                            <img class="card-img-top rounded-0" src="./images/post/blogs/02.jpg" alt="">
-                        </a>
-                        <div class="card-body px-0">
-                            <h2 class="card-title">
-                                <a class="text-white opacity-75-onHover" href="post-details.html">Sejarah Terbentuknya IRMA Baitussalam SMA Negeri 22 Garut</a>
-                            </h2>
-                            <ul class="post-meta mt-3">
-                                <li class="d-inline-block mr-3">
-                                    <span class="fas fa-clock text-primary"></span>
-                                    <a class="ml-1" href="#">24 Mei, 2023</a>
-                                </li>
-                                <li class="d-inline-block">
-                                    <span class="fas fa-list-alt text-primary"></span>
-                                    <a class="ml-1" href="#">Postingan</a>
-                                </li>
-                            </ul>
-                            <p class="card-text my-4">Ekstrakurikuler IRMA Baitussalam dibentuk pada tanggal 14 Februari 2014. Pada awal pertama kali dibentuk, ekstrakurikuler ini bernama ROHIS Baitussalam.</p>
-                            <a href="post-details.html" class="btn btn-primary">Baca Selengkapnya <img src="./images/arrow-right.svg" alt=""></a>
-                        </div>
-                    </div>
-                    <!-- end of post-item -->
-                    
-                    <div class="card post-item bg-transparent border-0 mb-5">
-                        <a href="post-details.html">
-                            <img class="card-img-top rounded-0" src="./images/post/blogs/03.jpg" alt="">
-                        </a>
-                        <div class="card-body px-0">
-                            <h2 class="card-title">
-                                <a class="text-white opacity-75-onHover" href="post-details.html">Deretan Pengurus IRMA Baitussalam Beserta Anggotanya</a>
-                            </h2>
-                            <ul class="post-meta mt-3">
-                                <li class="d-inline-block mr-3">
-                                    <span class="fas fa-clock text-primary"></span>
-                                    <a class="ml-1" href="#">24 Mei, 2023</a>
-                                </li>
-                                <li class="d-inline-block">
-                                    <span class="fas fa-list-alt text-primary"></span>
-                                    <a class="ml-1" href="#">Postingan</a>
-                                </li>
-                            </ul>
-                            <p class="card-text my-4">IRMA Baitussalam mempunyai pengurus inti yang terdiri dari Ketua, Sekretaris, dan Bendahara beserta wakilnya masing-masing. Selain itu, ekstrakurikelr ini memiliki beberapa divisi khusus dan memiliki koordinator disetiap divisinya.</p>
-                            <a href="post-details.html" class="btn btn-primary">Baca Selengkapnya <img src="./images/arrow-right.svg" alt=""></a>
-                        </div>
-                    </div>
-                    <!-- end of post-item -->
-
-                    <div class="card post-item bg-transparent border-0 mb-5">
-                        <a href="post-details.html">
-                            <img class="card-img-top rounded-0" src="./images/post/blogs/04.jpg" alt="">
-                        </a>
-                        <div class="card-body px-0">
-                            <h2 class="card-title">
-                                <a class="text-white opacity-75-onHover" href="post-details.html">Lihat Dokumentasi Program Kerja IRMA Baitussalam</a>
-                            </h2>
-                            <ul class="post-meta mt-3">
-                                <li class="d-inline-block mr-3">
-                                    <span class="fas fa-clock text-primary"></span>
-                                    <a class="ml-1" href="#">24 Mei, 2023</a>
-                                </li>
-                                <li class="d-inline-block">
-                                    <span class="fas fa-list-alt text-primary"></span>
-                                    <a class="ml-1" href="#">Postingan</a>
-                                </li>
-                            </ul>
-                            <p class="card-text my-4">Jangan lupa untuk ikuti akun media sosial kami untuk melihat program-program kerja rutinan dan mingguan kami.</p>
-                            <a href="post-details.html" class="btn btn-primary">Baca Selengkapnya <img src="./images/arrow-right.svg" alt=""></a>
-                        </div>
-                    </div>
-                    <!-- end of post-item -->
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8  mb-5 mb-lg-0">
+				<article class="row mb-5">
+					<div class="col-12 mb-2" style="margin-top: -70px;" align="center">
+						<h1 class="welcome-title not-select" style="font-family: AhlanWasahlan;">Ahlan Wasahlan</h1>
+			        </div>
+					<div class="col-12">
+						<div class="post-slider not-select">
+							<img loading="lazy" src="images/banner-about.jpg" class="img-fluid-post" alt="Foto">
+							<img loading="lazy" src="images/post/02.jpg" class="img-fluid-post" alt="Foto">
+							<img loading="lazy" src="images/post/03.jpg" class="img-fluid-post" alt="Foto">
+						</div>
+					</div>
+					<div class="col-12 mx-auto mt-3">
+						<h3><a class="post-title" href="post-elements.html">Sejarah IRMA Jawa Barat dan IRMA Baitussalam</a></h3>
+						<ul class="list-inline post-meta mb-4">
+							<li class="list-inline-item"><i class="mdi mdi-calendar-clock-outline"></i> Rabu, 30 Juni 2023</li>
+							<li class="list-inline-item"><i class="mdi mdi-tag"></i> Sejarah</li>
+							<li class="list-inline-item"><i class="mdi mdi-comment-text-outline"></i> <span class="fb-comments-count" data-href="https://irmabaitussalam.github.io/blog/7028347452_03082023#komentar"></span> Komentar</li>
+						</ul>
+						<p class="post-description">Ikatan Remaja Masjid (IRMA) adalah sebuah organisasi keremajaan yang berfokus pada pendidikan karakter. IRMA merupakan organisasi yang tugas dan orientasi utamanya adalah berupaya mengembangkan nilai-nilai pendidikan karakter mulia. IRMA lahir pada tanggal 18 Desember 2017 di Kota Bandung oleh Bapak Rifa Anggyana S.Pd. dan diketuai oleh Ela Sopiani Rahayu dari MA Sinar Miskin Bandung.</p> <a href="post-elements.html" class="btn btn-outline-primary">Baca Selengkapnya</a>
+					</div>
+				</article>
+				<div class="widget">
+                    <h5 class="widget-title"><span>Halaman Pilihan</span></h5>
                 </div>
-                <div class="col-lg-4 col-md-5">
-                    <div class="widget text-center">
-                        <a href="https://irmabaitussalam.github.io"><img class="author-thumb-sm rounded-circle d-block mx-auto" src="./images/author-sm.svg" alt="Logo IRMA Baitussalam"></a></br>
-                        <h2 class="widget-title text-white d-inline-block mt-4">Tentang Kami</h2>
-                        <p class="mt-4">Mewujudkan remaja masjid yang beriman, bertaqwa, berkarakter, cerdas, dan terampil.</p>
-                        <ul class="list-inline mt-3">
-                            <li class="list-inline-item">
-                                <a href="https://www.facebook.com/p/100091427423487" class="text-white text-primary-onHover p-2">
-                                    <span class="fab fa-facebook-f fa-beat"></span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.instagram.com/irmasman22garut_official" class="text-white text-primary-onHover p-2">
-                                    <span class="fab fa-instagram fa-beat"></span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://tiktok.com/@irmasman22garut_official" class="text-white text-primary-onHover p-2">
-                                    <span class="fab fa-tiktok fa-beat"></span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.youtube.com/@IRMABaitussalam" class="text-white text-primary-onHover p-2">
-                                    <span class="fab fa-youtube fa-beat"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- end of author-widget -->
-
-                    <div class="widget">
-                        <div class="mb-5 text-center">
-                            <h2 class="widget-title text-white d-inline-block">Postingan Umum</h2>
-                        </div>
-                        <div class="card post-item bg-transparent border-0 mb-5">
-                            <a href="post-details.html">
-                                <img class="card-img-top rounded-0" src="./images/post/post-quotes/01.jpg" alt="">
-                            </a>
-                            <div class="card-body px-0">
-                                <h2 class="card-title">
-                                    <a class="text-white opacity-75-onHover" href="post-details.html">Motivasi Dirimu dengan Quotes dari Anggota IRMA Baitussalam</a>
-                                </h2>
-                                <ul class="post-meta mt-3 mb-4">
-                                    <li class="d-inline-block mr-3">
-                                        <span class="fas fa-clock text-primary"></span>
-                                        <a class="ml-1" href="#">24 Mei, 2023</a>
-                                    </li>
-                                    <li class="d-inline-block">
-                                        <span class="fas fa-list-alt text-primary"></span>
-                                        <a class="ml-1" href="#">Quotes</a>
-                                    </li>
-                                </ul>
-                                <a href="post-details.html" class="btn btn-primary">Baca Selengkapnya <img src="./images/arrow-right.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <!-- end of widget-post-item -->
-                        <div class="card post-item bg-transparent border-0 mb-5">
-                            <a href="post-details.html">
-                                <img class="card-img-top rounded-0" src="./images/post/post-quiz/01.jpg" alt="">
-                            </a>
-                            <div class="card-body px-0">
-                                <h2 class="card-title">
-                                    <a class="text-white opacity-75-onHover" href="post-details.html">Jawab Quiz Seru dan Cukup Menantang Yang Dapat Menambah Wawasanmu Tentang Islam</a>
-                                </h2>
-                                <ul class="post-meta mt-3 mb-4">
-                                    <li class="d-inline-block mr-3">
-                                        <span class="fas fa-clock text-primary"></span>
-                                        <a class="ml-1" href="#">24 Mei, 2023</a>
-                                    </li>
-                                    <li class="d-inline-block">
-                                        <span class="fas fa-list-alt text-primary"></span>
-                                        <a class="ml-1" href="#">Quiz</a>
-                                    </li>
-                                </ul>
-                                <a href="post-details.html" class="btn btn-primary">Baca Selengkapnya <img src="./images/arrow-right.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <!-- end of widget-post-item -->
-                    </div>
-                    <!-- end of post-items widget -->
-                </div>
+				<article class="row mb-5">
+					<div class="col-12">
+						<div class="post-slider">
+							<img loading="lazy" src="images/post/quotes.jpg" class="img-fluid" alt="post-thumb">
+						</div>
+					</div>
+					<div class="col-12 mx-auto mt-3">
+						<h3><a class="post-title" href="post-details-1.html">Motivasi Dirimu dengan Quotes dari Anggota IRMA Baitussalam</a></h3>
+					</div>
+				</article>
+				<article class="row mb-5">
+					<div class="col-12">
+						<div class="post-slider">
+							<img loading="lazy" src="images/post/quiz.jpg" class="img-fluid" alt="post-thumb">
+						</div>
+					</div>
+					<div class="col-12 mx-auto mt-3">
+						<h3><a class="post-title" href="post-details-1.html">Jawab Quiz Seru dan Cukup Menantang Yang Dapat Menambah Wawasanmu Tentang Islam</a></h3>
+					</div>
+				</article>
+			</div>
+			<aside class="col-lg-4">
+   <!-- categories -->
+   <div class="widget">
+      <h5 class="widget-title"><span>Kategori</span></h5>
+      <ul class="list-unstyled widget-list">
+         <li><a href="#!" class="d-flex">Dokumentasi <small class="ml-auto">(1)</small></a>
+         </li>
+         <li><a href="#!" class="d-flex">Sejarah <small class="ml-auto">(1)</small></a>
+         </li>
+         <li><a class="d-flex">Postingan <small class="ml-auto">(0)</small></a>
+         </li>
+      </ul>
+   </div>
+   <!-- team -->
+   <div class="widget">
+      <h5 class="widget-title"><span>Pengurus Saat Ini</span></h5>
+      <!-- team-item -->
+      <ul class="list-unstyled widget-list">
+         <li class="media widget-post align-items-center">
+            <img loading="lazy" class="mr-3 not-select" src="images/2223/01.jpg" alt="Ketua Umum">
+            <div class="media-body">
+               <h5 class="h6 mb-0">Perdiyana</h5>
+               <small>XII - MIPA 1</small>
+               <br>
+               <small><b>Ketua Umum</b></small>
             </div>
-        </div>
-
-        <!-- start of footer -->
-<footer class="bg-dark">
-    <div class="container">
-        <div class="row text-center">
-        	<div class="col-lg-3 col-sm-6 mb-5">
-                <h5 class="font-primary text-white mb-4">Kebijakan Penggunaan</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#!">Kebijakan &amp; Privasi</a></li>
-                    <li><a href="#!">Peraturan</a></li>
-                    <li><a href="#!">Syarat Ketentuan</a></li>
-                </ul>
+         </li>
+      </ul>
+      <ul class="list-unstyled widget-list" style="margin-top: -25px;">
+         <li class="media widget-post align-items-center">
+            <img loading="lazy" class="mr-3 not-select" src="images/2223/user.png" alt="Sekretaris">
+            <div class="media-body">
+               <h5 class="h6 mb-0">Suci Rahma Oktaviani</h5>
+               <small>XII - MIPA 2</small>
+               <br>
+               <small><b>Sekretaris</b></small>
             </div>
-            <div class="col-lg-3 col-sm-6 mb-5">
-                <h5 class="font-primary text-white mb-4">Media Sosial</h5>
-                <ul class="list-unstyled">
-                    <li><a href="https://www.facebook.com/p/100091427423487">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/irmasman22garut_official">Instagram</a></li>
-                    <li><a href="https://tiktok.com/@irmasman22garut_official">TikTok</a></li>
-                    <li><a href="https://www.twitter.com/irmasman22garut">Twitter</a></li>
-                    <li><a href="https://www.youtube.com/@IRMABaitussalam">YouTube</a></li>
-                </ul>
+         </li>
+      </ul>
+      <ul class="list-unstyled widget-list" style="margin-top: -25px;">
+         <li class="media widget-post align-items-center">
+            <img loading="lazy" class="mr-3 not-select" src="images/2223/user.png" alt="Bendahara">
+            <div class="media-body">
+               <h5 class="h6 mb-0">Fani Nuraeni</h5>
+               <small>XII - MIPA 2</small>
+               <br>
+               <small><b>Bendahara</b></small>
             </div>
-            <div class="col-lg-3 col-sm-6 mb-5">
-                <h5 class="font-primary text-white mb-4">Hubungi</h5>
-                <ul class="list-unstyled">
-                    <li><a href="mailto:irmabaitussalam22garut@gmail.com">E-mail</a></li>
-                    <li><a href="#!">WhatsApp</a></li>
-                </ul>
+         </li>
+      </ul>
+      <a href="tentang#pengurus-saat-ini" class="btn btn-outline-primary">Selengkapnya</a>
+   </div>
+			</aside>
+		</div>
+	</div>
+</section>
+
+   <footer class="section-sm pb-0 border-top border-default" style="margin-top: -45px;">
+      <div class="container">
+         <div class="row justify-content-between">
+            <div class="col-md-3 mb-4">
+               <a class="mb-4 d-block" href="/">
+                  <img class="img-fluid not-select" width="150px" src="images/logo.svg" alt="IRMA Baitussalam">
+               </a>
+               <p>“Mewujudkan remaja masjid yang beriman, bertaqwa, berkarakter, cerdas dan terampil.”</p>
             </div>
-        </div>
-    </div>
-</footer>
-<!-- end of footer -->
-    </div>
 
-    </section>
-    <!-- END main-wrapper -->
+            <div class="col-lg-2 col-md-3 col-6 mb-4">
+               <h6 class="mb-4">Tautan Cepat</h6>
+               <ul class="list-unstyled footer-list">
+                  <li><a href="tentang">Tentang</a></li>
+                  <li><a href="kontak">Kontak</a></li>
+                  <li><a href="kebijakan-privasi">Kebijakan Privasi</a></li>
+                  <li><a href="syarat-ketentuan">Syarat Ketentuan</a></li>
+               </ul>
+            </div>
 
-    <div class="widget bg-dark p-4 text-center">
-      <p class="mt-1">Copyright © 2023 IRMA Baitussalam</p>
-    </div>
-    <!-- All JS Files -->
-    <script src="./plugins/jQuery/jquery.min.js"></script>
-    <script src="./plugins/bootstrap/bootstrap.min.js"></script>
+            <div class="col-lg-2 col-md-3 col-6 mb-4">
+               <h6 class="mb-4">Tautan Sosial</h6>
+               <ul class="list-unstyled footer-list">
+                  <li><a href="https://facebook.com/people/IRMA-SMAN-22-GARUT/100083337945272"><i class="fa fab fa-facebook"></i> Facebook</a></li>
+                  <li><a href="https://instagram.com/irmasman22garut_official"><i class="fa fab fa-instagram"></i> Instagram</a></li>
+                  <li><a href="https://twitter.com/irmasman22garut"><i class="fa fab fa-twitter"></i> Twitter</a></li>
+                  <li><a href="https://www.tiktok.com/@irmasman22garut_official"><i class="fa fab fa-tiktok"></i> TikTok</a></li>
+                  <li><a href="https://www.youtube.com/@IRMABaitussalam"><i class="fa fab fa-youtube"></i> YouTube</a></li>
+               </ul>
+            </div>
 
-    <!-- Main Script -->
-    <script src="./js/script.js"></script>
+            <div class="col-md-3 mb-4">
+               <h6 class="mb-4">Isi Kuisioner dari Kami</h6>
+               <div class="mb-2 subscription">
+                  <a href="/kuisioner" class="btn btn-primary btn-block rounded" type="submit" target="_blank">Klik Disini</a>
+               </div>
+            </div>
+         </div>
+         <div class="scroll-top">
+            <a href="javascript:void(0);" id="scrollTop"><i class="mdi mdi-24px mdi-chevron-up"></i></a>
+         </div>
+         <div class="text-center">
+            <p class="content">&copy; <span id="copy-year"></span> - IRMA Baitussalam</p>
+            <script>
+                var d = new Date();
+                var year = d.getFullYear();
+                document.getElementById("copy-year").innerHTML = year;
+            </script>
+         </div>
+      </div>
+   </footer>
+
+
+   <!-- JS Plugins -->
+   <script src="plugins/jQuery/jquery.min.js"></script>
+   <script src="plugins/bootstrap/bootstrap.min.js" async></script>
+   <script src="plugins/slick/slick.min.js"></script>
+
+   <!-- Main Script -->
+   <script src="js/script.js"></script>
 </body>
 </html>

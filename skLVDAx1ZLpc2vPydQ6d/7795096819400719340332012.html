@@ -1,0 +1,363 @@
+<!-- navigation -->
+<header class="sticky-top bg-white border-bottom border-default">
+   <div class="container">
+
+      <nav class="navbar navbar-expand-lg navbar-white">
+         <a class="navbar-brand" href="index.html">
+            <img class="img-fluid not-select" width="45px" src="images/logo.svg" alt="IRMA Baitussalam">
+         </a>
+         <div class="page-title navbar-brand expand-lg navbar-white"><h5 class="mt-2">Pendaftaran</h5></div>
+         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+            <i class="mdi mdi-menu"></i>
+         </button>
+
+         <div class="collapse navbar-collapse text-center" id="navigation">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="/">Beranda</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="tentang">Tentang</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="kontak">Kontak</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link active" href="pendaftaran-anggota-baru">Pendaftaran</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Halaman <i class="mdi mdi-chevron-down ml-1"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="quotes">Quotes</a>
+                     <a class="dropdown-item" href="quiz">Quiz</a>
+                     <a class="dropdown-item" href="blog">Blog</a>
+                     <a class="dropdown-item" href="kebijakan-privasi">Kebijakan Privasi</a>
+                     <a class="dropdown-item" href="syarat-ketentuan">Syarat Ketentuan</a>
+                  </div>
+               </li>
+            </ul>
+
+         </div>
+      </nav>
+   </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="title-bordered mb-5 d-flex align-items-center" style="margin-top: -40px;">
+					<h1 class="h4">Yuk Gabung :)</h1>
+					<ul class="list-inline social-icons ml-auto mr-3 d-none d-sm-block">
+						<li class="list-inline-item"><a href="https://api.whatsapp.com/send?phone=6283173511053"><i class="mdi mdi-24px mdi-whatsapp"></i></a></li>
+						<li class="list-inline-item"><a href="https://m.me/100083337945272"><i class="mdi mdi-24px mdi-facebook-messenger"></i></a></li>
+						<li class="list-inline-item"><a href="https://github.com/IRMABaitussalam"><i class="mdi mdi-24px mdi-github"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="content mb-2">
+					<h2 id="open-recruitment">Open Recruitment Anggota IRMA Baitussalam SMAN 22 Garut</h2>
+					<img src="images/banner-about.jpg" class="img-fluid w-100 mb-4 rounded-lg not-select" alt="Foto">
+					<p>Assalamu'alaikum wr. wb. 🌟</p>
+					<p><b><i>Hallo adik-adik baru SMAN 22 GARUT!!</i></b><br>Apabila kalian berminat mengikuti ekstrakurikuler IRMA BAITUSSALAM SMAN 22 GARUT, langsung saja isi formulir pendaftaran dibawah ini ya!</p>
+					<p><i>“Kegiatannya apa saja Kang/Teh?”</i><br>Banyak, cek aja akun sosial media kami ya.</p>
+					<p><i>“Kang, aku mau ikutan, tapi ngga terlalu paham agama.”</i><br>Nggak papa, asalkan dalam diri kalian ada niat untuk belajar mendalami agama.</p>
+					<p>Yuk, semua bisa dengan belajar! ☺️</p>
+					<h4 class="mt-4">Contact Person</h4>
+					<p><i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6283173511053">+62 831-7351-1053</a> (Kang Perdiyana)</p>
+					<p><i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6281224847821">+62 812-2484-7821</a> (Teh Suci)</p>
+					<p><i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6283826766086">+62 838-2676-6086</a> (Teh Irna)</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<h4 class="mt-4">Formulir Pendaftaran</h4>
+				<form method="POST" action="https://formsubmit.co/irmabaitussalam22garut@gmail.com" name="register" onSubmit="return form_register()">
+					<div class="form-group">
+						<label for="name">Nama Lengkap <span class="text-danger">*</span></label>
+						<input type="text" name="name" id="name" class="form-control" placeholder="IRMA Baitussalam"></input>
+				        <div id="alert_name"></div>
+					</div>
+					<div class="form-group">
+						<label for="class">Kelas <span class="text-danger">*</span></label>
+						<input type="text" name="class" id="kelas" class="form-control" placeholder="X - MIPA 1"></input>
+						<div id="alert_class"></div>
+					</div>
+					<div class="form-group">
+					    <label for="school">Asal Sekolah (Alumni SMP mana?) <span class="text-danger">*</span></label>
+						<input type="text" name="school" id="school" class="form-control" placeholder="SMP Negeri 1 Cisompet"></input>
+					    <div id="alert_school"></div>
+					</div>
+					<div class="form-group">
+                        <label for="born">Tempat/Tanggal Lahir <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <input type="text" name="born" class="form-control" id="born" placeholder="Garut"></input>
+                            <div class="input-group-prepend">
+                                <input type="date" name="date" class="form-control" id="date" onchange="this.className=(this.value!=''?'has-value':'')" placeholder="DD/MM/YY"></input>
+                            </div>
+                        </div>
+                        <div id="alert_born"></div>
+                    </div>
+					<div class="form-group">
+						<label for="address">Alamat <span class="text-danger">*</span></label>
+						<input type="text" name="address" id="address" class="form-control" placeholder="Kp. Cisompet"></input>
+						<div id="alert_address"></div>
+					</div>
+					<div class="form-group">
+						<label for="whatsapp">Nomor WhatsApp <span class="text-danger">*</span></label>
+						<input type="number" name="whatsapp" id="whatsapp" class="form-control" placeholder="08xxxxxxxxxx" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="12"></input>
+						<div id="alert_address"></div>
+					</div>
+					<div class="form-group">
+						<label for="reason">Alasan masuk Ekstrakurikuler IRMA Baitussalam <span class="text-danger">*</span></label>
+						<textarea name="reason" id="reason" class="form-control" placeholder="Ketik..."></textarea>
+						<div id="alert_reason"></div>
+					</div>
+					<div class="form-group">
+                        <label for="captcha">Captcha <span class="text-danger">*</span></label>
+                        <div id="mainCaptcha" readonly="readonly"></div>
+                        <div class="input-group mt-3">
+                            <input type="text" class="form-control" id="inputcaptcha" placeholder="XXXXXX" maxlength="6"></input>
+                            <div class="input-group-prepend">
+                                <button class="btn btn-primary" type="button" id="refresh" onclick="register_captcha(); document.forms['register']['inputcaptcha'].focus();"><i class="fa fa-refresh"></i></button>
+                            </div>
+                        </div>
+                        <div id="alert_captcha"></div>
+                    </div>
+					<input type="hidden" name="_captcha" value="false"></input>
+                    <input type="hidden" name="_template" value="box"></input>
+                    <input type="hidden" name="_subject" value="Pendaftaran Anggota Baru IRMA Baitussalam"></input>
+                    <input type="hidden" name="_next" value="https://irmabaitussalam.github.io/XoFuyjAJe2e3QBs0RapE"></input>
+					<button type="submit" class="btn btn-primary">Kirim Sekarang</button>
+				    <div id="alert_send"></div>
+				    <script>
+						function form_register() {
+							    var name = document.forms["register"]["name"].value;
+							    var kelas = document.forms["register"]["kelas"].value;
+							    var school = document.forms["register"]["school"].value;
+							    var born = document.forms["register"]["born"].value;
+							    var date = document.forms["register"]["date"].value;
+							    var address = document.forms["register"]["address"].value;
+							    var whatsapp = document.forms["register"]["whatsapp"].value;
+							    var reason = document.forms["register"]["reason"].value;
+							    var codecaptcha = document.getElementById("mainCaptcha").value;
+							    var inputcaptcha = document.forms["register"]["inputcaptcha"].value;
+							   
+							    if (name == "") {
+								    document.getElementById("alert_name").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan nama lengkap Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								    document.forms["register"]["name"].focus();
+								    var div = document.getElementById("alert_name");
+                                    setTimeout(function () {
+                                             while(div.firstChild) {
+                                                 div.removeChild(div.firstChild);
+                                             }
+                                    }, 2000);
+                                    return false;
+                                }
+                                if (kelas == "") {
+								    document.getElementById("alert_class").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan kelas Anda saat ini!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								    document.forms["register"]["kelas"].focus();
+								    var div = document.getElementById("alert_class");
+                                    setTimeout(function () {
+                                             while(div.firstChild) {
+                                                 div.removeChild(div.firstChild);
+                                             }
+                                    }, 2000);
+                                    return false;
+                                }
+                                if (school == "") {
+								    document.getElementById("alert_school").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan asal sekolah Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								    document.forms["register"]["school"].focus();
+								    var div = document.getElementById("alert_school");
+                                    setTimeout(function () {
+                                             while(div.firstChild) {
+                                                 div.removeChild(div.firstChild);
+                                             }
+                                    }, 2000);
+                                    return false;
+                                }
+                                if (born == "") {
+								    document.getElementById("alert_born").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan tempat tanggal lahir Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								    document.forms["register"]["born"].focus();
+								    var div = document.getElementById("alert_born");
+                                    setTimeout(function () {
+                                             while(div.firstChild) {
+                                                 div.removeChild(div.firstChild);
+                                             }
+                                    }, 2000);
+                                    return false;
+                                }
+                                if (date == "") {
+								    document.getElementById("alert_born").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan tempat tanggal lahir Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								    document.forms["register"]["date"].focus();
+								    var div = document.getElementById("alert_born");
+                                    setTimeout(function () {
+                                             while(div.firstChild) {
+                                                 div.removeChild(div.firstChild);
+                                             }
+                                    }, 2000);
+                                    return false;
+                                }
+                                if (address == "") {
+								    document.getElementById("alert_address").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan alamat Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								    document.forms["register"]["address"].focus();
+								    var div = document.getElementById("alert_address");
+                                    setTimeout(function () {
+                                             while(div.firstChild) {
+                                                 div.removeChild(div.firstChild);
+                                             }
+                                    }, 2000);
+                                    return false;
+                                }
+                                if (reason == "") {
+								    document.getElementById("alert_reason").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan alasan Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								    document.forms["register"]["reason"].focus();
+								    var div = document.getElementById("alert_reason");
+                                    setTimeout(function () {
+                                             while(div.firstChild) {
+                                                 div.removeChild(div.firstChild);
+                                             }
+                                    }, 2000);
+                                    return false;
+                                }
+                                if (whatsapp == "") {
+								    document.getElementById("alert_whatsapp").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan nomor whatsapp Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								    document.forms["register"]["whatsapp"].focus();
+								    var div = document.getElementById("alert_whatsapp");
+                                    setTimeout(function () {
+                                             while(div.firstChild) {
+                                                 div.removeChild(div.firstChild);
+                                             }
+                                    }, 2000);
+                                    return false;
+                                }
+                                if (codecaptcha == inputcaptcha) {
+                                    if (document.forms["register"]["name"].value && document.forms["register"]["school"].value && document.forms["register"]["reason"].value != "") {
+                                        register_captcha();
+                                        document.getElementById("alert_send").innerHTML = '<div class="alert alert-success alert-dismissible alert-icon mt-3 fade show" role="alert"><i class="mdi mdi-send-check"></i> Terkirim!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								        var div = document.getElementById("alert_send");
+                                        setTimeout(function () {
+                                                 while(div.firstChild) {
+                                                     div.removeChild(div.firstChild);
+                                                 }
+                                        }, 18000);
+                                        return true;
+                                     }
+                                } else if (inputcaptcha == "") {
+                                        register_captcha();
+                                        document.getElementById("alert_captcha").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan kode captchanya!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								        document.forms["register"]["inputcaptcha"].focus();
+								        var div = document.getElementById("alert_captcha");
+                                        setTimeout(function () {
+                                                 while(div.firstChild) {
+                                                     div.removeChild(div.firstChild);
+                                                 }
+                                        }, 2000);
+                                        return false;
+                                } else {
+                                       register_captcha();
+                                       document.getElementById("alert_captcha").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan kode captchanya dengan benar!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								       document.forms["register"]["inputcaptcha"].focus();
+								       var div = document.getElementById("alert_captcha");
+                                       setTimeout(function () {
+                                                while(div.firstChild) {
+                                                    div.removeChild(div.firstChild);
+                                                }
+                                       }, 2000);
+                                       return false;
+                                }
+                        }
+                        function register_captcha() {
+                                var alpha = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M',
+                                                      'N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
+                                                      'a','b','c','d','e','f','g','h','i','j','k','l','m',
+                                                      'n','o','p','q','r','s','t','u','v','w','x','y','z',
+                                                      '0','1','2','3','4','5','6','7','8','9','$','@','#',
+                                                      '*',':',';','!','?','&','-','+','(',')','/','=');
+                                var i;
+                                for (i=0;i<6;i++){
+                                     var a = alpha[Math.floor(Math.random() * alpha.length)];
+                                     var b = alpha[Math.floor(Math.random() * alpha.length)];
+                                     var c = alpha[Math.floor(Math.random() * alpha.length)];
+                                     var d = alpha[Math.floor(Math.random() * alpha.length)];
+                                     var e = alpha[Math.floor(Math.random() * alpha.length)];
+                                     var f = alpha[Math.floor(Math.random() * alpha.length)];
+                                 }
+                                 function removeSpaces(string) {
+                                         return string.split(' ').join('');
+                                 }
+                                 var code = removeSpaces(a + b + c + d + e + f);
+                                 document.getElementById("mainCaptcha").innerHTML = '<h1 class="text-center captcha">' + code + '</h1>';
+                                 document.getElementById("mainCaptcha").value = code;
+                          }
+                          register_captcha()
+                      </script>
+				 </form>
+			 </div>
+		</div>
+	</div>
+</section>
+
+   <footer class="section-sm pb-0 border-top border-default" style="margin-top: -45px;">
+      <div class="container">
+         <div class="row justify-content-between">
+            <div class="col-md-3 mb-4">
+               <a class="mb-4 d-block" href="/">
+                  <img class="img-fluid not-select" width="150px" src="images/logo.svg" alt="IRMA Baitussalam">
+               </a>
+               <p>“Mewujudkan remaja masjid yang beriman, bertaqwa, berkarakter, cerdas dan terampil.”</p>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4">
+               <h6 class="mb-4">Tautan Cepat</h6>
+               <ul class="list-unstyled footer-list">
+                  <li><a href="tentang">Tentang</a></li>
+                  <li><a href="kontak">Kontak</a></li>
+                  <li><a href="kebijakan-privasi">Kebijakan Privasi</a></li>
+                  <li><a href="syarat-ketentuan">Syarat Ketentuan</a></li>
+               </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4">
+               <h6 class="mb-4">Tautan Sosial</h6>
+               <ul class="list-unstyled footer-list">
+                  <li><a href="https://facebook.com/people/IRMA-SMAN-22-GARUT/100083337945272"><i class="fa fab fa-facebook"></i> Facebook</a></li>
+                  <li><a href="https://instagram.com/irmasman22garut_official"><i class="fa fab fa-instagram"></i> Instagram</a></li>
+                  <li><a href="https://twitter.com/irmasman22garut"><i class="fa fab fa-twitter"></i> Twitter</a></li>
+                  <li><a href="https://www.tiktok.com/@irmasman22garut_official"><i class="fa fab fa-tiktok"></i> TikTok</a></li>
+                  <li><a href="https://www.youtube.com/@IRMABaitussalam"><i class="fa fab fa-youtube"></i> YouTube</a></li>
+               </ul>
+            </div>
+
+            <div class="col-md-3 mb-4">
+               <h6 class="mb-4">Isi Kuisioner dari Kami</h6>
+               <div class="mb-2 subscription">
+                  <a href="/kuisioner" class="btn btn-primary btn-block rounded" type="submit" target="_blank">Klik Disini</a>
+               </div>
+            </div>
+         </div>
+         <div class="scroll-top">
+            <a href="javascript:void(0);" id="scrollTop"><i class="mdi mdi-24px mdi-chevron-up"></i></a>
+         </div>
+         <div class="text-center">
+            <p class="content">&copy; <span id="copy-year"></span> - IRMA Baitussalam</p>
+            <script>
+                var d = new Date();
+                var year = d.getFullYear();
+                document.getElementById("copy-year").innerHTML = year;
+            </script>
+         </div>
+      </div>
+   </footer>
+
+
+   <!-- JS Plugins -->
+   <script src="plugins/jQuery/jquery.min.js"></script>
+   <script src="plugins/bootstrap/bootstrap.min.js" async></script>
+   <script src="plugins/slick/slick.min.js"></script>
+
+   <!-- Main Script -->
+   <script src="js/script.js"></script>
+</body>
