@@ -1346,4 +1346,11 @@ input {
   }
 }
 
+a .social-link {
+  color: #696c6d;
+}
+a .social-link:hover {
+  color: #649a44;
+}
+
 /*# sourceMappingURL=style.css.map */
