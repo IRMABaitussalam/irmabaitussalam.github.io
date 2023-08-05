@@ -1,39 +1,42 @@
-<div align="center"><a href="https://irmabaitussalam.github.io"><img src="./images/favicon.svg" weight="150px" height="150px" alt="Logo"></a></div>
+<div align="center">
+<a href="https://irmabaitussalam.github.io"><img src="./images/favicon.svg" weight="150px" height="150px" alt="Logo"></a>
+<h3>IRMA Baitussalam</h3>
+<h3><a href="https://irmabaitussalam.github.io"><img src="images/motto.svg" width="100%" alt="Motto"></h3></a></div>
 
 <div align="center">
 
-[Facebook](https://www.facebook.com/p/100091427423487) | [Instagram](https://www.instagram.com/irmasman22garut_official) | [WhatsApp](https://wa.me/6283173511053) | [Twitter](https://www.twitter.com/irmasman22garut) | [TikTok](https://www.tiktok.com/@irmasman22garut_official) | [YouTube](https://www.youtube.com/@IRMABaitussalam) | [Email](mailto:irmabaitussalam22garut@gmail.com) | [Website](https://irmabaitussalam.github.io) | [License](https://github.com/IRMABaitussalam/irmabaitussalam.github.io/blob/master/LICENSE)</div>
+[Facebook](https://facebook.com/people/IRMA-SMAN-22-GARUT/100083337945272) | [Instagram](https://www.instagram.com/irmasman22garut_official) | [WhatsApp](https://wa.me/6283173511053) | [Twitter](https://www.twitter.com/irmasman22garut) | [TikTok](https://www.tiktok.com/@irmasman22garut_official) | [YouTube](https://www.youtube.com/@IRMABaitussalam) | [Email](mailto:irmabaitussalam22garut@gmail.com) | [Website](https://irmabaitussalam.github.io) | [Lisensi](LICENSE)</div>
 
 # irmabaitussalam.github.io
-Welcome 👋 to the official repository of the IRMA Baitussalam website 🥳. This repository serves as the central hub for developing, maintaining, and enhancing the website of IRMA Baitussalam.
+Selamat datang 👋 di repositori resmi dari situs web IRMA Baitussalam 🥳. Repositori ini berfungsi sebagai pusat pengembangan, pemeliharaan, dan perbaikan situs web IRMA Baitussalam.
 
-IRMA Baitussalam is a reputable organization dedicated to promoting education and fostering a positive learning environment. This website showcases the organization's mission, vision, and various initiatives undertaken to empower individuals through education.
+IRMA Baitussalam adalah organisasi terkemuka yang berdedikasi untuk mempromosikan pendidikan dan menciptakan lingkungan belajar yang positif. Situs web ini memperlihatkan misi, visi, dan berbagai inisiatif yang dilakukan oleh organisasi ini untuk memberdayakan individu melalui pendidikan.
 
-The repository contains the source code, design assets, and other relevant files necessary for the development and deployment of the IRMA Baitussalam website. By utilizing this repository, we aim to ensure transparency, collaboration, and efficiency in managing the website's development life cycle.
+Repositori ini berisi kode sumber, aset desain, dan berkas relevan lainnya yang diperlukan untuk pengembangan dan penyebaran situs web IRMA Baitussalam. Dengan memanfaatkan repositori ini, kami bertujuan untuk memastikan transparansi, kolaborasi, dan efisiensi dalam mengelola siklus pengembangan situs web.
 
-Contributors 🛠️ to this repository are encouraged to adhere to best practices and follow the established coding guidelines to maintain a high standard of code quality. This includes utilizing appropriate technologies, adhering to responsive design principles, and implementing robust security measures.
+Para kontributor 🛠️ ke repositori ini diharapkan mengikuti praktik terbaik dan mengikuti pedoman pengkodean yang telah ditetapkan untuk menjaga standar kualitas kode yang tinggi. Ini termasuk penggunaan teknologi yang tepat, mengikuti prinsip desain responsif, dan menerapkan langkah-langkah keamanan yang kuat.
 
-# License
+# Lisensi
 <div align="center">
 
 [![Apache 2.0 License Logo](https://www.apache.org/foundation/press/kit/asf_logo.svg)](https://www.apache.org/licenses/LICENSE-2.0)</div>
 
-The IRMA Baitussalam website ([irmabaitussalam.github.io](https://irmabaitussalam.github.io)) repository is licensed under the Apache 2.0 License, a widely recognized open-source license known for its permissive and flexible terms. This license grants users the freedom to use, modify, distribute, and sublicense the source code and any accompanying documentation within the repository.
+Situs web IRMA Baitussalam ([irmabaitussalam.github.io](https://irmabaitussalam.github.io)) berada di bawah lisensi Apache 2.0, sebuah lisensi open-source yang sangat diakui karena ketentuannya yang longgar dan fleksibel. Lisensi ini memberikan kebebasan kepada pengguna untuk menggunakan, memodifikasi, mendistribusikan, dan memberikan sublisensi terhadap kode sumber dan dokumentasi yang ada dalam repositori ini.
 
-Under the Apache 2.0 License, contributors to the IRMA Baitussalam website repository retain their copyright ownership while granting a non-exclusive license to others. This license permits individuals and organizations to build upon, incorporate, and distribute derivative works based on the original codebase.
+Dalam Lisensi Apache 2.0, para kontributor untuk repositori situs web IRMA Baitussalam tetap mempertahankan kepemilikan hak cipta mereka sambil memberikan lisensi non-eksklusif kepada orang lain. Lisensi ini memungkinkan individu dan organisasi untuk membangun, menggabungkan, dan mendistribusikan karya turunan berdasarkan kode sumber asli.
 
-The Apache 2.0 License also ensures that users receive the software "as is," without any warranties or conditions, expressed or implied. However, the license provides limitations of liability, protecting contributors and maintainers from legal claims related to the software's use.
+Lisensi Apache 2.0 juga memastikan bahwa pengguna menerima perangkat lunak "sebagaimana adanya", tanpa jaminan atau kondisi apa pun, baik yang diungkapkan maupun yang tersirat. Namun, lisensi ini memberikan batasan tanggung jawab, melindungi kontributor dan pengelola dari klaim hukum terkait penggunaan perangkat lunak tersebut.
 
-One notable requirement of the Apache 2.0 License is the inclusion of a copy of the license text in any distribution of the software. This ensures that downstream users are aware of their rights and responsibilities under the license.
+Salah satu persyaratan penting dari Lisensi Apache 2.0 adalah penyertaan salinan teks lisensi dalam setiap distribusi perangkat lunak. Ini memastikan bahwa pengguna yang sadar akan hak dan tanggung jawab mereka di bawah lisensi.
 
-As a contributor or user of the IRMA Baitussalam website repository, it is essential to review and comply with the terms of the Apache 2.0 License. By doing so, we foster a collaborative and open environment that promotes the sharing of knowledge, encourages innovation, and supports the growth of the open-source community 🌐.
+Sebagai kontributor atau pengguna repositori situs web IRMA Baitussalam, penting untuk meninjau dan mematuhi ketentuan Lisensi Apache 2.0. Dengan melakukannya, kita mendorong lingkungan kolaboratif dan terbuka yang mendorong berbagi pengetahuan, mendorong inovasi, dan mendukung pertumbuhan komunitas open-source 🌐.
 
-For detailed information about the rights and obligations conferred by the Apache 2.0 License, please refer to the LICENSE file in the repository 👆.
+Untuk informasi lebih rinci tentang hak dan kewajiban yang diberikan oleh Lisensi Apache 2.0, silakan lihat berkas [LISENSI](LICENSE) di repositori tersebut 👆.
 
-# Contributor Stats
+# Kontributor Statistik
 ### IRMA Baitussalam
-[![IRMA Baitussalam Stats](https://github-readme-stats.vercel.app/api?username=IRMABaitussalam&show_icons=true&bg_color=3,e96443,904e95&title_color=fff&text_color=fff&icon_color=fff)](https://github.com/IRMABaitussalam)
+[![IRMA Baitussalam Stats](https://github-readme-stats.vercel.app/api?username=IRMABaitussalam&show_icons=true)](https://github.com/IRMABaitussalam)
 ### Rangga Fajar Oktariansyah
-[![Fajar Kim Stats](https://github-readme-stats.vercel.app/api?username=FajarKim&show_icons=true&bg_color=3,e96443,904e95&title_color=fff&text_color=fff&icon_color=fff)](https://github.com/FajarKim)
+[![Fajar Kim Stats](https://github-readme-stats.vercel.app/api?username=FajarKim&show_icons=true)](https://github.com/FajarKim)
 
 <p align="center"><font face="Times New Roman" color="#8B8B8B" size="1.5px">Copyright © 2023 IRMA Baitussalam</font></p>
