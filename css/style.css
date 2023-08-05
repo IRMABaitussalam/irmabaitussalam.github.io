@@ -1197,7 +1197,7 @@ i.fa-refresh:hover {
 }
 
 .sub-img {
-  line-height: 2px;
+  line-height: -3px;
   font-size: 9px;
   margin-buttom: -10px;
   -khtml-user-select: none;
