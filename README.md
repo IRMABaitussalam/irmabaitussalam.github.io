@@ -1,7 +1,7 @@
 <div align="center">
 <a href="https://irmabaitussalam.github.io"><img src="./images/favicon.svg" weight="150px" height="150px" alt="Logo"></a>
 <h3>IRMA Baitussalam</h3>
-<h3><a href="https://irmabaitussalam.github.io"><img src="images/motto.svg" width="100%" alt="Motto"></h3></a></div>
+<h3><a href="https://irmabaitussalam.github.io"><img src="images/motto.svg" width="450px" alt="Motto"></h3></a></div>
 
 <div align="center">
 
