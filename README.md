@@ -1,7 +1,7 @@
 <div align="center">
 <a href="https://irmabaitussalam.github.io"><img src="./images/favicon.svg" weight="150px" height="150px" alt="Logo"></a>
 <h3>IRMA Baitussalam</h3>
-<p><a href="https://irmabaitussalam.github.io"><img src="images/motto.svg" width="950px" alt="Motto"></p></a></div>
+<p>Mewujudkan remaja masjid yang beriman, bertaqwa, berkarakter, cerdas dan terampil</p></div>
 
 <div align="center">
 
