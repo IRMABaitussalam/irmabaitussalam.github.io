@@ -51,6 +51,10 @@
    <script>
    	var d = new Date();
        var newYears = d.getFullYear()+1;
+       var newMonth = d.getMonth()+1;
+       if (newMonth < "7") {
+       	var newYears = d.getFullYear();
+       }
 
        $(".simple_timer").syotimer({
          year: newYears,
