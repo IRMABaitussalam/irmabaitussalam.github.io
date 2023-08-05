@@ -15,6 +15,7 @@ VERSION:	v1.0
   font-family: Marola;
   src: url("../font/Marola.ttf") format("truetype");
 }
+
 /*  typography */
 body {
   line-height: 1.7;
@@ -22,6 +23,10 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #696c6d;
   font-size: 14px;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 p, .paragraph {
@@ -65,6 +70,7 @@ h6, .h6 {
 
 /* Button style */
 .btn {
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize;
@@ -76,7 +82,14 @@ h6, .h6 {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
 }
 .btn:active, .btn:focus {
   outline: 0;
@@ -85,43 +98,53 @@ h6, .h6 {
 .btn:hover {
   text-decoration: none;
 }
+.btn.disabled, .btn:disabled {
+  opacity: 0.65;
+}
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+a.btn.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
 
 .btn-primary {
-  background: #046c34;
+  background-color: #046c34;
   color: #fff;
   border-color: #046c34;
 }
 .btn-primary:active, .btn-primary.focus, .btn-primary.active {
-  background: #046c34 !important;
+  background-color: #046c34 !important;
   border-color: #046c34 !important;
 }
 .btn-primary:hover {
-  background: #035b2c !important;
+  background-color: #035b2c !important;
   border-color: #035b2c !important;
 }
 
 .btn-outline-primary {
-  background: transparent;
+  background-color: transparent;
   color: #696c6d;
   border-color: #046c34;
 }
 .btn-outline-primary:active, .btn-outline-primary.focus, .btn-outline-primary.active {
-  background: #046c34 !important;
+  background-color: #046c34 !important;
   border-color: #046c34 !important;
   color: #fff;
 }
 .btn-otline-primary:hover {
-  background: #035b2c !important;
+  background-color: #035b2c !important;
   border-color: #035b2c !important;
 }
 
 .btn-outline-light {
-  background: transparent;
+  background-color: transparent;
   color: #696c6d;
   border-color: #ddd;
 }
 .btn-outline-light:active, .btn-outline-light:hover, .btn-outline-light.focus, .btn-outline-light.active {
-  background: #f0f0f0 !important;
+  background-color: #f0f0f0 !important;
   border-color: #ddd !important;
 }
 
@@ -1197,7 +1220,7 @@ i.fa-refresh:hover {
 }
 
 .sub-img {
-  line-height: -3px;
+  line-height: 1;
   font-size: 9px;
   margin-buttom: -10px;
   -khtml-user-select: none;
