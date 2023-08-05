@@ -36,8 +36,10 @@ Untuk informasi lebih rinci tentang hak dan kewajiban yang diberikan oleh Lisens
 
 # Kontributor Statistik
 ### IRMA Baitussalam
-[![IRMA Baitussalam Stats](https://github-readme-stats.vercel.app/api?username=IRMABaitussalam&show_icons=true)](https://github.com/IRMABaitussalam)
+[![IRMA Baitussalam Stats](https://github-readme-stats.vercel.app/api?username=IRMABaitussalam&show_icons=true#gh-light-mode-only)](https://github.com/IRMABaitussalam#gh-light-mode-only)
+[![IRMA Baitussalam Stats](https://github-readme-stats.vercel.app/api?username=IRMABaitussalam&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/IRMABaitussalam#gh-dark-mode-only)
 ### Rangga Fajar Oktariansyah
-[![Fajar Kim Stats](https://github-readme-stats.vercel.app/api?username=FajarKim&show_icons=true)](https://github.com/FajarKim)
+[![Fajar Kim Stats](https://github-readme-stats.vercel.app/api?username=FajarKim&show_icons=true#gh-light-mode-only)](https://github.com/FajarKim#gh-light-mode-only)
+[![IRMA Baitussalam Stats](https://github-readme-stats.vercel.app/api?username=FajarKim&show_icons=true&theme=github_dark#gh-dark-mode-only)](https://github.com/IRMABaitussalam#gh-dark-mode-only)
 
 <p align="center"><font face="Times New Roman" color="#8B8B8B" size="1.5px">Copyright © 2023 IRMA Baitussalam</font></p>
