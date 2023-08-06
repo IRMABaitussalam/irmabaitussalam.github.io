@@ -115,6 +115,69 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+.btn-social {
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  padding: 8px 8px;
+  border-radius: 50px;
+  border: 1px solid;
+  position: relative;
+  font-size: 1.5rem;
+  z-index: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-social {
+    transition: none;
+  }
+}
+.btn-social:active, .btn-social:focus {
+  outline: 0;
+  box-shadow: none !important;
+  background-color: #046c34;
+  border-color: #046c34;
+  color: #fff;
+}
+.btn-social:hover {
+  text-decoration: none;
+  background-color: #046c34;
+  border-color: #046c34;
+  color: #fff;
+}
+.btn-social.disabled, .btn-social:disabled {
+  opacity: 0.65;
+}
+.btn-social:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+a.btn-social.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
+
+.btn-icon {
+  width: 43px;
+  height: 43px;
+  position: relative;
+  display: center;
+  padding-top: 0.645rem;
+  padding-left: 0.688rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  background-color: #046c34;
+}
+.btn-icon:hover {
+  color: #ffffff;
+  background-color: #035b2c;
+}
+
 .btn-primary {
   background-color: #046c34;
   color: #fff;
@@ -318,6 +381,10 @@ a:hover {
 
 .rounded-lg, .post-slider {
   border-radius: 10px !important;
+}
+
+.rounded-lg, .post-slider-quotes {
+  border-radius: 0;
 }
 
 .border-default {
@@ -592,6 +659,10 @@ a:hover {
   overflow: hidden;
   margin-bottom: 20px;
 }
+.post-slider-quotes {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
 .post-slider img {
   border-radius: inherit;
 }
@@ -599,6 +670,12 @@ a:hover {
   left: 10px;
 }
 .post-slider:hover .nextArrow {
+  right: 10px;
+}
+.post-slider-quotes:hover .prevArrow {
+  left: 10px;
+}
+.post-slider-quotes:hover .nextArrow {
   right: 10px;
 }
 
