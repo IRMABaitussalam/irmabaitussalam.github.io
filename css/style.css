@@ -120,7 +120,7 @@ fieldset:disabled a.btn {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize;
-  padding: 8px 8px;
+  padding: 0.3125rem 1rem;
   border-radius: 50px;
   border: 1px solid;
   position: relative;
@@ -167,8 +167,7 @@ fieldset:disabled a.btn {
   height: 43px;
   position: relative;
   display: center;
-  padding-top: 0.645rem;
-  padding-left: 0.688rem;
+  padding: 0.312rem 0.625rem;
   color: #ffffff;
   font-size: 1.25rem;
   background-color: #046c34;
