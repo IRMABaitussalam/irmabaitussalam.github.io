@@ -94,9 +94,15 @@ h6, .h6 {
 .btn:active, .btn:focus {
   outline: 0;
   box-shadow: none !important;
+  background-color: #046c34;
+  border-color: #046c34;
+  color: #fff;
 }
 .btn:hover {
   text-decoration: none;
+  background-color: #046c34;
+  border-color: #046c34;
+  color: #fff;
 }
 .btn.disabled, .btn:disabled {
   opacity: 0.65;
@@ -119,8 +125,8 @@ fieldset:disabled a.btn {
   border-color: #046c34 !important;
 }
 .btn-primary:hover {
-  background-color: #035b2c !important;
-  border-color: #035b2c !important;
+  background-color: #035b2c;
+  border-color: #035b2c;
 }
 
 .btn-outline-primary {
@@ -1263,6 +1269,7 @@ input {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  margin-bottom: -26rem;
 }
 .comingsoon-wrapper .app-brand {
   margin-bottom: 2rem;
@@ -1284,6 +1291,7 @@ input {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: -50rem;
 }
 @media (min-width: 768px) {
   .syotimer__body {
@@ -1295,7 +1303,7 @@ input {
   width: 70px;
   height: 80px;
   margin-right: 0.75rem;
-  border: 1px solid #e5e9f2;
+  border: 1px solid #046c34;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1401,17 +1409,17 @@ a .social-link:hover {
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: transparent;
+    background-color: #eee;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
 .check-box:hover input ~ .checkmark {
-    background-color: transparent;
+    background-color: #eee;
 }
 
 .check-box input:checked ~ .checkmark {
-    background-color: #046c34;
+    background-color: #eee;
 }
 
 .checkmark:after {
@@ -1422,17 +1430,21 @@ a .social-link:hover {
 
 .check-box input:checked ~ .checkmark:after {
     display: block;
+    border: solid #046c34;
+    border-width: 0 3px 3px 0;
 }
 
 .check-box .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
+    left: 8px;
+    top: 3px;
+    width: 8px;
+    height: 13px;
     border: solid white;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+    transition: transform 0.4s ease-ot;
 }
+
 /*# sourceMappingURL=style.css.map */
