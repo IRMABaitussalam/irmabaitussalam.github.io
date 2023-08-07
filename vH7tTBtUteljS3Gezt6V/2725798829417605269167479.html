@@ -1,0 +1,68 @@
+<body>
+
+<section class="section-sm">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="title-bordered mb-5 d-flex align-items-center" style="margin-top: -40px;">
+					<h1 class="h4">Astaghfirullah.... ;(</h1>
+				</div>
+				<div class="content mb-5">
+					<h1 class="text-center">Formilir Pengiriman Quotes Telah Ditutup</h1>
+					<div align="center"><img src="images/closed.svg" class="img-fluid w-60 mb-4 not-select" alt="Foto"></div>
+					<p class="text-center">Yah, pengiriman sudah ditutup. Silahkan kembali lagi nanti :)</p>
+					<div class="row comingsoon-wrapper">
+						<div class="col-lg-8 col-xl-5" style="margin-top: -40rem;">
+					        <div class="simple_timer"></div>
+					        <p id="mon"></p>
+				        </div>
+					</div>
+		        </div>
+		        <div class="mb-2 subscription">
+                  <a href="/" class="btn btn-primary btn-block rounded" type="submit">Kembali ke Beranda</a>
+               </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+   <footer class="section-sm pb-0" style="margin-top: -45px;">
+      <div class="container">
+         <div class="scroll-top">
+            <a href="javascript:void(0);" id="scrollTop"><i class="mdi mdi-24px mdi-chevron-up"></i></a>
+         </div>
+         <div class="text-center" style="margin-bottom: -10rem;">
+            <p class="content">&copy; <span id="copy-year"></span> - IRMA Baitussalam</p>
+            <script>
+                var d = new Date();
+                var year = d.getFullYear();
+                document.getElementById("copy-year").innerHTML = year;
+            </script>
+         </div>
+      </div>
+   </footer>
+
+
+   <!-- JS Plugins -->
+   <script src="plugins/jQuery/jquery.min.js"></script>
+   <script src="plugins/bootstrap/bootstrap.min.js" async></script>
+   <script src="plugins/slick/slick.min.js"></script>
+   <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+   <script>
+   	var d = new Date();
+       var newYears = d.getFullYear();
+       var newMonth = d.getMonth()+1;
+       var newDays = d.getDate()+1;
+
+       $(".simple_timer").syotimer({
+         year: newYears,
+         month: newMonth,
+         day: newDays,
+         hour: 05,
+         minute: 00
+       });
+   </script>
+
+   <!-- Main Script -->
+   <script src="js/script.js"></script>
+</body>

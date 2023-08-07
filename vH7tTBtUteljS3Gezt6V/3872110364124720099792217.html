@@ -1,0 +1,559 @@
+<body>
+<!-- navigation -->
+<header class="sticky-top bg-white border-bottom border-default">
+   <div class="container">
+
+      <nav class="navbar navbar-expand-lg navbar-white">
+         <a class="navbar-brand" href="index.html">
+            <img class="img-fluid not-select" width="45px" src="images/logo.svg" alt="IRMA Baitussalam">
+         </a>
+         <div class="page-title navbar-brand expand-lg navbar-white"><h5 class="mt-2">Kirim Quotes</h5></div>
+         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+            <i class="mdi mdi-menu"></i>
+         </button>
+
+         <div class="collapse navbar-collapse text-center" id="navigation">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="/">Beranda</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="tentang">Tentang</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link active" href="kontak">Kontak</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="pendaftaran-anggota-baru">Pendaftaran</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Halaman <i class="mdi mdi-chevron-down ml-1"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="quotes">Quotes</a>
+                     <a class="dropdown-item" href="quiz">Quiz</a>
+                     <a class="dropdown-item" href="blog">Blog</a>
+                     <a class="dropdown-item" href="pedoman-komunitas">Pedoman Komunitas</a>
+                     <a class="dropdown-item" href="kebijakan-privasi">Kebijakan Privasi</a>
+                     <a class="dropdown-item" href="syarat-ketentuan">Syarat Ketentuan</a>
+                  </div>
+               </li>
+            </ul>
+
+         </div>
+      </nav>
+   </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="title-bordered mb-5 d-flex align-items-center" style="margin-top: -40px;">
+					<h1 class="h4">Kirimkan Quotesmu Yuk :)</h1>
+					<ul class="list-inline social-icons ml-auto mr-3 d-none d-sm-block">
+						<li class="list-inline-item"><a href="https://api.whatsapp.com/send?phone=6283173511053"><i class="mdi mdi-24px mdi-whatsapp"></i></a></li>
+						<li class="list-inline-item"><a href="https://m.me/100083337945272"><i class="mdi mdi-24px mdi-facebook-messenger"></i></a></li>
+						<li class="list-inline-item"><a href="https://github.com/IRMABaitussalam"><i class="mdi mdi-24px mdi-github"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="content mb-5">
+					<h1 id="ask-us-anything-br-or-just-say-hi">Kirimkan Quotes Terbaikmu Untuk Ditampilkan</h1>
+					<p>Punya kata-kata bijak dan ingin ditampilkan? Kirim saja dengan mengisi formulir di bawah ini ya 😁</p>
+					<h4 class="mt-4">Contact Person</h4>
+					<p><i class="mdi mdi-email-outline text-primary"></i> <a href="mailto:irmabaitussalam22garut@gmail.com">irmabaitussalam22garut@gmail.com</a></p>
+					<p><i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6283173511053">+62 831-7351-1053</a> (Kang Perdiyana)</p>
+					<p><i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6285659850910">+62 856-5985-0910</a> (Kang Rangga)</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div align="center" class="text-center text-md-center mb-3 mt-3">
+                    <ul class="nav nav-underline-active-primary mb-3 justify-content-between" id="generateThemeType" role="tablist">
+                    	
+                        <li class="nav-item" role="presentation">
+                             <a class="nav-link active" id="tab-sendEmail" data-toggle="tab" href="#sendEmail" role="tab" aria-controls="sendEmail" aria-selected="true">
+                                 <p class="text-uppercase d-block"><i class="mdi mdi-email-edit-outline"></i> Email</p>
+                             </a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                             <a class="nav-link" id="tab-sendWhatsApp" data-toggle="tab" href="#sendWhatsApp" role="tab" aria-controls="sendWhatsApp" aria-selected="false">
+                                 <p class="text-uppercase d-block"><i class="mdi mdi-whatsapp"></i> WhatsApp</p>
+                             </a>
+                        </li>
+                   </ul>
+               </div>
+               <div class="tab-content" id="formContact">
+                   <div class="tab-pane fade show active" id="sendEmail" role="tabpanel" aria-labelledby="tab-sendEmail">
+				       <form method="POST" action="https://formsubmit.co/irmabaitussalam22garut@gmail.com" name="emailForm" onSubmit="return validation_email()">
+					       <div class="form-group">
+						       <label for="name">Nama Anda <span class="text-danger">*</span></label>
+						       <input type="text" name="name" id="name" class="form-control" placeholder="IRMA Baitussalam"></input>
+							   <div id="alert_name_1"></div>
+					       </div>
+					       <div class="form-group">
+						       <label for="name">Kelas <span class="text-danger">*</span></label>
+						       <input type="text" name="kelas" id="kelas" class="form-control" placeholder="XII - MIPA 1"></input>
+							   <div id="alert_class_1"></div>
+					       </div>
+					       <div class="form-group">
+						       <label for="email">Alamat Email Anda <span class="text-danger">*</span></label>
+						       <input type="email" name="email" id="email" class="form-control" placeholder="alamatemailanda@domain.com"></input>
+							   <div id="alert_email_1"></div>
+					       </div>
+					       <div class="form-group">
+						       <label for="instagram">Username Instagram</label>
+					       </div>
+					       <div class="input-group" style="margin-top: -16px;">
+                               <div class="input-group-prepend">
+                                   <span class="input-group-text" id="link-instagram" style="padding-top: 0.53rem;">https://instagram.com/</span>
+                               </div>
+                               <input type="text" class="form-control" name="instagram" id="instagram" aria-describedby="link-instagram-username" placeholder="irmasman22garut_official"></input>
+                           </div>
+					       <div class="form-group">
+						       <label for="message">Tulis Quotes Disini <span class="text-danger">*</span></label>
+						       <textarea name="message" id="message" class="form-control" placeholder="Ketik..."></textarea>
+						       <div id="alert_message_1"></div>
+					       </div>
+					       <div class="form-group">
+                               <label for="captcha">Captcha <span class="text-danger">*</span></label>
+                               <div id="mainCaptcha_1" readonly="readonly"></div>
+                               <div class="input-group mt-3">
+                                   <input type="text" class="form-control" id="inputcaptcha" placeholder="XXXXXX" maxlength="6"></input>
+                                   <div class="input-group-prepend">
+                                       <button class="btn btn-primary" type="button" id="refresh" onclick="emailForm_captcha(); document.forms['emailForm']['inputcaptcha'].focus();"><i class="fa fa-refresh"></i></button>
+                                   </div>
+                               </div>
+                               <div id="alert_captcha_1"></div>
+                           </div>
+                           <div class="form-group">
+                           	<label class="content check-box"><input type="checkbox" id="agree_1" name="agree" value="yes"></input><span class="checkmark"></span> Dengan mengklik tombol "Kirim Sekarang", Anda sudah menyutujui <a href="syarat-ketentuan">Syarat Ketentuan</a>, <a href="kebijakan-privasi">Kebijakan Privasi</a>, dan <a href="pedoman-komunitas">Pedoman Komunitas</a> kami.</label>
+                               <div id="alert_agree_1"></div>
+                           </div>
+					       <input type="hidden" name="_captcha" value="false"></input>
+                           <input type="hidden" name="_template" value="box"></input>
+                           <input type="hidden" name="_subject" value="Kirim Quotes"></input>
+                           <input type="hidden" name="_next" value="https://irmabaitussalam.github.io/O4clntSIjySR6wWnBxU5"></input>
+					       <button type="submit" class="btn btn-primary">Kirim Sekarang</button>
+					       <div id="alert_send_1"></div>
+					       <script>
+						       function validation_email() {
+							           var name = document.forms["emailForm"]["name"].value;
+							           var kelas = document.forms["emailForm"]["kelas"].value;
+							           var email = document.forms["emailForm"]["email"].value;
+							           var message = document.forms["emailForm"]["message"].value;
+							           var codecaptcha = document.getElementById("mainCaptcha_1").value;
+							           var inputcaptcha = document.forms["emailForm"]["inputcaptcha"].value;
+							           const agree = document.querySelector('#agree_1');
+							   
+							           if (name == "") {
+								           document.getElementById("alert_name_1").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan nama Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								           document.forms["emailForm"]["name"].focus();
+								           var div = document.getElementById("alert_name_1");
+                                           setTimeout(function () {
+                                                    while(div.firstChild) {
+                                                        div.removeChild(div.firstChild);
+                                                    }
+                                           }, 2000);
+                                           return false;
+                                       }
+                                       if (kelas == "") {
+								           document.getElementById("alert_class_1").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan kelas Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								           document.forms["emailForm"]["kelas"].focus();
+								           var div = document.getElementById("alert_class_1");
+                                           setTimeout(function () {
+                                                    while(div.firstChild) {
+                                                        div.removeChild(div.firstChild);
+                                                    }
+                                           }, 2000);
+                                           return false;
+                                       }
+                                       if (email == "") {
+								           document.getElementById("alert_email_1").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan alamat email Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								           document.forms["emailForm"]["email"].focus();
+								           var div = document.getElementById("alert_email_1");
+                                           setTimeout(function () {
+                                                    while(div.firstChild) {
+                                                        div.removeChild(div.firstChild);
+                                                    }
+                                           }, 2000);
+                                           return false;
+                                       }
+                                       if (! check_email(email)) {
+								           document.getElementById("alert_email_1").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Masukkan alamat email yang benar dan/atau sesuai format!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								           document.forms["emailForm"]["email"].focus();
+								           var div = document.getElementById("alert_email_1");
+                                           setTimeout(function () {
+                                                    while(div.firstChild) {
+                                                        div.removeChild(div.firstChild);
+                                                    }
+                                           }, 2000);
+                                           return false;
+                                       }
+                                       if (message == "") {
+								           document.getElementById("alert_message_1").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan ketik pesan Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								           document.forms["emailForm"]["message"].focus();
+								           var div = document.getElementById("alert_message_1");
+                                           setTimeout(function () {
+                                                    while(div.firstChild) {
+                                                        div.removeChild(div.firstChild);
+                                                    }
+                                           }, 2000);
+                                           return false;
+                                       }
+                                       if (codecaptcha == inputcaptcha) {
+                                       	if (! agree.checked) {
+								               document.getElementById("alert_agree_1").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Klik kotak centang di atas!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								               document.forms["emailForm"]["agree_1"].focus();
+								               var div = document.getElementById("alert_agree_1");
+                                               setTimeout(function () {
+                                                        while(div.firstChild) {
+                                                            div.removeChild(div.firstChild);
+                                                        }
+                                               }, 2000);
+                                               return false;
+                                           }
+                                       	if (document.forms["emailForm"]["name"].value && document.forms["emailForm"]["email"].value && document.forms["emailForm"]["message"].value != "") {
+                                       	    emailForm_captcha();
+                                               document.getElementById("alert_send_1").innerHTML = '<div class="alert alert-success alert-dismissible alert-icon mt-3 fade show" role="alert"><i class="mdi mdi-check-decagram"></i> Terkirim!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								               var div = document.getElementById("alert_send_1");
+                                               setTimeout(function () {
+                                                        while(div.firstChild) {
+                                                            div.removeChild(div.firstChild);
+                                                        }
+                                               }, 18000);
+                                               return true;
+                                           }
+                                       } else if (inputcaptcha == "") {
+                                       	emailForm_captcha();
+                                       	document.getElementById("alert_captcha_1").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan kode captchanya!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								           document.forms["emailForm"]["inputcaptcha"].focus();
+								           var div = document.getElementById("alert_captcha_1");
+                                           setTimeout(function () {
+                                                    while(div.firstChild) {
+                                                        div.removeChild(div.firstChild);
+                                                    }
+                                           }, 2000);
+                                           return false;
+                                       } else {
+                                       	emailForm_captcha();
+                                       	document.getElementById("alert_captcha_1").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan kode captchanya dengan benar!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								           document.forms["emailForm"]["inputcaptcha"].focus();
+								           var div = document.getElementById("alert_captcha_1");
+                                           setTimeout(function () {
+                                                    while(div.firstChild) {
+                                                        div.removeChild(div.firstChild);
+                                                    }
+                                           }, 2000);
+                                           return false;
+                                       }
+                               }
+                               function check_email(email) {
+                                	   if (email.indexOf("@") != -1 && email.indexOf(".") != -1) {
+                                           return true;
+                                       } else {
+                                       	return false;
+                                       }
+                               }
+                               function emailForm_captcha() {
+                                       var alpha = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M',
+                                                             'N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
+                                                             'a','b','c','d','e','f','g','h','i','j','k','l','m',
+                                                             'n','o','p','q','r','s','t','u','v','w','x','y','z',
+                                                             '0','1','2','3','4','5','6','7','8','9','$','@','#',
+                                                             '*',':',';','!','?','&','-','+','(',')','/','=');
+                                       var i;
+                                       for (i=0;i<6;i++){
+                                            var a = alpha[Math.floor(Math.random() * alpha.length)];
+                                            var b = alpha[Math.floor(Math.random() * alpha.length)];
+                                            var c = alpha[Math.floor(Math.random() * alpha.length)];
+                                            var d = alpha[Math.floor(Math.random() * alpha.length)];
+                                            var e = alpha[Math.floor(Math.random() * alpha.length)];
+                                            var f = alpha[Math.floor(Math.random() * alpha.length)];
+                                       }
+                                       function removeSpaces(string) {
+                                            return string.split(' ').join('');
+                                       }
+                                       var code = removeSpaces(a + b + c + d + e + f);
+                                       document.getElementById("mainCaptcha_1").innerHTML = '<h1 class="text-center captcha">' + code + '</h1>';
+                                       document.getElementById("mainCaptcha_1").value = code;
+                               }
+                               emailForm_captcha()
+                           </script>
+				      </form>
+			    </div>
+				<div class="tab-pane fade show" id="sendWhatsApp" role="tabpanel" aria-labelledby="tab-sendWhatsApp">
+				       <form method="POST" action="" name="whatsappForm" onSubmit="return validation_wa()">
+					       <div class="form-group">
+						       <label for="name">Nama Anda <span class="text-danger">*</span></label>
+						       <input type="text" name="name" id="name" class="form-control" placeholder="IRMA Baitussalam"></input>
+						       <div id="alert_name_2"></div>
+					       </div>
+					       <div class="form-group">
+						       <label for="name">Kelas <span class="text-danger">*</span></label>
+						       <input type="text" name="kelas" id="kelas" class="form-control" placeholder="XII - MIPA 1"></input>
+							   <div id="alert_class_2"></div>
+					       </div>
+					       <div class="form-group">
+						       <label for="whatsapp">Nomor WhatsApp Anda <span class="text-danger">*</span></label>
+						       <input type="number" name="whatsapp" id="whatsapp" class="form-control" placeholder="08xxxxxxxxxx" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="12"></input>
+						       <div id="alert_wa_2"></div>
+					       </div>
+					       <div class="form-group">
+						       <label for="instagram">Username Instagram</label>
+					       </div>
+					       <div class="input-group" style="margin-top: -16px;">
+                               <div class="input-group-prepend">
+                                   <span class="input-group-text" id="link-instagram" style="padding-top: 0.53rem;">https://instagram.com/</span>
+                               </div>
+                               <input type="text" class="form-control" name="instagram" id="instagram" aria-describedby="link-instagram-username" placeholder="irmasman22garut_official"></input>
+                           </div>
+					       <div class="form-group">
+						       <label for="message">Tulis Quotes Disini <span class="text-danger">*</span></label>
+						       <textarea name="message" id="message" class="form-control" placeholder="Ketik..." maxlength="5000"></textarea>
+						       <div id="alert_message_2"></div>
+					       </div>
+					       <div class="form-group">
+                               <label for="captcha">Captcha <span class="text-danger">*</span></label>
+                               <div id="mainCaptcha_2" readonly="readonly"></div>
+                               <div class="input-group mt-3">
+                                   <input type="text" class="form-control" id="inputcaptcha" placeholder="XXXXXX" maxlength="6"></input>
+                                   <div class="input-group-prepend">
+                                       <button class="btn btn-primary" type="button" id="refresh" onclick="whatsappForm_captcha(); document.forms['whatsappForm']['inputcaptcha'].focus();"><i class="fa fa-refresh"></i></button>
+                                   </div>
+                               </div>
+                               <div id="alert_captcha_2"></div>
+                           </div>
+                           <div class="form-group">
+                           	<label class="content check-box"><input type="checkbox" id="agree_2" name="agree" value="yes"></input><span class="checkmark"></span> Dengan mengklik tombol "Kirim Sekarang", Anda sudah menyutujui <a href="syarat-ketentuan">Syarat Ketentuan</a>, <a href="kebijakan-privasi">Kebijakan Privasi</a>, dan <a href="pedoman-komunitas">Pedoman Komunitas</a> kami.</label>
+                               <div id="alert_agree_2"></div>
+                           </div>
+					       <button type="submit" class="btn btn-primary">Kirim Sekarang</button>
+					       <div id="alert_send_2"></div>
+					       <script>
+						       function validation_wa() {
+							           var name = document.forms["whatsappForm"]["name"].value;
+							           var kelas = document.forms["whatsappForm"]["kelas"].value;
+							           var whatsapp = document.forms["whatsappForm"]["whatsapp"].value;
+							           var message = document.forms["whatsappForm"]["message"].value;
+							           var instagram = document.forms["whatsappForm"]["instagram"].value;
+							           var subject = "Kirim Quotes";
+							           var codecaptcha = document.getElementById("mainCaptcha_2").value;
+							           var inputcaptcha = document.forms["whatsappForm"]["inputcaptcha"].value;
+							           const agree = document.querySelector('#agree_2');
+							   
+							           if (name == "") {
+								           document.getElementById("alert_name_2").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan nama Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								           document.forms["whatsappForm"]["name"].focus();
+								           var div = document.getElementById("alert_name_2");
+                                           setTimeout(function () {
+                                                    while(div.firstChild) {
+                                                        div.removeChild(div.firstChild);
+                                                    }
+                                           }, 2000);
+                                           return false;
+                                       }
+                                       if (kelas == "") {
+								           document.getElementById("alert_class_2").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan kelas Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								           document.forms["whatsappForm"]["kelas"].focus();
+								           var div = document.getElementById("alert_class_2");
+                                           setTimeout(function () {
+                                                    while(div.firstChild) {
+                                                        div.removeChild(div.firstChild);
+                                                    }
+                                           }, 2000);
+                                           return false;
+                                       }
+                                       if (whatsapp == "") {
+								           document.getElementById("alert_wa_2").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan nomor WhatsApp Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								           document.forms["whatsappForm"]["whatsapp"].focus();
+								           var div = document.getElementById("alert_wa_2");
+                                           setTimeout(function () {
+                                                    while(div.firstChild) {
+                                                        div.removeChild(div.firstChild);
+                                                    }
+                                           }, 2000);
+                                           return false;
+                                       }
+                                       if (message == "") {
+								           document.getElementById("alert_message_2").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan ketik pesan Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								           document.forms["whatsappForm"]["message"].focus();
+								           var div = document.getElementById("alert_message_2");
+                                           setTimeout(function () {
+                                                    while(div.firstChild) {
+                                                        div.removeChild(div.firstChild);
+                                                    }
+                                           }, 2000);
+                                           return false;
+                                       }
+                                       if (codecaptcha == inputcaptcha) {
+                                       	if (! agree.checked) {
+								               document.getElementById("alert_agree_2").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Klik kotak centang di atas!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								               document.forms["whatsappForm"]["agree_2"].focus();
+								               var div = document.getElementById("alert_agree_2");
+                                               setTimeout(function () {
+                                                        while(div.firstChild) {
+                                                            div.removeChild(div.firstChild);
+                                                        }
+                                               }, 2000);
+                                               return false;
+                                           }
+                                       	if (document.forms["whatsappForm"]["name"].value && document.forms["whatsappForm"]["whatsapp"].value && document.forms["whatsappForm"]["message"].value != "") {
+                                       	    /* Whatsapp Settings */
+                                               var walink = 'https://web.whatsapp.com/send',
+                                                   phone = '6285659850910';
+                                       	    /* Smartphone Support */
+                                               if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                                                   var walink = 'whatsapp://send';
+                                               }
+                                               function removeSpaces(string) {
+                                                   return string.split(' ').join('');
+                                               }
+                                               if (document.forms["whatsappForm"]["instagram"].value != "") {
+                                                   var blanter_whatsapp = walink + '?phone=' + phone + '&text=' +
+                                                       "Assalamu'alaikum wr. wb. Kang/Teh izin share quotes 🙏🏻" + '%0A' +
+                                                       '*Nama*: ' + name + '%0A' +
+                                                       '*Kelas*: ' + kelas + '%0A' +
+                                                       '*Instagram*: https://instagram.com/' + removeSpaces(instagram) + '%0A' +
+                                                       '*Nomor WhatsApp*: ' + whatsapp + '%0A' +
+                                                       '*Subjek*: ' + subject + '%0A' +
+                                                       '*Quotes*: ' + message + '%0A';
+                                               } else {
+                                               	var blanter_whatsapp = walink + '?phone=' + phone + '&text=' +
+                                                       "Assalamu'alaikum wr. wb. Kang/Teh izin share quotes 🙏🏻" + '%0A' +
+                                                       '*Nama*: ' + name + '%0A' +
+                                                       '*Kelas*: ' + kelas + '%0A' +
+                                                       '*Nomor WhatsApp*: ' + whatsapp + '%0A' +
+                                                       '*Subjek*: ' + subject + '%0A' +
+                                                       '*Quotes*: ' + message + '%0A';
+                                               }
+                                               window.open(blanter_whatsapp,'_blank');
+                                       	    whatsappForm_captcha();
+                                               document.getElementById("alert_send_2").innerHTML = '<div class="alert alert-success alert-dismissible alert-icon mt-3 fade show" role="alert"><i class="mdi mdi-check-decagram"></i> Terkirim!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								               var div = document.getElementById("alert_send_2");
+                                               setTimeout(function () {
+                                                        while(div.firstChild) {
+                                                            div.removeChild(div.firstChild);
+                                                        }
+                                               }, 18000);
+                                               return false;
+                                           }
+                                       } else if (inputcaptcha == "") {
+                                       	whatsappForm_captcha();
+                                       	document.getElementById("alert_captcha_2").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan kode captchanya!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								           document.forms["whatsappForm"]["inputcaptcha"].focus();
+								           var div = document.getElementById("alert_captcha_2");
+                                           setTimeout(function () {
+                                                    while(div.firstChild) {
+                                                        div.removeChild(div.firstChild);
+                                                    }
+                                           }, 2000);
+                                           return false;
+                                       } else {
+                                       	whatsappForm_captcha();
+                                       	document.getElementById("alert_captcha_2").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan kode captchanya dengan benar!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								           document.forms["whatsappForm"]["inputcaptcha"].focus();
+								           var div = document.getElementById("alert_captcha_2");
+                                           setTimeout(function () {
+                                                    while(div.firstChild) {
+                                                        div.removeChild(div.firstChild);
+                                                    }
+                                           }, 2000);
+                                           return false;
+                                       }
+                               }
+                               function whatsappForm_captcha() {
+                                       var alpha = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M',
+                                                             'N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
+                                                             'a','b','c','d','e','f','g','h','i','j','k','l','m',
+                                                             'n','o','p','q','r','s','t','u','v','w','x','y','z',
+                                                             '0','1','2','3','4','5','6','7','8','9','$','@','#',
+                                                             '*',':',';','!','?','&','-','+','(',')','/','=');
+                                       var i;
+                                       for (i=0;i<6;i++){
+                                            var a = alpha[Math.floor(Math.random() * alpha.length)];
+                                            var b = alpha[Math.floor(Math.random() * alpha.length)];
+                                            var c = alpha[Math.floor(Math.random() * alpha.length)];
+                                            var d = alpha[Math.floor(Math.random() * alpha.length)];
+                                            var e = alpha[Math.floor(Math.random() * alpha.length)];
+                                            var f = alpha[Math.floor(Math.random() * alpha.length)];
+                                       }
+                                       function removeSpaces(string) {
+                                            return string.split(' ').join('');
+                                       }
+                                       var code = removeSpaces(a + b + c + d + e + f);
+                                       document.getElementById("mainCaptcha_2").innerHTML = '<h1 class="text-center captcha">' + code + '</h1>';
+                                       document.getElementById("mainCaptcha_2").value = code;
+                               }
+                               whatsappForm_captcha()
+                           </script>
+				      </form>
+				 </div>
+			 </div>
+		</div>
+	</div>
+</section>
+
+   <footer class="section-sm pb-0 border-top border-default" style="margin-top: -45px;">
+      <div class="container">
+         <div class="row justify-content-between">
+            <div class="col-md-3 mb-4">
+               <a class="mb-4 d-block" href="/">
+                  <img class="img-fluid not-select" width="150px" src="images/logo.svg" alt="IRMA Baitussalam">
+               </a>
+               <p>“Mewujudkan remaja masjid yang beriman, bertaqwa, berkarakter, cerdas dan terampil.”</p>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4">
+               <h6 class="mb-4">Tautan Cepat</h6>
+               <ul class="list-unstyled footer-list">
+                  <li><a href="tentang">Tentang</a></li>
+                  <li><a href="kontak">Kontak</a></li>
+                  <li><a href="kebijakan-privasi">Kebijakan Privasi</a></li>
+                  <li><a href="syarat-ketentuan">Syarat Ketentuan</a></li>
+               </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4">
+               <h6 class="mb-4">Tautan Sosial</h6>
+               <ul class="list-unstyled footer-list">
+                  <li><a href="https://facebook.com/people/IRMA-SMAN-22-GARUT/100083337945272"><i class="fa fab fa-facebook"></i> Facebook</a></li>
+                  <li><a href="https://instagram.com/irmasman22garut_official"><i class="fa fab fa-instagram"></i> Instagram</a></li>
+                  <li><a href="https://twitter.com/irmasman22garut"><i class="fa fab fa-twitter"></i> Twitter</a></li>
+                  <li><a href="https://www.tiktok.com/@irmasman22garut_official"><i class="fa fab fa-tiktok"></i> TikTok</a></li>
+                  <li><a href="https://www.youtube.com/@IRMABaitussalam"><i class="fa fab fa-youtube"></i> YouTube</a></li>
+               </ul>
+            </div>
+
+            <div class="col-md-3 mb-4">
+               <h6 class="mb-4">Isi Kuisioner dari Kami</h6>
+               <div class="mb-2 subscription">
+                  <a href="/kuisioner" class="btn btn-primary btn-block rounded" type="submit" target="_blank">Klik Disini</a>
+               </div>
+            </div>
+         </div>
+         <div class="scroll-top">
+            <a href="javascript:void(0);" id="scrollTop"><i class="mdi mdi-24px mdi-chevron-up"></i></a>
+         </div>
+         <div class="text-center">
+            <p class="content">&copy; <span id="copy-year"></span> - IRMA Baitussalam</p>
+            <script>
+                var d = new Date();
+                var year = d.getFullYear();
+                document.getElementById("copy-year").innerHTML = year;
+            </script>
+         </div>
+      </div>
+   </footer>
+
+
+   <!-- JS Plugins -->
+   <script src="plugins/jQuery/jquery.min.js"></script>
+   <script src="plugins/bootstrap/bootstrap.min.js" async></script>
+   <script src="plugins/slick/slick.min.js"></script>
+
+   <!-- Main Script -->
+   <script src="js/script.js"></script>
+</body>
