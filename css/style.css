@@ -737,6 +737,9 @@ a:hover {
   background: #046c34;
   color: #fff;
 }
+.pagination .page-item:disabled, .pagination .page-item.disabled {
+  opacity: 0.65;
+}
 .pagination .page-item .page-link:focus {
   box-shadow: none;
 }
