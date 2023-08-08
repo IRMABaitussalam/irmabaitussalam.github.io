@@ -68,8 +68,8 @@
 					<br><i class="mdi mdi-clock-outline text-primary"></i> Sabtu - Minggu: 06.00 WIB sampai 14.00 WIB</p>
 					<h4 class="mt-4">Contact Person</h4>
 					<p><i class="mdi mdi-email-outline text-primary"></i> <a href="mailto:irmabaitussalam22garut@gmail.com">irmabaitussalam22garut@gmail.com</a>
-					<br><i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6283173511053">+62 831-7351-1053</a> (Kang Perdiyana)
-					<br><i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6285659850910">+62 856-5985-0910</a> (Kang Rangga)</p>
+					<br><i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6283173511053&text=Assalamu'alaikum%20wr.%20wb.%20Kang%2fTeh%20izin%20share%20quotes%20%f0%9f%99%8f%f0%9f%8f%bb%0a*Nama*%3a%20%0a*Kelas*%3a%20%0a*Instagram*%3a%20https%3a%2f%2finstagram.com%2f(username)%0a*Nomor%20WhatsApp*%3a%20%0a*Quotes*%3a%20">+62 831-7351-1053</a> (Kang Perdiyana)
+					<br><i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6285659850910&text=Assalamu'alaikum%20wr.%20wb.%20Kang%2fTeh%20izin%20share%20quotes%20%f0%9f%99%8f%f0%9f%8f%bb%0a*Nama*%3a%20%0a*Kelas*%3a%20%0a*Instagram*%3a%20https%3a%2f%2finstagram.com%2f(username)%0a*Nomor%20WhatsApp*%3a%20%0a*Quotes*%3a%20">+62 856-5985-0910</a> (Kang Rangga)</p>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -342,7 +342,6 @@
 							           var whatsapp = document.forms["whatsappForm"]["whatsapp"].value;
 							           var message = document.forms["whatsappForm"]["message"].value;
 							           var instagram = document.forms["whatsappForm"]["instagram"].value;
-							           var subject = "Kirim Quotes";
 							           var codecaptcha = document.getElementById("mainCaptcha_2").value;
 							           var inputcaptcha = document.forms["whatsappForm"]["inputcaptcha"].value;
 							           const agree = document.querySelector('#agree_2');
@@ -421,7 +420,6 @@
                                                        '*Kelas*: ' + kelas + '%0A' +
                                                        '*Instagram*: https://instagram.com/' + removeSpaces(instagram) + '%0A' +
                                                        '*Nomor WhatsApp*: ' + whatsapp + '%0A' +
-                                                       '*Subjek*: ' + subject + '%0A' +
                                                        '*Quotes*: ' + message + '%0A';
                                                } else {
                                                	var blanter_whatsapp = walink + '?phone=' + phone + '&text=' +
@@ -429,7 +427,6 @@
                                                        '*Nama*: ' + name + '%0A' +
                                                        '*Kelas*: ' + kelas + '%0A' +
                                                        '*Nomor WhatsApp*: ' + whatsapp + '%0A' +
-                                                       '*Subjek*: ' + subject + '%0A' +
                                                        '*Quotes*: ' + message + '%0A';
                                                }
                                                window.open(blanter_whatsapp,'_blank');
