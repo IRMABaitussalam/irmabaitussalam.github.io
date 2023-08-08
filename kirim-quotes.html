@@ -36,10 +36,26 @@
    <script src="plugins/jQuery/jquery.min.js"></script>
    <script>
    	var d = new Date();
-       var newDay = d.getDay()+1;
+       var newDay = d.getDay();
        var newHours = d.getHours();
-       if (newDay < "6") {
-       	if (newHours < "17") {
+       if (newDay == "0") {
+       	if (newHours < "14") {
+       	    if (newHours > "5") {
+                   $(function() {
+             	        $("#body_quotes").load("vH7tTBtUteljS3Gezt6V/3872110364124720099792217.html");
+                   });
+               } else {
+               	$(function() {
+             	        $("#body_quotes").load("vH7tTBtUteljS3Gezt6V/2725798829417605269167479.html");
+                   });
+               }
+           } else {
+           	$(function() {
+             	    $("#body_quotes").load("vH7tTBtUteljS3Gezt6V/2725798829417605269167479.html");
+               });
+           }
+       } else if (newDay == "6") {
+       	if (newHours < "14") {
        	    if (newHours > "5") {
                    $(function() {
              	        $("#body_quotes").load("vH7tTBtUteljS3Gezt6V/3872110364124720099792217.html");
@@ -55,8 +71,8 @@
                });
            }
        } else {
-       	if (newHours < "14") {
-               if (newHours > "7") {
+       	if (newHours < "17") {
+               if (newHours > "4") {
                    $(function() {
              	        $("#body_quotes").load("vH7tTBtUteljS3Gezt6V/3872110364124720099792217.html");
                    });

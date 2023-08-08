@@ -53,19 +53,22 @@
    	var d = new Date();
        var newYears = d.getFullYear();
        var newMonth = d.getMonth()+1;
-       var newDays = d.getDate()+1;
+       var newDate = d.getDate()+1;
+       var newDay = d.getDay();
        var newHours = "5";
        if (d.getHours() < "5") {
-       	var newDays = d.getDate();
+       	var newDate = d.getDate();
        }
-       if (newDays > "5") {
+       if (newDay == "0") {
+       	var newHours = "6";
+       } else if (newDay == "6") {
        	var newHours = "6";
        }
 
        $(".simple_timer").syotimer({
          year: newYears,
          month: newMonth,
-         day: newDays,
+         day: newDate,
          hour: newHours,
          minute: 00
        });
