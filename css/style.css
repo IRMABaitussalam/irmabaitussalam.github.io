@@ -1687,4 +1687,26 @@ a .social-link:hover {
 .input-group textarea.form-control {
   height: 120px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.pagination-center {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding-left: 1.397rem;
+}
+@media (min-width: 768px) {
+  .pagination-center {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    padding-left: 12.66rem;
+  }
+}
+@media (min-width: 1200px) {
+  .pagination-center {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    padding-left: 25.85rem;
+  }
+}
