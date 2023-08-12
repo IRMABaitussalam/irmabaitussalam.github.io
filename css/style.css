@@ -395,10 +395,10 @@ a:hover {
   box-shadow: none;
 }
 .form-control::-moz-placeholder {
-  font-size: 80%;
+  font-size: 100%;
 }
 .form-control::placeholder {
-  font-size: 80%;
+  font-size: 100%;
 }
 
 .nav-item {
