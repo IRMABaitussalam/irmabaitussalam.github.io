@@ -83,7 +83,7 @@
 					</div>
 					<div class="form-group">
 						<label for="class">Kelas <span class="text-danger">*</span></label>
-						<input type="text" name="class" id="kelas" class="form-control" placeholder="X - MIPA 1"></input>
+						<input type="text" name="class" id="kelas" class="form-control" placeholder="X - MIPA 1" oninput="this.value = this.value.toUpperCase()"></input>
 						<div id="alert_class"></div>
 					</div>
 					<div class="form-group">
@@ -92,23 +92,13 @@
 					    <div id="alert_school"></div>
 					</div>
 					<div class="form-group">
-                        <label for="born">Tempat/Tanggal Lahir <span class="text-danger">*</span></label>
-                        <div class="input-group">
-                            <input type="text" name="born" class="form-control" id="born" placeholder="Garut"></input>
-                            <div class="input-group-prepend">
-                                <input type="date" name="date" class="form-control" id="date" onchange="this.className=(this.value!=''?'has-value':'')" placeholder="DD/MM/YY"></input>
-                            </div>
-                        </div>
-                        <div id="alert_born"></div>
-                    </div>
-					<div class="form-group">
 						<label for="address">Alamat <span class="text-danger">*</span></label>
 						<input type="text" name="address" id="address" class="form-control" placeholder="Kp. Cisompet"></input>
 						<div id="alert_address"></div>
 					</div>
 					<div class="form-group">
 						<label for="whatsapp">Nomor WhatsApp <span class="text-danger">*</span></label>
-						<input type="number" name="whatsapp" id="whatsapp" class="form-control" placeholder="08xxxxxxxxxx" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="12"></input>
+						<input type="text" name="whatsapp" id="whatsapp" class="form-control" data-mask="(+62) 999-9999-9999" placeholder="(+62) 8xx-xxxx-xxxx"></input>
 						<div id="alert_address"></div>
 					</div>
 					<div class="form-group">
@@ -142,8 +132,6 @@
 							    var name = document.forms["register"]["name"].value;
 							    var kelas = document.forms["register"]["kelas"].value;
 							    var school = document.forms["register"]["school"].value;
-							    var born = document.forms["register"]["born"].value;
-							    var date = document.forms["register"]["date"].value;
 							    var address = document.forms["register"]["address"].value;
 							    var whatsapp = document.forms["register"]["whatsapp"].value;
 							    var reason = document.forms["register"]["reason"].value;
@@ -177,28 +165,6 @@
 								    document.getElementById("alert_school").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan asal sekolah Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
 								    document.forms["register"]["school"].focus();
 								    var div = document.getElementById("alert_school");
-                                    setTimeout(function () {
-                                             while(div.firstChild) {
-                                                 div.removeChild(div.firstChild);
-                                             }
-                                    }, 2000);
-                                    return false;
-                                }
-                                if (born == "") {
-								    document.getElementById("alert_born").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan tempat tanggal lahir Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
-								    document.forms["register"]["born"].focus();
-								    var div = document.getElementById("alert_born");
-                                    setTimeout(function () {
-                                             while(div.firstChild) {
-                                                 div.removeChild(div.firstChild);
-                                             }
-                                    }, 2000);
-                                    return false;
-                                }
-                                if (date == "") {
-								    document.getElementById("alert_born").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan tempat tanggal lahir Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
-								    document.forms["register"]["date"].focus();
-								    var div = document.getElementById("alert_born");
                                     setTimeout(function () {
                                              while(div.firstChild) {
                                                  div.removeChild(div.firstChild);
@@ -374,6 +340,7 @@
    <script src="plugins/jQuery/jquery.min.js"></script>
    <script src="plugins/bootstrap/bootstrap.min.js" async></script>
    <script src="plugins/slick/slick.min.js"></script>
+   <script src="plugins/jquery-mask-input/jquery.mask.min.js"></script>
 
    <!-- Main Script -->
    <script src="js/script.js"></script>
