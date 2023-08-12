@@ -409,6 +409,7 @@
                                                    var walink = 'whatsapp://send';
                                                }
                                                var whatsapp = whatsapp.split('+').join('%2b');
+                                               var message = message.split(' ').join('%20');
                                                if (document.forms["whatsappForm"]["subject"].value != "") {
                                                    var blanter_whatsapp = walink + '?phone=' + phone + '&text=' +
                                                        '*Nama*: ' + name + '%0A' +
