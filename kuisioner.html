@@ -98,9 +98,9 @@
 					<img src="images/banner-about.jpg" class="img-fluid w-100 mb-4 rounded-lg not-select" alt="Foto">
 					<p>Ceritakan kesan yang kamu rasakan tentang IRMA Baitussalam. Ungkapkan keluhanmu dan jangan lupa curahkan harapanmu buat IRMA Baitussalam ya 😇</p>
 					<h4 class="mt-4">Contact Person</h4>
-					<p><i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6283173511053">+62 831-7351-1053</a> (Kang Perdiyana)</p>
-					<p><i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6281224847821">+62 812-2484-7821</a> (Teh Suci)</p>
-					<p><i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6283826766086">+62 838-2676-6086</a> (Teh Irna)</p>
+					<p><i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6283173511053">+62 831-7351-1053</a> (Kang Perdiyana)<br>
+					<i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6281224847821">+62 812-2484-7821</a> (Teh Suci)<br>
+					<i class="mdi mdi-whatsapp text-primary"></i> <a href="https://api.whatsapp.com/send?phone=6283826766086">+62 838-2676-6086</a> (Teh Irna)</p>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -123,11 +123,16 @@
 					    <div id="alert_instansi"></div>
 					</div>
 					<div class="form-group">
-						<label for="whatsapp">Nomor HP/WhatsApp <span class="text-danger">*</span></label>
-						<input type="text" name="whatsapp" id="whatsapp" class="form-control" data-mask="(+62) 999-9999-9999" placeholder="(+62) 8xx-xxxx-xxxx"></input>
+						<label for="whatsapp">Nomor WhatsApp <span class="text-danger">*</span></label>
+				    </div>
+					<div class="input-group" style="margin-top: -16px;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="number-whatsapp" style="padding-top: 0.33rem; padding-bottom: -0.3rem;"><i class="mdi mdi-whatsapp"></i></span>
+                        </div>
+                        <input type="text" name="whatsapp" id="whatsapp" class="form-control" data-mask="+62 899-9999-9999" placeholder="+62 8xx-xxxx-xxxx"></input>
 						<div id="alert_whatsapp"></div>
-					</div>
-					<div class="form-group">
+                    </div>
+					<div class="form-group mt-3">
 						<label for="kesan">Kesan mengenai Ekstrakurikuler IRMA Baitussalam <span class="text-danger">*</span></label>
 						<textarea name="kesan" id="kesan" class="form-control" placeholder="Ketik..."></textarea>
 						<div id="alert_kesan"></div>
@@ -148,7 +153,7 @@
                         <div class="input-group mt-3">
                             <input type="text" class="form-control" id="inputcaptcha" placeholder="XXXXXX" maxlength="6"></input>
                             <div class="input-group-prepend">
-                                <button class="btn btn-primary" type="button" id="refresh" onclick="kuisionerIRMA_captcha(); document.forms['kuisionerIRMA']['inputcaptcha'].focus();"><i class="fa fa-refresh"></i></button>
+                                <button class="btn btn-primary rounded-right" type="button" id="refresh" onclick="kuisionerIRMA_captcha(); document.forms['kuisionerIRMA']['inputcaptcha'].focus();"><i class="fa fa-refresh"></i></button>
                             </div>
                         </div>
                         <div id="alert_captcha"></div>
@@ -199,7 +204,7 @@
                                     return false;
                                 }
                                 if (whatsapp == "") {
-								    document.getElementById("alert_whatsapp").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan nomor HP/WhatsApp Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								    document.getElementById("alert_whatsapp").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan nomor WhatsApp Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
 								    document.forms["kuisionerIRMA"]["whatsapp"].focus();
 								    var div = document.getElementById("alert_whatsapp");
                                     setTimeout(function () {
@@ -257,7 +262,7 @@
                                     if (document.forms["kuisionerIRMA"]["name"].value && document.forms["kuisionerIRMA"]["instansi"].value && document.forms["kuisionerIRMA"]["reason"].value != "") {
                                     	agree_checked();
                                         kuisionerIRMA_captcha();
-                                        document.getElementById("alert_send").innerHTML = '<div class="alert alert-success alert-dismissible alert-icon mt-3 fade show" role="alert"><i class="mdi mdi-send-check"></i> Terkirim!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+                                        document.getElementById("alert_send").innerHTML = '<div class="alert alert-success alert-dismissible alert-icon mt-3 fade show" role="alert"><i class="mdi mdi-check"></i> Terkirim!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
 								        var div = document.getElementById("alert_send");
                                         setTimeout(function () {
                                                  while(div.firstChild) {

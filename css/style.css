@@ -1560,3 +1560,8 @@ a .social-link:hover {
     padding-left: 25.85rem;
   }
 }
+
+.input-group-text {
+  border-color: #ddd;
+  background: #eee;
+}

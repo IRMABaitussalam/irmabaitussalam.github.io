@@ -93,15 +93,25 @@
 					</div>
 					<div class="form-group">
 						<label for="address">Alamat <span class="text-danger">*</span></label>
-						<input type="text" name="address" id="address" class="form-control" placeholder="Kp. Cisompet"></input>
+				    </div>
+					<div class="input-group" style="margin-top: -16px;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="number-whatsapp" style="padding-top: 0.33rem; padding-bottom: -0.3rem;"><i class="mdi mdi-map-marker-outline"></i></span>
+                        </div>
+                        <input type="text" name="address" id="address" class="form-control" placeholder="Kp. Cisompet"></input>
 						<div id="alert_address"></div>
-					</div>
-					<div class="form-group">
+                    </div>
+					<div class="form-group mt-3">
 						<label for="whatsapp">Nomor WhatsApp <span class="text-danger">*</span></label>
-						<input type="text" name="whatsapp" id="whatsapp" class="form-control" data-mask="(+62) 999-9999-9999" placeholder="(+62) 8xx-xxxx-xxxx"></input>
-						<div id="alert_address"></div>
-					</div>
-					<div class="form-group">
+				    </div>
+					<div class="input-group" style="margin-top: -16px;">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="number-whatsapp" style="padding-top: 0.33rem; padding-bottom: -0.3rem;"><i class="mdi mdi-whatsapp"></i></span>
+                        </div>
+                        <input type="text" name="whatsapp" id="whatsapp" class="form-control" data-mask="+62 899-9999-9999" placeholder="+62 8xx-xxxx-xxxx"></input>
+						<div id="alert_whatsapp"></div>
+                    </div>
+					<div class="form-group mt-3">
 						<label for="reason">Alasan masuk Ekstrakurikuler IRMA Baitussalam <span class="text-danger">*</span></label>
 						<textarea name="reason" id="reason" class="form-control" placeholder="Ketik..."></textarea>
 						<div id="alert_reason"></div>
@@ -112,7 +122,7 @@
                         <div class="input-group mt-3">
                             <input type="text" class="form-control" id="inputcaptcha" placeholder="XXXXXX" maxlength="6"></input>
                             <div class="input-group-prepend">
-                                <button class="btn btn-primary" type="button" id="refresh" onclick="register_captcha(); document.forms['register']['inputcaptcha'].focus();"><i class="fa fa-refresh"></i></button>
+                                <button class="btn btn-primary rounded-right" type="button" id="refresh" onclick="register_captcha(); document.forms['register']['inputcaptcha'].focus();"><i class="fa fa-refresh"></i></button>
                             </div>
                         </div>
                         <div id="alert_captcha"></div>
@@ -183,10 +193,10 @@
                                     }, 2000);
                                     return false;
                                 }
-                                if (reason == "") {
-								    document.getElementById("alert_reason").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan alasan Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
-								    document.forms["register"]["reason"].focus();
-								    var div = document.getElementById("alert_reason");
+                                if (whatsapp == "") {
+								    document.getElementById("alert_whatsapp").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan nomor WhatsApp Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								    document.forms["register"]["whatsapp"].focus();
+								    var div = document.getElementById("alert_whatsapp");
                                     setTimeout(function () {
                                              while(div.firstChild) {
                                                  div.removeChild(div.firstChild);
@@ -194,10 +204,10 @@
                                     }, 2000);
                                     return false;
                                 }
-                                if (whatsapp == "") {
-								    document.getElementById("alert_whatsapp").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan nomor whatsapp Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
-								    document.forms["register"]["whatsapp"].focus();
-								    var div = document.getElementById("alert_whatsapp");
+                                if (reason == "") {
+								    document.getElementById("alert_reason").innerHTML = '<div class="alert alert-danger alert-dismissible alert-icon mt-2 fade show" role="alert"><i class="mdi mdi-alert"></i> Silahkan masukkan alasan Anda!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+								    document.forms["register"]["reason"].focus();
+								    var div = document.getElementById("alert_reason");
                                     setTimeout(function () {
                                              while(div.firstChild) {
                                                  div.removeChild(div.firstChild);
@@ -219,7 +229,7 @@
                                     }
                                     if (document.forms["register"]["name"].value && document.forms["register"]["school"].value && document.forms["register"]["reason"].value != "") {
                                         register_captcha();
-                                        document.getElementById("alert_send").innerHTML = '<div class="alert alert-success alert-dismissible alert-icon mt-3 fade show" role="alert"><i class="mdi mdi-send-check"></i> Terkirim!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+                                        document.getElementById("alert_send").innerHTML = '<div class="alert alert-success alert-dismissible alert-icon mt-3 fade show" role="alert"><i class="mdi mdi-check"></i> Terkirim!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
 								        var div = document.getElementById("alert_send");
                                         setTimeout(function () {
                                                  while(div.firstChild) {

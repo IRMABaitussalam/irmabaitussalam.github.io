@@ -102,16 +102,21 @@
 							   <div id="alert_class_1"></div>
 					       </div>
 					       <div class="form-group">
-						       <label for="email">Alamat Email Anda <span class="text-danger">*</span></label>
-						       <input type="email" name="email" id="email" class="form-control" placeholder="alamatemailanda@domain.com"></input>
-							   <div id="alert_email_1"></div>
+						       <label for="email">Alamat Email <span class="text-danger">*</span></label>
 					       </div>
-					       <div class="form-group">
+					       <div class="input-group" style="margin-top: -16px;">
+                               <div class="input-group-prepend">
+                                   <span class="input-group-text" id="email-address" style="padding-top: 0.33rem; padding-bottom: -0.3rem;"><i class="mdi mdi-email-outline"></i></span>
+                               </div>
+                               <input type="email" class="form-control" name="email" id="email" aria-describedby="email-address-input" placeholder="alamatemailanda@domain.com"></input>
+                               <div id="alert_email_1"></div>
+                           </div>
+					       <div class="form-group mt-3">
 						       <label for="instagram">Username Instagram</label>
 					       </div>
 					       <div class="input-group" style="margin-top: -16px;">
                                <div class="input-group-prepend">
-                                   <span class="input-group-text" id="link-instagram" style="padding-top: 0.33rem; padding-bottom: -0.3rem;">https://instagram.com/</span>
+                                   <span class="input-group-text" id="link-instagram" style="padding-top: 0.33rem; padding-bottom: -0.3rem;"><i class="mdi mdi-instagram"></i></span>
                                </div>
                                <input type="text" class="form-control" name="instagram" id="instagram" aria-describedby="link-instagram-username" placeholder="irmasman22garut_official" oninput="this.value = this.value.toLowerCase()"></input>
                            </div>
@@ -126,7 +131,7 @@
                                <div class="input-group mt-3">
                                    <input type="text" class="form-control" id="inputcaptcha" placeholder="XXXXXX" maxlength="6"></input>
                                    <div class="input-group-prepend">
-                                       <button class="btn btn-primary" type="button" id="refresh" onclick="emailForm_captcha(); document.forms['emailForm']['inputcaptcha'].focus();"><i class="fa fa-refresh"></i></button>
+                                       <button class="btn btn-primary rounded-right" type="button" id="refresh" onclick="emailForm_captcha(); document.forms['emailForm']['inputcaptcha'].focus();"><i class="fa fa-refresh"></i></button>
                                    </div>
                                </div>
                                <div id="alert_captcha_1"></div>
@@ -139,7 +144,7 @@
                            <input type="hidden" name="_template" value="box"></input>
                            <input type="hidden" name="_subject" value="Kirim Quotes"></input>
                            <input type="hidden" name="_next" value="https://irmabaitussalam.github.io/O4clntSIjySR6wWnBxU5"></input>
-					       <button type="submit" class="btn btn-primary">Kirim Sekarang</button>
+					       <button type="submit" class="btn btn-primary" formnovalidate>Kirim Sekarang</button>
 					       <div id="alert_send_1"></div>
 					       <script>
 						       function validation_email() {
@@ -220,7 +225,7 @@
                                            }
                                        	if (document.forms["emailForm"]["name"].value && document.forms["emailForm"]["email"].value && document.forms["emailForm"]["message"].value != "") {
                                        	    emailForm_captcha();
-                                               document.getElementById("alert_send_1").innerHTML = '<div class="alert alert-success alert-dismissible alert-icon mt-3 fade show" role="alert"><i class="mdi mdi-check-decagram"></i> Terkirim!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+                                               document.getElementById("alert_send_1").innerHTML = '<div class="alert alert-success alert-dismissible alert-icon mt-3 fade show" role="alert"><i class="mdi mdi-check"></i> Terkirim!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
 								               var div = document.getElementById("alert_send_1");
                                                setTimeout(function () {
                                                         while(div.firstChild) {
@@ -253,8 +258,9 @@
                                            return false;
                                        }
                                }
-                               function check_email(email) {
-                                	   if (email.indexOf("@") != -1 && email.indexOf(".") != -1) {
+                               function check_email(inputText) {
+                               	    var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,10})+$/;
+                                	   if (inputText.match(emailFormat)) {
                                            return true;
                                        } else {
                                        	return false;
@@ -300,16 +306,21 @@
 							   <div id="alert_class_2"></div>
 					       </div>
 					       <div class="form-group">
-						       <label for="whatsapp">Nomor WhatsApp Anda <span class="text-danger">*</span></label>
-						       <input type="text" name="whatsapp" id="whatsapp" class="form-control" data-mask="(+62) 999-9999-9999" placeholder="(+62) 8xx-xxxx-xxxx"></input>
-						       <div id="alert_wa_2"></div>
+						       <label for="whatsapp">Nomor WhatsApp <span class="text-danger">*</span></label>
 					       </div>
-					       <div class="form-group">
+					       <div class="input-group" style="margin-top: -16px;">
+                               <div class="input-group-prepend">
+                                   <span class="input-group-text" id="number-whatsapp" style="padding-top: 0.33rem; padding-bottom: -0.3rem;"><i class="mdi mdi-whatsapp"></i></span>
+                               </div>
+                               <input type="text" name="whatsapp" id="whatsapp" class="form-control" data-mask="+62 899-9999-9999" placeholder="+62 8xx-xxxx-xxxx"></input>
+                               <div id="alert_wa_2"></div>
+                           </div>
+					       <div class="form-group mt-3">
 						       <label for="instagram">Username Instagram</label>
 					       </div>
 					       <div class="input-group" style="margin-top: -16px;">
                                <div class="input-group-prepend">
-                                   <span class="input-group-text" id="link-instagram" style="padding-top: 0.33rem; padding-bottom: -0.3rem;">https://instagram.com/</span>
+                                   <span class="input-group-text" id="link-instagram" style="padding-top: 0.33rem; padding-bottom: -0.3rem;"><i class="mdi mdi-instagram"></i></span>
                                </div>
                                <input type="text" class="form-control" name="instagram" id="instagram" aria-describedby="link-instagram-username" placeholder="irmasman22garut_official" oninput="this.value = this.value.toLowerCase()"></input>
                            </div>
@@ -324,7 +335,7 @@
                                <div class="input-group mt-3">
                                    <input type="text" class="form-control" id="inputcaptcha" placeholder="XXXXXX" maxlength="6"></input>
                                    <div class="input-group-prepend">
-                                       <button class="btn btn-primary" type="button" id="refresh" onclick="whatsappForm_captcha(); document.forms['whatsappForm']['inputcaptcha'].focus();"><i class="fa fa-refresh"></i></button>
+                                       <button class="btn btn-primary rounded-right" type="button" id="refresh" onclick="whatsappForm_captcha(); document.forms['whatsappForm']['inputcaptcha'].focus();"><i class="fa fa-refresh"></i></button>
                                    </div>
                                </div>
                                <div id="alert_captcha_2"></div>
@@ -333,7 +344,7 @@
                            	<label class="content check-box"><input type="checkbox" id="agree_2" name="agree" value="yes"></input><span class="checkmark"></span> Dengan mengklik tombol "Kirim Sekarang", Anda sudah menyutujui <a href="syarat-ketentuan">Syarat Ketentuan</a>, <a href="kebijakan-privasi">Kebijakan Privasi</a>, dan <a href="pedoman-komunitas">Pedoman Komunitas</a> kami.</label>
                                <div id="alert_agree_2"></div>
                            </div>
-					       <button type="submit" class="btn btn-primary">Kirim Sekarang</button>
+					       <button type="submit" class="btn btn-primary" formnovalidate>Kirim Sekarang</button>
 					       <div id="alert_send_2"></div>
 					       <script>
 						       function validation_wa() {
@@ -413,6 +424,7 @@
                                                function removeSpaces(string) {
                                                    return string.split(' ').join('');
                                                }
+                                               var whatsapp = whatsapp.split('+').join('%2b');
                                                if (document.forms["whatsappForm"]["instagram"].value != "") {
                                                    var blanter_whatsapp = walink + '?phone=' + phone + '&text=' +
                                                        "Assalamu'alaikum wr. wb. Kang/Teh izin share quotes 🙏🏻" + '%0A' +
@@ -431,7 +443,7 @@
                                                }
                                                window.open(blanter_whatsapp,'_blank');
                                        	    whatsappForm_captcha();
-                                               document.getElementById("alert_send_2").innerHTML = '<div class="alert alert-success alert-dismissible alert-icon mt-3 fade show" role="alert"><i class="mdi mdi-check-decagram"></i> Terkirim!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+                                               document.getElementById("alert_send_2").innerHTML = '<div class="alert alert-success alert-dismissible alert-icon mt-3 fade show" role="alert"><i class="mdi mdi-check"></i> Terkirim!<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
 								               var div = document.getElementById("alert_send_2");
                                                setTimeout(function () {
                                                         while(div.firstChild) {
