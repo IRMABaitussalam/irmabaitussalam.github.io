@@ -24,6 +24,18 @@
    <!-- Main Stylesheet -->
    <link rel="stylesheet" href="../css/style.css">
 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <script type="text/javascript">
+       $(document).ready(function() {
+           $("#quotes-search").on("keyup", function() {
+              var value = $(this).val().toLowerCase();
+              $("#quotes-button *").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+              });
+           });
+       });
+   </script>
+
    <!--Favicon-->
    <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
    <link rel="icon" href="../images/favicon.svg" type="image/x-icon">
@@ -96,37 +108,47 @@
 				<div class="content">
 					<h4>Lihat Quotes</h4>
 					<p>Berikut list quotes dari anggota IRMA Baitussalam yang bisa dibaca mulai dari Part 1!</p>
+					<hr>
+					<form class="pt-4 pb-2">
+						<div class="input-group" style="margin-top: -16px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="padding-top: 0.33rem; padding-bottom: -0.3rem;"><i class="fa fas fa-search"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="quotes-search" placeholder="Cari quotes..."></input>
+                        </div>
+                    </form>
 				</div>
-				<div class="col-12 mx-auto mb-3">
+				<div class="mx-auto pb-2" id="quotes-button">
 					<div class="text-center">
 						<a href="part-1" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 1</a><br>
 						<a href="part-2" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 2</a><br>
 						<a href="part-3" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 3</a><br>
-						<a href="part-4" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 4</a>
-						<a href="part-5" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 5</a>
-						<a href="part-6" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 6</a>
-						<a href="part-7" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 7</a>
-						<a href="part-8" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 8</a>
-						<a href="part-9" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 9</a>
-						<a href="part-10" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 10</a>
-						<a href="part-11" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 11</a>
-						<a href="part-12" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 12</a>
-						<a href="part-13" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 13</a>
-						<a href="part-14" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 14</a>
-						<a href="part-15" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 15</a>
-						<a href="part-16" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 16</a>
-						<a href="part-17" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 17</a>
-						<a href="part-18" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 18</a>
-						<a href="part-19" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 19</a>
-						<a href="part-20" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 20</a>
-						<a href="part-21" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 21</a>
-						<a href="part-22" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 22</a>
-						<a href="part-23" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 23</a>
-						<a href="part-24" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 24</a>
+						<a href="part-4" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 4</a><br>
+						<a href="part-5" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 5</a><br>
+						<a href="part-6" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 6</a><br>
+						<a href="part-7" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 7</a><br>
+						<a href="part-8" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 8</a><br>
+						<a href="part-9" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 9</a><br>
+						<a href="part-10" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 10</a><br>
+						<a href="part-11" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 11</a><br>
+						<a href="part-12" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 12</a><br>
+						<a href="part-13" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 13</a><br>
+						<a href="part-14" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 14</a><br>
+						<a href="part-15" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 15</a><br>
+						<a href="part-16" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 16</a><br>
+						<a href="part-17" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 17</a><br>
+						<a href="part-18" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 18</a><br>
+						<a href="part-19" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 19</a><br>
+						<a href="part-20" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 20</a><br>
+						<a href="part-21" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 21</a><br>
+						<a href="part-22" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 22</a><br>
+						<a href="part-23" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 23</a><br>
+						<a href="part-24" class="btn btn-primary btn-block rounded mb-1" type="submit">Quotes Part 24</a><br>
 						<a href="part-25" class="btn btn-primary btn-block rounded" type="submit">Quotes Part 25</a>
 					</div>
 				</div>
 				<div class="content">
+					<hr>
 					<p>Jangan lupa untuk ikuti akun media sosial kami agar tidak ketinggalan quotes dari kami.</p>
 					<p>Punya quotes untuk ditampilkan? Yuk, kirim quotesnya dengan mengklik tombol:</p>
 					<p><a href="/kirim-quotes"><button class="btn btn-primary rounded" type="submit">Kirim Quotes</button></a></p>
@@ -136,7 +158,7 @@
 	</div>
 </section>
 
-   <footer class="section-sm pb-0 border-top border-default" style="margin-top: -45px;">
+   <footer class="section-sm pb-0 border-top border-default" style="margin-top: -60px;">
       <div class="container">
          <div class="row justify-content-between">
             <div class="col-md-3 mb-4">

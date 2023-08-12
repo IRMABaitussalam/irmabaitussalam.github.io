@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+   <meta charset="utf-8">
+   <title>IRMA Baitussalam - Blog</title>
+
+   <!-- mobile responsive meta -->
+   <meta property="fb:app_id" content="1015230009800296">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+   <meta name="description" content="Website resmi IRMA Baitussalam">
+   <meta name="author" content="Fajar Kim">
+ 
+   <!-- theme meta -->
+   <meta name="theme-name" content="islamic-blog" />
+
+   <!-- plugins -->
+   <link rel="preload" href="https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0bbck.woff2" style="font-display: optional;">
+   <link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:600%7cOpen&#43;Sans&amp;display=swap" media="screen">
+
+   <link rel="stylesheet" href="../plugins/material/css/materialdesignicons.css">
+   <link rel="stylesheet" href="../plugins/fontawesome/css/all.css">
+   <link rel="stylesheet" href="../plugins/themify-icons/themify-icons.css">
+   <link rel="stylesheet" href="../plugins/slick/slick.css">
+
+   <!-- Main Stylesheet -->
+   <link rel="stylesheet" href="../css/style.css">
+
+   <!--Favicon-->
+   <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
+   <link rel="icon" href="../images/favicon.svg" type="image/x-icon">
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script type="text/javascript">
+       $(document).ready(function() {
+           $('#search-blog').keyup(function() {
+              var text = $(this).val().toLowerCase();
+              $('.blog').hide();
+                $('.blog .post-title').each(function() {
+                  if ($(this).text().toLowerCase().indexOf(""+text+"") != -1 ) {
+                      $(this).closest('.blog').show();
+                  }
+              });
+           });
+       });
+   </script>
+   
+   <meta property="og:url" content="https://irmabaitussalam.github.io">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="IRMA Baitussalam - Beranda">
+   <meta property="og:description" content="Selamat datang di website resmi IRMA Baitussalam">
+   <meta property="og:image" content="https://telegra.ph/file/c726b750b902319591883.jpg"/>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v17.0&appId=1015230009800296&autoLogAppEvents=1" nonce="VTmP38r1"></script>
+<!-- navigation -->
+<header class="sticky-top bg-white border-bottom border-default">
+   <div class="container">
+
+      <nav class="navbar navbar-expand-lg navbar-white">
+         <a class="navbar-brand" href="/">
+            <img class="img-fluid not-select" width="45px" src="../images/logo.svg" alt="IRMA Baitussalam">
+         </a>
+         <div class="page-title navbar-brand expand-lg navbar-white"><h5 class="mt-2">IRMA Baitussalam</h5></div>
+         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+            <i class="mdi mdi-menu"></i>
+         </button>
+
+         <div class="collapse navbar-collapse text-center" id="navigation">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="/">Beranda</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/tentang">Tentang</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/kontak">Kontak</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/pendaftaran-anggota-baru">Pendaftaran</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link active" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Halaman <i class="mdi mdi-chevron-down"></i>
+                  </a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="/quotes">Quotes</a>
+                     <a class="dropdown-item" href="/quiz">Quiz</a>
+                     <a class="dropdown-item active" href="/blog">Blog</a>
+                     <a class="dropdown-item" href="/pedoman-komunitas">Pedoman Komunitas</a>
+                     <a class="dropdown-item" href="/kebijakan-privasi">Kebijakan Privasi</a>
+                     <a class="dropdown-item" href="/syarat-ketentuan">Syarat Ketentuan</a>
+                  </div>
+               </li>
+            </ul>
+
+         </div>
+      </nav>
+   </div>
+</header>
+<!-- end navigation -->
+
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="title-bordered mb-5 d-flex align-items-center" style="margin-top: -40px;">
+					<h1 class="h4">Blog IRMA Baitussalam</h1>
+					<ul class="list-inline social-icons ml-auto mr-3 d-none d-sm-block">
+						<li class="list-inline-item"><a href="https://api.whatsapp.com/send?phone=6283173511053"><i class="mdi mdi-24px mdi-whatsapp"></i></a></li>
+						<li class="list-inline-item"><a href="https://m.me/100083337945272"><i class="mdi mdi-24px mdi-facebook-messenger"></i></a></li>
+						<li class="list-inline-item"><a href="https://github.com/IRMABaitussalam"><i class="mdi mdi-24px mdi-github"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-12 mx-auto">
+			   <div class="content">
+					<form class="pt-4 pb-2">
+						<div class="input-group" style="margin-top: -16px;">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" style="padding-top: 0.33rem; padding-bottom: -0.3rem;"><i class="fa fas fa-search"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="search-blog" placeholder="Cari artikel atau blog..."></input>
+                        </div>
+                    </form>
+				</div>
+			</div>
+			<div class="col-lg-8  mb-2 mb-lg-0">
+				<article class="row mb-5 blog">
+					<div class="col-12">
+						<div class="post-slider not-select">
+							<img loading="lazy" src="../images/post/04.jpg" class="img-fluid-post" alt="Foto">
+							<img loading="lazy" src="../images/post/02.jpg" class="img-fluid-post" alt="Foto">
+							<img loading="lazy" src="../images/post/03.jpg" class="img-fluid-post" alt="Foto">
+						</div>
+					</div>
+					<div class="col-12 mx-auto mt-3">
+						<h3><a class="post-title" href="blog/7028347452_03082023">Sejarah IRMA Jawa Barat dan IRMA Baitussalam</a></h3>
+						<ul class="list-inline post-meta mb-4">
+							<li class="list-inline-item"><i class="mdi mdi-account-circle-outline"></i> IRMA Baitussalam</li>
+							<li class="list-inline-item"><i class="mdi mdi-calendar-clock-outline"></i> Kamis, 3 Agustus 2023</li>
+							<li class="list-inline-item"><i class="mdi mdi-tag"></i> Sejarah</li>
+							<li class="list-inline-item"><i class="mdi mdi-comment-text-outline"></i> <span class="fb-comments-count" data-href="https://irmabaitussalam.github.io/blog/7028347452_03082023.html#komentar"></span> Komentar</li>
+						</ul>
+						<p class="post-description">Ikatan Remaja Masjid (IRMA) adalah sebuah organisasi keremajaan yang berfokus pada pendidikan karakter. IRMA merupakan organisasi yang tugas dan orientasi utamanya adalah berupaya mengembangkan nilai-nilai pendidikan karakter mulia. IRMA lahir pada tanggal 18 Desember 2017 di Kota Bandung oleh Bapak Rifa Anggyana S.Pd. dan diketuai oleh Ela Sopiani Rahayu dari MA Sinar Miskin Bandung.</p> <a href="blog/7028347452_03082023" class="btn btn-outline-primary">Baca Selengkapnya</a>
+					</div>
+				</article>
+			</div>
+			<aside class="col-lg-4">
+   <!-- categories -->
+   <div class="widget">
+      <h5 class="widget-title"><span>Kategori</span></h5>
+      <ul class="list-unstyled widget-list">
+         <li><a href="#!" class="d-flex">Dokumentasi <small class="ml-auto">(1)</small></a>
+         </li>
+         <li><a href="#!" class="d-flex">Sejarah <small class="ml-auto">(1)</small></a>
+         </li>
+         <li><a class="d-flex">Postingan <small class="ml-auto">(0)</small></a>
+         </li>
+      </ul>
+   </div>
+			</aside>
+		</div>
+	</div>
+</section>
+
+   <footer class="section-sm pb-0 border-top border-default" style="margin-top: -45px;">
+      <div class="container">
+         <div class="row justify-content-between">
+            <div class="col-md-3 mb-4">
+               <a class="mb-4 d-block" href="/">
+                  <img class="img-fluid not-select" width="150px" src="../images/logo.svg" alt="IRMA Baitussalam">
+               </a>
+               <p>“Mewujudkan remaja masjid yang beriman, bertaqwa, berkarakter, cerdas dan terampil.”</p>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4">
+               <h6 class="mb-4">Tautan Cepat</h6>
+               <ul class="list-unstyled footer-list">
+                  <li><a href="/tentang">Tentang</a></li>
+                  <li><a href="/kontak">Kontak</a></li>
+                  <li><a href="/kebijakan-privasi">Kebijakan Privasi</a></li>
+                  <li><a href="/syarat-ketentuan">Syarat Ketentuan</a></li>
+               </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6 mb-4">
+               <h6 class="mb-4">Tautan Sosial</h6>
+               <ul class="list-unstyled footer-list">
+                  <li><a href="https://facebook.com/people/IRMA-SMAN-22-GARUT/100083337945272"><i class="fa fab fa-facebook"></i> Facebook</a></li>
+                  <li><a href="https://instagram.com/irmasman22garut_official"><i class="fa fab fa-instagram"></i> Instagram</a></li>
+                  <li><a href="https://twitter.com/irmasman22garut"><i class="fa fab fa-twitter"></i> Twitter</a></li>
+                  <li><a href="https://www.tiktok.com/@irmasman22garut_official"><i class="fa fab fa-tiktok"></i> TikTok</a></li>
+                  <li><a href="https://www.youtube.com/@IRMABaitussalam"><i class="fa fab fa-youtube"></i> YouTube</a></li>
+               </ul>
+            </div>
+
+            <div class="col-md-3 mb-4">
+               <h6 class="mb-4">Isi Kuisioner dari Kami</h6>
+               <div class="mb-2 subscription">
+                  <a href="/kuisioner" class="btn btn-primary btn-block rounded" type="submit" target="_blank">Klik Disini</a>
+               </div>
+            </div>
+         </div>
+         <div class="scroll-top">
+            <a href="javascript:void(0);" id="scrollTop"><i class="mdi mdi-24px mdi-chevron-up"></i></a>
+         </div>
+         <div class="text-center">
+            <p class="content">&copy; <span id="copy-year"></span> - IRMA Baitussalam</p>
+            <script>
+                var d = new Date();
+                var year = d.getFullYear();
+                document.getElementById("copy-year").innerHTML = year;
+            </script>
+         </div>
+      </div>
+   </footer>
+
+
+   <!-- JS Plugins -->
+   <script src="../plugins/jQuery/jquery.min.js"></script>
+   <script src="../plugins/bootstrap/bootstrap.min.js" async></script>
+   <script src="../plugins/slick/slick.min.js"></script>
+
+   <!-- Main Script -->
+   <script src="../js/script.js"></script>
+</body>
+</html>
