@@ -30,6 +30,7 @@
 	$('.tab-content').find('.tab-pane').each(function (idx, item) {
 		var navTabs = $(this).closest('.code-tabs').find('.nav-tabs'),
 			title = $(this).attr('title');
+			$.find(title).hide();
 		navTabs.append('<li class="nav-item"><a class="nav-link" href="#">' + title + '</a></li>');
 	});
 
