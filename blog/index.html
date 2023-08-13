@@ -8,7 +8,7 @@
    <!-- mobile responsive meta -->
    <meta property="fb:app_id" content="1015230009800296">
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-   <meta name="description" content="Website resmi IRMA Baitussalam">
+   <meta name="description" content="Baca artikel atau blog dari IRMA Baitussalam.">
    <meta name="author" content="Fajar Kim">
  
    <!-- theme meta -->
@@ -36,20 +36,20 @@
        $(document).ready(function() {
            $('#search-blog').keyup(function() {
               var text = $(this).val().toLowerCase();
-              $('.blog').hide();
-                $('.blog .post-title').each(function() {
+              $('article').hide();
+              $('article .post-title').each(function() {
                   if ($(this).text().toLowerCase().indexOf(""+text+"") != -1 ) {
-                      $(this).closest('.blog').show();
+                      $(this).closest('article').show();
                   }
               });
            });
        });
    </script>
    
-   <meta property="og:url" content="https://irmabaitussalam.github.io">
+   <meta property="og:url" content="https://irmabaitussalam.github.io/blog">
    <meta property="og:type" content="website">
-   <meta property="og:title" content="IRMA Baitussalam - Beranda">
-   <meta property="og:description" content="Selamat datang di website resmi IRMA Baitussalam">
+   <meta property="og:title" content="IRMA Baitussalam - Blog">
+   <meta property="og:description" content="Baca artikel atau blog dari IRMA Baitussalam.">
    <meta property="og:image" content="https://telegra.ph/file/c726b750b902319591883.jpg"/>
 </head>
 
@@ -129,7 +129,7 @@
 				</div>
 			</div>
 			<div class="col-lg-8  mb-2 mb-lg-0">
-				<article class="row mb-5 blog">
+				<article class="row mb-5">
 					<div class="col-12">
 						<div class="post-slider not-select">
 							<img loading="lazy" src="../images/post/04.jpg" class="img-fluid-post" alt="Foto">
