@@ -15,6 +15,10 @@ VERSION:	v1.0
   font-family: Marola;
   src: url("../font/Marola.ttf") format("truetype");
 }
+@font-face {
+  font-family: ArabQuran;
+  src: url("../font/Arab Quran Islamic.woff") format("woff");
+}
 
 /*  typography */
 body {
@@ -1564,4 +1568,13 @@ a .social-link:hover {
 .input-group-text {
   border-color: #ddd;
   background: #eee;
+}
+
+.arabic {
+  font-family: ArabQuran;
+  font-size: 16px;
+}
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
 }
