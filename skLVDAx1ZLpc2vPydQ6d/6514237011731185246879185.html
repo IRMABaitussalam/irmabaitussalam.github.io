@@ -13,7 +13,7 @@
 					<p class="text-center">Yah, pendaftaran sudah ditutup. Silahkan kembali lagi nanti :)</p>
 					<div class="row comingsoon-wrapper">
 						<div class="col-lg-8 col-xl-5" style="margin-top: -40rem;">
-					        <div class="simple_timer"></div>
+					        <div class="simple_timer not-select"></div>
 					        <p id="mon"></p>
 				        </div>
 					</div>
@@ -62,6 +62,10 @@
          day: 01,
          hour: 00,
          minute: 00
+       });
+
+       $('.img-fluid').bind('contextmenu', function(e){
+           return false;
        });
    </script>
 
