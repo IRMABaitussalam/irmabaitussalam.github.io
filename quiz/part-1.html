@@ -180,97 +180,100 @@
    <!-- Main Script -->
    <script src="../js/script.js"></script>
    <script>
-      $('#quiz').quiz({
-          questions: [
-              {
-                  'q': 'Apa tujuan utama dari Tasawuf dalam ajaran Islam?',
-                  'options': [
-                      'Mencari kekayaan dunia',
-                      'Menghindari maksiat',
-                      'Mendekatkan diri kepada Allah SWT',
-                      'Mendekatkan diri kepada manusia',
-                      'Mencari kebahagiaan dunia'
-                  ],
-                  'correctIndex': 2,
-                  'correctResponse': 'Yeayy, awabannya betul! 😎',
-                  'incorrectResponse': 'Yahh, jawabannya salah! 🥲',
-                  'explanation': `
+       $('#quiz').quiz({
+           questions: [
+               {
+                   'q': 'Apa tujuan utama dari Tasawuf dalam ajaran Islam?',
+                   'options': [
+                       'Mencari kekayaan dunia',
+                       'Menghindari maksiat',
+                       'Mendekatkan diri kepada Allah SWT',
+                       'Mendekatkan diri kepada manusia',
+                       'Mencari kebahagiaan dunia'
+                   ],
+                   'correctIndex': 2,
+                   'correctResponse': 'Yeayy, awabannya betul! 😎',
+                   'incorrectResponse': 'Yahh, jawabannya salah! 🥲',
+                   'explanation': `
+                        <h6>Jawaban</h6>
+                        <p>Mendekatkan diri kepada Allah SWT</p>
+                        <h6>Pembahasan</h6>
+                        <p>Parktik ilmu tasawuf mengajarkan dan membimbing manusia untuk selalu membersihkan jiwa dan mendekatkan diri kepada Allah SWT.
+                        Jadi, tasawuf memiliki tujuan utama untuk mendekatkan diri kepada Allah SWT. Hal ini dilakukan melalui introspeksi, pengendalian diri, dan pemahaman mendalam tentang ajaran agama,
+                        sehingga manusia tidak akan tergoda dengan nafsu yang nikmatnya hanya sementara dan orientasinya hanya kepada dunia.</p>
+                   `
+               },
+               {
+                   'q': 'Kata "Tasawuf" berasal dari kata?',
+                   'options': [
+                       'Kata "safa" yang berarti bersih',
+                       'Kata "suf" yang berarti wol',
+                       'Kata "sufi" yang berarti seorang guru',
+                       'Kata "suffah" yang berarti serambi masjid'
+                   ],
+                   'correctIndex': 1,
+                   'correctResponse': 'Yeayy, jawabannya betul! 😎',
+                   'incorrectResponse': 'Yahh, jawabannya salah! 🥲',
+                   'explanation': `
                        <h6>Jawaban</h6>
-                       <p>Mendekatkan diri kepada Allah SWT</p>
+                       <p>Kata "suf" yang berarti wol</p>
                        <h6>Pembahasan</h6>
-                       <p>Parktik ilmu tasawuf mengajarkan dan membimbing manusia untuk selalu membersihkan jiwa dan mendekatkan diri kepada Allah SWT.
-                       Jadi, tasawuf memiliki tujuan utama untuk mendekatkan diri kepada Allah SWT. Hal ini dilakukan melalui introspeksi, pengendalian diri, dan pemahaman mendalam tentang ajaran agama,
-                       sehingga manusia tidak akan tergoda dengan nafsu yang nikmatnya hanya sementara dan orientasinya hanya kepada dunia.</p>
-                  `
-              },
-              {
-                  'q': 'Kata "Tasawuf" berasal dari kata?',
-                  'options': [
-                      'Kata "safa" yang berarti bersih',
-                      'Kata "suf" yang berarti wol',
-                      'Kata "sufi" yang berarti seorang guru',
-                      'Kata "suffah" yang berarti serambi masjid'
-                  ],
-                  'correctIndex': 1,
-                  'correctResponse': 'Yeayy, jawabannya betul! 😎',
-                  'incorrectResponse': 'Yahh, jawabannya salah! 🥲',
-                  'explanation': `
-                      <h6>Jawaban</h6>
-                      <p>Kata "suf" yang berarti wol</p>
-                      <h6>Pembahasan</h6>
-                      <p>Asal kata "Tasawuf" berasal dari kata "<i>suf</i>" yang berarti wol. Istilah ini digunakan karena para sufi awal sering memakai pakaian kasar yang terbuat dari wol sebagai simbol kesederhanaan dan kerendahan hati.
-                      Pakaian wol ini menunjukkan penolakan terhadap kemewahan dunia dan fokus pada kehidupan spiritual. Beberapa teori lain juga menyatakan bahwa tasawuf dapat berasal dari kata "<i>safa</i>" yang berarti bersih atau "<i>suffah</i>" yang merujuk pada serambi masjid di mana para sahabat Nabi berkumpul untuk mempelajari Islam.
-                      Namun, pendapat yang paling umum diterima adalah yang berkaitan dengan pakaian wol.</p>
-                  `
-              },
-              {
-                  'q': 'Apa itu "Maqamat" dalam tasawuf?',
-                  'options': [
-                      'Berserah diri kepada Allah SWT',
-                      'Istilah yang merujuk kuburan',
-                      'Ikhlas dalam beramal shaleh, beribadah, dan berbuat kebaikan',
-                      'Usaha menjauhi diri dari segala perbuatan maksiat',
-                      'Kedudukan manusia di hadapan Allah SWT'
-                  ],
-                  'correctIndex': 4,
-                  'correctResponse': 'Yeayy, awabannya betul! 😎',
-                  'incorrectResponse': 'Yahh, jawabannya salah! 🥲',
-                  'explanation': `
+                       <p>Asal kata "Tasawuf" berasal dari kata "<i>suf</i>" yang berarti wol. Istilah ini digunakan karena para sufi awal sering memakai pakaian kasar yang terbuat dari wol sebagai simbol kesederhanaan dan kerendahan hati.
+                       Pakaian wol ini menunjukkan penolakan terhadap kemewahan dunia dan fokus pada kehidupan spiritual. Beberapa teori lain juga menyatakan bahwa tasawuf dapat berasal dari kata "<i>safa</i>" yang berarti bersih atau "<i>suffah</i>" yang merujuk pada serambi masjid di mana para sahabat Nabi berkumpul untuk mempelajari Islam.
+                       Namun, pendapat yang paling umum diterima adalah yang berkaitan dengan pakaian wol.</p>
+                   `
+               },
+               {
+                   'q': 'Apa itu "Maqamat" dalam tasawuf?',
+                   'options': [
+                       'Berserah diri kepada Allah SWT',
+                       'Istilah yang merujuk kuburan',
+                       'Ikhlas dalam beramal shaleh, beribadah, dan berbuat kebaikan',
+                       'Usaha menjauhi diri dari segala perbuatan maksiat',
+                       'Kedudukan manusia di hadapan Allah SWT'
+                   ],
+                   'correctIndex': 4,
+                   'correctResponse': 'Yeayy, awabannya betul! 😎',
+                   'incorrectResponse': 'Yahh, jawabannya salah! 🥲',
+                   'explanation': `
                        <h6>Jawaban</h6>
                        <p>Kedudukan manusia di hadapan Allah SWT</p>
                        <h6>Pembahasan</h6>
                        <p>Secara harfiah, <i><b>Maqamat</b></i> merupakan jamak dari kata <i>maqam</i> yang berarti tempat berpijak atau pangkat mulia. 
                        Dalam istilah tasawuf, <i><b>Maqamat</b></i> berarti kedudukan seorang hamba di hadapan Allah, sebagaimana yang didudukkan oleh Allah di dalamnya,
                        baik dengan segi ibadah, mujahadah, riyadhah, dan juga terputusnya hubungan dari yang selain Allah.</p>
-                  `
-              },
-              {
-                  'q': 'Dalam tasawuf, apa istilah yang digunakan untuk menyebut seorang pembimbing spiritual?',
-                  'options': [
-                      'Sheikh',
-                      'Wali',
-                      'Ustadz',
-                      'Sufi',
-                      'Ulama'
-                  ],
-                  'correctIndex': 0,
-                  'correctResponse': 'Yeayy, jawabannya betul! 😎',
-                  'incorrectResponse': 'Yahh, jawabannya salah! 🥲',
-                  'explanation': `
-                      <h6>Jawaban</h6>
-                      <p>Sheikh atau Murshid</p>
-                      <h6>Pembahasan</h6>
-                      <p>Dalam tasawuf, seorang pembimbing spiritual disebut sebagai <b><i>Sheikh</i></b> atau <b><i>Murshid</i></b>.
-                      Seorang sheikh adalah orang yang sudah mencapai tingkat spiritual tinggi dan memiliki pengalaman serta pengetahuan mendalam tentang jalan sufi (tarekat).
-                      Mereka membimbing murid-murid mereka dalam menjalani berbagai latihan rohani untuk mencapai maqam (tingkatan) yang lebih tinggi.</p>
-                  `
-              }
-         ],
-         resultsFormat: 'Anda menjawab %score dari %total pertanyaan dengan benar!',
-         nextButtonText: 'Selanjutnya',
-         finishButtonText: 'Selesai',
-         restartButtonText: 'Coba lagi'
-      });
+                   `
+               },
+               {
+                   'q': 'Dalam tasawuf, apa istilah yang digunakan untuk menyebut seorang pembimbing spiritual?',
+                   'options': [
+                       'Sheikh',
+                       'Wali',
+                       'Ustadz',
+                       'Sufi',
+                       'Ulama'
+                   ],
+                   'correctIndex': 0,
+                   'correctResponse': 'Yeayy, jawabannya betul! 😎',
+                   'incorrectResponse': 'Yahh, jawabannya salah! 🥲',
+                   'explanation': `
+                       <h6>Jawaban</h6>
+                       <p>Sheikh atau Murshid</p>
+                       <h6>Pembahasan</h6>
+                       <p>Dalam tasawuf, seorang pembimbing spiritual disebut sebagai <b><i>Sheikh</i></b> atau <b><i>Murshid</i></b>.
+                       Seorang sheikh adalah orang yang sudah mencapai tingkat spiritual tinggi dan memiliki pengalaman serta pengetahuan mendalam tentang jalan sufi (tarekat).
+                       Mereka membimbing murid-murid mereka dalam menjalani berbagai latihan rohani untuk mencapai maqam (tingkatan) yang lebih tinggi.</p>
+                   `
+               }
+           ],
+           resultsFormat: 'Anda menjawab %score dari %total pertanyaan dengan benar!',
+           nextButtonText: 'Selanjutnya',
+           finishButtonText: 'Selesai',
+           restartButtonText: 'Coba lagi'
+       });
+       $('.answers a').bind('contextmenu', function(e){
+           return false;
+       });
    </script>
 </body>
 </html>
