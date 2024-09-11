@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Kuesioner - IRMA Baitussalam">
+    <meta name="author" content="Fajar Kim">
+
+    <!-- Meta Property -->
+    <meta property="og:url" content="https://irmabaitussalam.github.io/kuesioner">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kuesioner - IRMA Baitussalam">
+    <meta property="og:description" content="Yuk isi kuesioner dari IRMA Baitussalam.">
+    <meta property="og:image" content="https://irmabaitussalam.github.io/images/thumbnail/kuesioner.jpg"/>
+
+    <title>Kuesioner - IRMA Baitussalam</title>
+
+    <!--Favicon-->
+    <link rel="icon shortcut" href="https://irmabaitussalam.github.io/images/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="https://irmabaitussalam.github.io/images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="https://irmabaitussalam.github.io/images/favicon-16x16.png" type="image/png" sizes="16x16" />
+    <link rel="icon" href="https://irmabaitussalam.github.io/images/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="https://irmabaitussalam.github.io/images/apple-touch-icon.png" sizes="180x180" />
+    <link fetchpriority="low" href="https://irmabaitussalam.github.io/images/site.webmanifest" rel="manifest" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#">IRMA Baitussalam</a>
+        <div class="menu-icon" id="menu-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="navbar-background" id="navbar-background" align="center">
+            <div class="navbar-links" id="navbar-links">
+                <a href="/" class="nav-btn nav-btn-neumorphic col-lg-12">Beranda</a>
+                <a href="/tentang" class="nav-btn nav-btn-neumorphic col-lg-12">Tentang</a>
+                <a href="/blog" class="nav-btn nav-btn-neumorphic col-lg-12">Blog</a>
+                <a href="/kontak" class="nav-btn nav-btn-neumorphic col-lg-12">Kontak</a>
+                <a href="/pendaftaran-anggota-baru" class="nav-btn nav-btn-neumorphic col-lg-12">Pendaftaran</a>
+                <a href="#" id="submenu" class="submenu nav-btn nav-btn-neumorphic col-lg-12">Halaman Lainnya</a>
+                <div class="submenu-content col-lg-12" id="submenu-content">
+                    <a href="/pedoman-komunitas" class="nav-btn nav-btn-neumorphic-inset col-lg-12">Pedoman Komunitas</a>
+                    <a href="/kebijakan-privasi" class="nav-btn nav-btn-neumorphic-inset col-lg-12">Kebijakan Privasi</a>
+                    <a href="/syarat-ketentuan" class="nav-btn nav-btn-neumorphic-inset col-lg-12">Syarat Ketentuan</a>
+                </div>
+        
+                <button id="themeToggle" class="theme-toggle-btn">
+                    <i id="themeIcon" class="ti ti-sun-filled"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-5 pt-5">
+        <img src="https://irmabaitussalam.github.io/images/logo.svg" alt="Logo" class="logo">
+        <h2 class="mt-4">IRMA Baitussalam SMAN 22 Garut</h2>
+        <p>&ldquo;Mewujudkan remaja masjid yang beriman, bertaqwa, berkarakter, cerdas, dan terampil&rdquo;</p>
+        <div class="achievements mt-5">
+            <div class="mb-5 text-left">
+                <h5 class="text1-color mb-3">Contact Person</h5>
+                <hr>
+                <p><i class="ti ti-brand-whatsapp"></i> <b>Kang Gilang:</b> <a href="https://api.whatsapp.com/send?phone=6285860379372">+62 858-6037-9372</a></p>
+                <p><i class="ti ti-brand-whatsapp"></i> <b>Kang Rangga:</b> <a href="https://api.whatsapp.com/send?phone=6285659850910">+62 856-5985-0910</a></p>
+                <p><i class="ti ti-brand-whatsapp"></i> <b>Teh Irna:</b> <a href="https://api.whatsapp.com/send?phone=6283826766086">+62 838-2676-6086</a></p>
+            </div>
+
+            <div class="mb-5" align="left">
+                <h5 class="text-left text1-color mb-3">Formulir Kuesioner</h5>
+                <hr>
+                <form name="kuesioner" action="https://formsubmit.co/irmabaitussalam22garut@gmail.com" method="POST" onSubmit="return validateForms();">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap <span class="red-color">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Contoh: Gilang Ramdani">
+                        <div id="alert-1"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="kelas">Kelas <span class="red-color">*</span></label>
+                        <input type="text" id="kelas" name="kelas" placeholder="Contoh: XII - 1">
+                        <div id="alert-2"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="instansi">Instansi <span class="red-color">*</span></label>
+                        <p>Bisa berupa nama Ekstrakurikuler yang diikuti (jika bukan anggota) atau nama sekolah asal.</p>
+                        <input type="text" id="instansi" name="instansi" placeholder="Contoh: SMA Negeri 22 Garut">
+                        <div id="alert-3"></div>
+                    </div>
+                    <div class="form-group wa-input">
+                        <label for="no-whatsapp">Nomor WhatsApp <span class="red-color">*</span></label>
+                        <div class="wa-container">
+                            <span class="wa-icon">
+                                <i class="ti ti-brand-whatsapp"></i>
+                            </span>
+                            <input type="text" id="no-whatsapp" name="no-whatsapp" placeholder="+62 8xx-xxxx-xxxx" data-mask="+62 899-9999-99999">
+                        </div>
+                        <div id="alert-4"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="kesan">Kesan mengenai Ekstrakurikuler IRMA Baitussalam <span class="red-color">*</span></label>
+                        <textarea id="kesan" name="kesan" placeholder="Tulis kesanmu..." rows="5"></textarea>
+                        <div id="alert-5"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="kritik">Kritik untuk Ekstrakurikuler IRMA Baitussalam <span class="red-color">*</span></label>
+                        <textarea id="kritik" name="kritik" placeholder="Tulis kritikmu..." rows="5"></textarea>
+                        <div id="alert-6"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="saran">Saran untuk Ekstrakurikuler IRMA Baitussalam <span class="red-color">*</span></label>
+                        <textarea id="saran" name="saran" placeholder="Tulis saranmu..." rows="5"></textarea>
+                        <div id="alert-7"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="captcha-input">Captcha <span class="red-color">*</span></label>
+                        <div id="mainCaptcha" class="mt-3 mb-5"></div>
+                        <div class="refresh-container">
+                            <button class="refresh-icon" onclick="document.forms['kuesioner']['captcha-input'].focus(); return generateCaptcha('form[name=kuesioner] #mainCaptcha');">
+                                <i class="ti ti-refresh"></i>
+                            </button>
+                            <input type="text" id="captcha-input" name="captcha-input" placeholder="XXXXXX" maxlength="6">
+                        </div>
+                        <div id="alert-8"></div>
+                    </div>
+                    <div class="form-group mt-4 mb-4">
+                        <label class="check-box"><input type="checkbox" id="agree" name="agree" value="false"></input><span class="checkmark"></span> Dengan mengklik tombol &ldquo;Kirim Sekarang&rdquo;, Anda sudah menyutujui <a href="/syarat-ketentuan">Syarat Ketentuan</a>, <a href="/kebijakan-privasi">Kebijakan Privasi</a>, dan <a href="/pedoman-komunitas">Pedoman Komunitas</a> kami.</label>
+                        <div id="alert-9"></div>
+                    </div>
+                    <input type="hidden" name="_captcha" value="false"></input>
+                    <input type="hidden" name="_template" value="box"></input>
+                    <input type="hidden" name="_subject" value="Kuesioner IRMA Baitussalam"></input>
+                    <input type="hidden" name="_next" value="https://irmabaitussalam.github.io/RpslGamWsNPUra1fYa4fuSHm18e32GsBtzKL6PdzeTXOa8FzXx"></input>
+                    <button type="submit" class="icon-text-btn mb-4">Kirim Sekarang</button>
+                    <div id="alert-success"></div>
+                </form>
+            </div>
+            <div class="content">
+                <p class="footer-link"><a class="link" href="https://irmabaitussalam.github.io/pedoman-komunitas">Pedoman Komunitas</a> &middot; <a class="link" href="https://irmabaitussalam.github.io/kebijakan-privasi">Kebijakan Privasi</a> &middot; <a class="link" href="https://irmabaitussalam.github.io/syarat-ketentuan">Syarat Ketentuan</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-top">
+        <footer class="text-center fixed-bottom py-4">
+            <span>&copy; 2014-<span id="currentYear"></span> IRMA Baitussalam</span>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js"></script>
+    <script src="./plugins/jquery-mask-input/jquery.mask.min.js"></script>
+    <script src="./js/theme.js"></script>
+    <script src="./js/captcha.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+        const captcha = $('#mainCaptcha');
+        const input = {
+            nama: $('form[name="kuesioner"] [name="name"]'),
+            kelas: $('form[name="kuesioner"] [name="kelas"]'),
+            instansi: $('form[name="kuesioner"] [name="instansi"]'),
+            kesan: $('form[name="kuesioner"] [name="kesan"]'),
+            kritik: $('form[name="kuesioner"] [name="kritik"]'),
+            saran: $('form[name="kuesioner"] [name="saran"]'),
+            noWhatsApp: $('form[name="kuesioner"] [name="no-whatsapp"]'),
+            captcha: $('form[name="kuesioner"] [name="captcha-input"]'),
+            agree: $('#agree')
+        };
+    
+        const alert = {
+            nama: $('form[name="kuesioner"] #alert-1'),
+            kelas: $('form[name="kuesioner"] #alert-2'),
+            instansi: $('form[name="kuesioner"] #alert-3'),
+            noWhatsApp: $('form[name="kuesioner"] #alert-4'),
+            kesan: $('form[name="kuesioner"] #alert-5'),
+            kritik: $('form[name="kuesioner"] #alert-6'),
+            saran: $('form[name="kuesioner"] #alert-7'),
+            captcha: $('form[name="kuesioner"] #alert-8'),
+            agree: $('form[name="kuesioner"] #alert-9'),
+            success: $('form[name="kuesioner"] #alert-success')
+        };
+
+        function validateForms() {
+            if (input.nama.val() === "") {
+                alert.nama.html(alertDanger("Silahkan masukkan nama lengkap Anda!"));
+                input.nama.focus();
+                setTimeout(() => alert.nama.empty(), 2500);
+                return false;
+            } else if (!validName(input.nama.val())) {
+                alert.nama.html(alertDanger("Silahkan masukkan nama Anda dengan benar!"));
+                input.nama.focus();
+                setTimeout(() => alert.nama.empty(), 2500);
+                return false;
+            }
+
+            if (input.kelas.val() === "") {
+                alert.kelas.html(alertDanger("Silahkan masukkan kelas Anda saat ini!"));
+                input.kelas.focus();
+                setTimeout(() => alert.kelas.empty(), 2500);
+                return false;
+            }
+
+            if (input.instansi.val() === "") {
+                alert.instansi.html(alertDanger("Silahkan masukkan nama ekstrakurikuler atau sekolah Anda!"));
+                input.instansi.focus();
+                setTimeout(() => alert.instansi.empty(), 2500);
+                return false;
+            } else if (!validSchoolName(input.instansi.val())) {
+                alert.instansi.html(alertDanger("Silahkan masukkan nama ekstrakurikuler atau sekolah Anda dengan benar!"));
+                input.instansi.focus();
+                setTimeout(() => alert.instansi.empty(), 2500);
+                return false;
+            }
+
+            if (input.noWhatsApp.val() === "") {
+                alert.noWhatsApp.html(alertDanger("Silahkan masukkan nomor WhatsApp Anda!"));
+                input.noWhatsApp.focus();
+                setTimeout(() => alert.noWhatsApp.empty(), 2500);
+                return false;
+            } else if (!(new RegExp("^[\-\+\ 0-9]+$", "g")).test(input.noWhatsApp.val())) {
+                alert.noWhatsApp.html(alertDanger("Silahkan masukkan nomor WhatsApp yang benar!"));
+                input.noWhatsApp.focus().val('');
+                setTimeout(() => alert.noWhatsApp.empty(), 2500);
+                return false;
+            }
+
+            if (input.kesan.val() === "") {
+                alert.kesan.html(alertDanger("Silahkan tuliskan kesan Anda mengenai IRMA Baitussalam!"));
+                input.kesan.focus();
+                setTimeout(() => alert.kesan.empty(), 2500);
+                return false;
+            }
+
+            if (input.kritik.val() === "") {
+                alert.kritik.html(alertDanger("Silahkan tuliskan kritik Anda untuk IRMA Baitussalam!"));
+                input.kritik.focus();
+                setTimeout(() => alert.kritik.empty(), 2500);
+                return false;
+            }
+
+            if (input.saran.val() === "") {
+                alert.saran.html(alertDanger("Silahkan tuliskan saran Anda untuk IRMA Baitussalam!"));
+                input.saran.focus();
+                setTimeout(() => alert.saran.empty(), 2500);
+                return false;
+            }
+
+            if (input.captcha.val() === "") {
+                alert.captcha.html(alertDanger("Silahkan masukkan code Captchanya!"));
+                input.captcha.focus().val('');
+                setTimeout(() => alert.captcha.empty(), 2500);
+                return false;
+            }
+
+            if (!input.agree.is(':checked')) {
+                alert.agree.html(alertDanger("Klik kotak centang di atas!"));
+                input.agree.focus();
+                setTimeout(() => alert.agree.empty(), 2500);
+                return false;
+            }
+
+            if (input.captcha.val() !== captcha.val()) {
+                alert.captcha.html(alertDanger("Captcha salah. Silahkan masukkan code Captcha yang benar!"));
+                input.captcha.focus().val('');
+                generateCaptcha('form[name="kuesioner"] #mainCaptcha');
+                setTimeout(() => alert.captcha.empty(), 2500);
+                return false;
+            }
+
+            alert.success.html(alertSuccess("Terkirim"));
+            setTimeout(() => alert.success.empty(), 2500);
+
+            generateCaptcha('form[name="kuesioner"] #mainCaptcha');
+            return true;
+        }
+        generateCaptcha('form[name="kuesioner"] #mainCaptcha');
+    </script>
+</body>
+</html>

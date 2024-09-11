@@ -1,0 +1,49 @@
+<body>
+    <button id="themeToggle" class="theme-toggle-btn" hidden>
+        <i id="themeIcon" class="ti ti-sun-filled"></i>
+    </button>
+
+    <div class="container container-syotimer-register text-center">
+        <div class="achievements">
+            <div class="text-left">
+                <div class="card card-neumorphism">
+                    <div class="card-subtitle" align="center">
+                        <h1 class="title-large"><i class="ti ti-alarm"></i></h1>
+                        <h4 class="card-title">Formulir Closed</h4>
+                        <hr>
+                        <p>
+                            Yah, formulir pendaftarannya sudah ditutup. Silahkan kembali lagi di bulan Juli nanti ya :)
+                        </p>
+                        <p>Formulir dibuka dalam waktu:</p>
+                        <div class="comingsoon-wrapper">
+						<div class="col-lg-8">
+					        <div class="simple_timer"></div>
+					        <p id="mon"></p>
+				        </div>
+					</div>
+                        <a href="https://irmabaitussalam.github.io" class="icon-text-btn col-lg-12 mt-5 mb-3"><i class="ti ti-home"></i> Kembali ke Beranda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/theme.js"></script>
+    <script src="./plugins/syotimer/jquery.syotimer.min.js"></script>
+    <script>
+        const d = new Date();
+        const currentYear = d.getFullYear();
+        const targetYear = d.getMonth() + 1 > 6 ? currentYear + 1 : currentYear;
+        const targetMonth = 7;
+        const targetDay = 1;
+        const targetHour = 0;
+
+        $(".simple_timer").syotimer({
+            year: targetYear,
+            month: targetMonth,
+            day: targetDay,
+            hour: targetHour,
+            minute: 0
+        });
+    </script>
+</body>
