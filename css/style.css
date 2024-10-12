@@ -1225,12 +1225,12 @@ input[type="text"]#captcha-input:focus {
 }
 
 .ad-title {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .ad-description {
     display: -webkit-box;
-    font-size: 11px;
+    font-size: 12px;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -1238,7 +1238,7 @@ input[type="text"]#captcha-input:focus {
 }
 
 .ad-button {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
     border-radius: 5px;
     padding: 6px;
