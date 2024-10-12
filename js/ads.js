@@ -58,6 +58,72 @@ const ads = [
         title: 'Desain Apa Pun dengan Mudah di Canva!',
         description: 'Buat desain yang menakjubkan untuk keperluan pribadi atau bisnis dengan Canva. Mudah digunakan, bahkan untuk pemula! Coba gratis sekarang!',
         link: 'https://www.canva.com/'
+    },
+    {
+        image: 'https://jnewsonline.com/wp-content/uploads/2021/04/Facebook-batalkan-pemblokiran-konten-berita-Australia.jpg',
+        title: 'Terhubung dengan Teman di Seluruh Dunia dengan Facebook!',
+        description: 'Bagikan momen, temukan teman baru, dan tetap terhubung dengan keluarga di Facebook. Bergabunglah sekarang!',
+        link: 'https://www.facebook.com/'
+    },
+    {
+        image: 'https://akcdn.detik.net.id/community/media/visual/2023/09/13/whatsapp-channel_169.png?w=600&q=90',
+        title: 'Chat Mudah dan Cepat dengan WhatsApp!',
+        description: 'Kirim pesan, lakukan panggilan, dan berbagi momen dengan mudah menggunakan WhatsApp. Unduh gratis sekarang!',
+        link: 'https://www.whatsapp.com/'
+    },
+    {
+        image: 'https://images.news18.com/ibnlive/uploads/2024/07/instagram-reels-add-20-music-2024-07-1f423b3f0a40a922079ec60046a034ae.jpg?impolicy=website&width=640&height=480',
+        title: 'Bagikan Gaya Hidupmu di Instagram!',
+        description: 'Abadikan momen terbaikmu dengan foto dan video yang memukau di Instagram. Temukan komunitas baru dan terhubung!',
+        link: 'https://www.instagram.com/'
+    },
+    {
+        image: 'https://cdnpro.eraspace.com/media/mageplaza/blog/post/p/e/pengguna_twitter_primary.jpg',
+        title: 'Ikuti Berita Terkini di X!',
+        description: 'Dapatkan informasi terbaru, opini, dan tren dari seluruh dunia dengan X. Mulai berkomunikasi sekarang!',
+        link: 'https://www.x.com/'
+    },
+    {
+        image: 'https://images.bisnis.com/thumb/posts/2023/07/07/1672633/threads2_1688617832.jpg?w=600&h=400',
+        title: 'Gabung Diskusi Seru di Threads!',
+        description: 'Bicarakan topik yang kamu suka dan temukan percakapan seru dengan Threads. Bergabung dan berinteraksi sekarang!',
+        link: 'https://www.threads.net/'
+    },
+    {
+        image: 'https://raw.githubusercontent.com/tabler/tabler-icons/master/.github/og.png',
+        title: 'Tingkatkan Desain Anda dengan Tabler Icons!',
+        description: 'Akses koleksi ikon berkualitas tinggi yang gratis dan dapat disesuaikan untuk proyek Anda. Mudah digunakan, dapat diskalakan, dan sempurna untuk desain modern. Mulai gunakan Tabler Icons hari ini!',
+        link: 'https://tabler.io/icons'
+    },
+    {
+        image: 'https://discover.buysellads.com/hs-fs/hubfs/publisher-pages/images/carbon/carbonads_icon.png?width=800&height=800&name=carbonads_icon.png', 
+        title: 'Monetisasi Website Anda dengan Carbon Ads!',
+        description: 'Tampilkan iklan minimalis yang fokus pada teknologi tanpa mengganggu desain situs Anda. Dapatkan penghasilan sambil menjaga tampilan tetap rapi. Coba Carbon Ads sekarang!',
+        link: 'https://carbonads.net/'
+    },
+    {
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5sW6tqoSV0BCMJUwt5VIyTLQyrSNN_DNDsIMV-Pycpn6q5C4KEUAuOK5U&s=10',
+        title: 'Tingkatkan Terminal Anda dengan Nerd Font!',
+        description: 'Perkaya pengalaman coding dengan lebih dari 50+ font, ikon, dan glyph yang telah di-patch. Cocok untuk developer. Unduh Nerd Fonts sekarang!',
+        link: 'https://www.nerdfonts.com/'
+    },
+    {
+        image: 'https://i.ibb.co/X3GNW8v/Bootstrap.png',
+        title: 'Buat Website Responsif dengan Mudah Menggunakan Bootstrap!',
+        description: 'Kembangkan website responsif dengan cepat dan mudah menggunakan Bootstrap. Framework front-end paling populer untuk pengembangan web. Mulai sekarang!',
+        link: 'https://getbootstrap.com/'
+    },
+    {
+        image: 'https://www.aplyca.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fc63hsprlvlya%2F1zUViz84vavghFDIK1qmlm%2F8be7ec39bf58472414e212d7547e7f8b%2FVercel__Zeit_.jpeg&w=1920&q=75',
+        title: 'Deploy Website Anda dengan Mudah di Vercel!',
+        description: 'Platform terbaik untuk deploy dan skala proyek web modern. Nikmati deploy otomatis yang cepat, aman, dan mudah dengan Vercel. Mulai gratis sekarang!',
+        link: 'https://vercel.com/'
+    },
+    {
+        image: 'https://www.catatan.net/images/gohugo/gohugo.jpeg',
+        title: 'Bangun Website Super Cepat dengan Hugo!',
+        description: 'Ciptakan website statis dengan cepat menggunakan Hugo. Cepat, fleksibel, dan mudah digunakan—cocok untuk blog pribadi atau proyek besar. Coba Hugo sekarang!',
+        link: 'https://gohugo.io/'
     }
 ];
 
