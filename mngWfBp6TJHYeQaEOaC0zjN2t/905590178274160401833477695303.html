@@ -32,6 +32,16 @@
         <img src="https://irmabaitussalam.github.io/images/logo.svg" alt="Logo" class="logo">
         <h2 class="mt-4">IRMA Baitussalam SMAN 22 Garut</h2>
         <p>&ldquo;Mewujudkan remaja masjid yang beriman, bertaqwa, berkarakter, cerdas, dan terampil&rdquo;</p>
+        <div id="ads1" align="left" class="ad-container card-ad d-flex flex-row align-items-center">
+            <img id="ads1-image" src="" alt="Iklan" class="img-fluid">
+            <div class="ad-content">
+                <div>
+                    <h5 id="ads1-title" class="card-title mb-1 ad-title"></h5>
+                    <p id="ads1-description" class="card-text mb-0 ad-description"></p>
+                    <a id="ads1-link" href="#" target="_blank" class="icon-text-btn btn-sm mt-2 ad-button">Klik Disini</a>
+                </div>
+            </div>
+        </div>
         <div class="achievements mt-5">
         	<div class="mb-5 text-left">
                 <h5 class="text1-color mb-3">Open Recruitment Anggota IRMA Baitussalam SMAN 22 Garut</h5>
@@ -47,13 +57,24 @@
                 </div>
             </div>
 
-            <div class="mb-5 text-left">
+            <div class="mb-4 text-left">
                 <h5 class="text1-color mb-3">Contact Person</h5>
                 <hr>
                 <p><i class="ti ti-mail"></i> <b>Email:</b> <a href="mailto:irmabaitussalam22garut@gmail.com">irmabaitussalam22garut@gmail.com</a></p>
                 <p><i class="ti ti-brand-whatsapp"></i> <b>Kang Gilang:</b> <a href="https://api.whatsapp.com/send?phone=6285860379372">+62 858-6037-9372</a></p>
                 <p><i class="ti ti-brand-whatsapp"></i> <b>Kang Rangga:</b> <a href="https://api.whatsapp.com/send?phone=6285659850910">+62 856-5985-0910</a></p>
                 <p><i class="ti ti-brand-whatsapp"></i> <b>Teh Irna:</b> <a href="https://api.whatsapp.com/send?phone=6283826766086">+62 838-2676-6086</a></p>
+            </div>
+
+            <div id="ads2" align="left" class="ad-container card-ad d-flex flex-row align-items-center mb-5">
+                <img id="ads2-image" src="" alt="Iklan" class="img-fluid">
+                <div class="ad-content">
+                    <div>
+                        <h5 id="ads2-title" class="card-title mb-1 ad-title"></h5>
+                        <p id="ads2-description" class="card-text mb-0 ad-description"></p>
+                        <a id="ads2-link" href="#" target="_blank" class="icon-text-btn btn-sm mt-2 ad-button">Klik Disini</a>
+                    </div>
+                </div>
             </div>
 
             <div class="mb-5" align="left">
@@ -134,6 +155,16 @@
                     <button type="submit" class="icon-text-btn mb-4">Kirim Sekarang</button>
                     <div id="alert-success"></div>
                 </form>
+            </div>
+            <div id="ads3" align="left" class="ad-container card-ad d-flex flex-row align-items-center mb-5">
+                <img id="ads3-image" src="" alt="Iklan" class="img-fluid">
+                <div class="ad-content">
+                    <div>
+                        <h5 id="ads3-title" class="card-title mb-1 ad-title"></h5>
+                        <p id="ads3-description" class="card-text mb-0 ad-description"></p>
+                        <a id="ads3-link" href="#" target="_blank" class="icon-text-btn btn-sm mt-2 ad-button">Klik Disini</a>
+                    </div>
+                </div>
             </div>
             <div class="content">
                 <p class="footer-link"><a class="link" href="https://irmabaitussalam.github.io/pedoman-komunitas">Pedoman Komunitas</a> &middot; <a class="link" href="https://irmabaitussalam.github.io/kebijakan-privasi">Kebijakan Privasi</a> &middot; <a class="link" href="https://irmabaitussalam.github.io/syarat-ketentuan">Syarat Ketentuan</a></p>
@@ -279,5 +310,11 @@
             return true;
         }
         generateCaptcha('form[name="pendaftaran"] #mainCaptcha');
+    </script>
+    <script src="./js/ads.js"></script>
+    <script>
+        $(document).ready(function() {
+            startAd(3);
+        });
     </script>
 </body>
