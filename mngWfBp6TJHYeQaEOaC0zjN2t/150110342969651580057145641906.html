@@ -32,11 +32,15 @@
     <script src="./plugins/syotimer/jquery.syotimer.min.js"></script>
     <script>
         const d = new Date();
-        const currentYear = d.getFullYear();
-        const targetYear = d.getMonth() + 1 > 6 ? currentYear + 1 : currentYear;
+        const currentMonth = d.getMonth() + 1;
+        let targetYear = d.getFullYear();
         const targetMonth = 7;
         const targetDay = 1;
         const targetHour = 0;
+
+        if (currentMonth >= 11) {
+            targetYear += 1;
+        }
 
         $(".simple_timer").syotimer({
             year: targetYear,

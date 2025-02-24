@@ -39,14 +39,11 @@
     <script>
         $(function() {
             const d = new Date();
-            const newDay = d.getDay();
-            const newHours = d.getHours();
-            const currentDate = new Date();
-            const cutoffDate = new Date(d.getFullYear(), 10, 1);
+            const currentMonth = d.getMonth();
 
             let urlToLoad;
 
-            if (currentDate < cutoffDate) {
+            if (currentMonth >= 6 && currentMonth <= 10) {
                 urlToLoad = "mngWfBp6TJHYeQaEOaC0zjN2t/905590178274160401833477695303.html";
             } else {
                 urlToLoad = "mngWfBp6TJHYeQaEOaC0zjN2t/150110342969651580057145641906.html";
