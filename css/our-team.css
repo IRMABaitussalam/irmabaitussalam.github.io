@@ -186,7 +186,7 @@
     padding: 1.5rem;
     box-sizing: border-box;
     background-color: var(--base);
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     box-shadow: 7px 7px 15px var(--shadow-color), -7px -7px 15px var(--highlight-color);
     transition: box-shadow 0.3s ease-in-out, background-color 0.3s, color 0.3s;
@@ -241,4 +241,29 @@
     .team-card {
         width: 100%;
     }
+}
+
+/* Versi tombol disabled */
+.social-icon-btn:disabled,
+.social-icon-btn.disabled {
+    cursor: not-allowed;
+    opacity: 0.6; /* Buat lebih redup */
+    box-shadow: inset 3px 3px 10px var(--shadow-color), inset -3px -3px 10px var(--highlight-color);
+    transform: none !important; /* Hilangkan efek hover & active */
+    pointer-events: none; /* Nonaktifkan interaksi */
+}
+
+/* Saat disabled, ikon juga ikut redup */
+.social-icon-btn:disabled i,
+.social-icon-btn.disabled i {
+    color: var(--subtext2); /* Warna lebih redup */
+}
+
+/* Nonaktifkan hover & active untuk tombol disabled */
+.social-icon-btn:disabled:hover,
+.social-icon-btn.disabled:hover,
+.social-icon-btn:disabled:active,
+.social-icon-btn.disabled:active {
+    transform: none !important;
+    box-shadow: inset 3px 3px 10px var(--shadow-color), inset -3px -3px 10px var(--highlight-color);
 }

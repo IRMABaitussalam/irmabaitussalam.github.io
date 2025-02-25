@@ -38,6 +38,19 @@ function validSchoolName(name) {
     return new RegExp("^[\\p{L}\\s0-9&'\\-]+$", "u").test(name);
 }
 
+function showPeriod(period) {
+    var team2023 = document.getElementById("team-2023");
+    var team2024 = document.getElementById("team-2024");
+
+    if (period === "2023") {
+        team2023.style.display = "flex";
+        team2024.style.display = "none";
+    } else {
+        team2023.style.display = "none";
+        team2024.style.display = "flex";
+    }
+}
+
 /**
  * Get current year for footer
  */
