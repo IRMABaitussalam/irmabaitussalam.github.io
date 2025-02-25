@@ -243,23 +243,20 @@
     }
 }
 
-/* Versi tombol disabled */
 .social-icon-btn:disabled,
 .social-icon-btn.disabled {
     cursor: not-allowed;
-    opacity: 0.6; /* Buat lebih redup */
+    opacity: 0.6;
     box-shadow: inset 3px 3px 10px var(--shadow-color), inset -3px -3px 10px var(--highlight-color);
-    transform: none !important; /* Hilangkan efek hover & active */
-    pointer-events: none; /* Nonaktifkan interaksi */
+    transform: none !important;
+    pointer-events: none;
 }
 
-/* Saat disabled, ikon juga ikut redup */
 .social-icon-btn:disabled i,
 .social-icon-btn.disabled i {
-    color: var(--subtext2); /* Warna lebih redup */
+    color: var(--surface1);
 }
 
-/* Nonaktifkan hover & active untuk tombol disabled */
 .social-icon-btn:disabled:hover,
 .social-icon-btn.disabled:hover,
 .social-icon-btn:disabled:active,
