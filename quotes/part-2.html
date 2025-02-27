@@ -184,7 +184,7 @@
 
       $("#quote-image").html(`<img src="${q.image}" class="img-fluid img-rounded" alt="${q.title} by ${q.author}" id="quoteImage">`);
       $("#quote-title").text(q.title);
-      $("#quote-text").append(`&ldquo;${q.text}&rdquo;`);
+      $("#quote-text").append(q.text);
       $("#quote-author").text(q.author);
       $("#quote-date").text(q.date);
 
