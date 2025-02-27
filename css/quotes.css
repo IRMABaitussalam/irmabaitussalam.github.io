@@ -376,7 +376,7 @@ input[type="text"] {
 }
 @media (min-width: 992px) {
   .clear-icon {
-    transform: translateY(-100%);
+    transform: translateY(-50%);
   }
 }
 
