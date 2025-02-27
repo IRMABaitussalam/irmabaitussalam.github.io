@@ -362,7 +362,7 @@ input[type="text"] {
   position: absolute;
   top: 50%;
   right: 15px;
-  transform: translateY(-15%);
+  transform: translateY(-5%);
   cursor: pointer;
   color: var(--red);
   display: none;
