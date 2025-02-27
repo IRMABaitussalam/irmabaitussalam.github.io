@@ -24,32 +24,32 @@ const quotes = [
       image: "https://scontent.fbdo4-1.fna.fbcdn.net/v/t39.30808-6/469430194_492392710484972_1357870296544920694_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=109&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEMUrpDthW7fqy7MbK9SQj-lZz4b2BMawuVnPhvYExrC8UeyrQHvU6J2avvIVOCn9RZWdAvbEPgQdRyvf4f-sq_&_nc_ohc=RKWGedS72KcQ7kNvgGtenvs&_nc_oc=AdhVCfo42uWzBta-kwGwPnCXHz2kNNPUIqokUM6ZeyAnM8UgvBxJ3ltGpQjy4Pg9tHY&_nc_zt=23&_nc_ht=scontent.fbdo4-1.fna&_nc_gid=AoMbG4j_s-GSbat0P5yR-NM&oh=00_AYBTQjp2Px1ecgZKB-AcyDqreEvPNkYRuOnYcTSZCisEBg&oe=67C4D2E2",
       social: {
         facebook: "https://www.facebook.com/share/p/1EABLsmhBp/",
-        x: "",
+        x: "https://x.com/irmasman22garut/status/1644558955753123842",
         youtube: "https://youtube.com/shorts/5oojZj1L8gs?si=jEftR5nesLtIciQQ",
         tiktok: "https://vm.tiktok.com/ZSMyHjKaG/",
         download: {
           hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-2.jpg",
-          normal: "",
+          normal: "https://pbs.twimg.com/media/FtKlpT0aQAIPEWz?format=jpg&name=large",
           low: "https://scontent.fbdo4-1.fna.fbcdn.net/v/t39.30808-6/469430194_492392710484972_1357870296544920694_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=109&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEMUrpDthW7fqy7MbK9SQj-lZz4b2BMawuVnPhvYExrC8UeyrQHvU6J2avvIVOCn9RZWdAvbEPgQdRyvf4f-sq_&_nc_ohc=RKWGedS72KcQ7kNvgGtenvs&_nc_oc=AdhVCfo42uWzBta-kwGwPnCXHz2kNNPUIqokUM6ZeyAnM8UgvBxJ3ltGpQjy4Pg9tHY&_nc_zt=23&_nc_ht=scontent.fbdo4-1.fna&_nc_gid=AoMbG4j_s-GSbat0P5yR-NM&oh=00_AYBTQjp2Px1ecgZKB-AcyDqreEvPNkYRuOnYcTSZCisEBg&oe=67C4D2E2"
         }
       },
       author: "Siti Patimah Nurhamidah",
-      date: "7 April 2023",
+      date: "8 April 2023",
       url: "part-2"
     },
     {
       title: "Quotes Part #3",
       text: "Hidup itu harus seperti Fi'il Madkhori, mensyukuri dalam keadaan sekarang dan masa yang akan datang.",
-      image: "https://scontent.fbdo4-1.fna.fbcdn.net/v/t39.30808-6/469428068_492392717151638_1653543523487171775_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHsGyjr8ykCNUUDXAmZQhGIO9oWG8NvCNE72hYbw28I0fA0sRvGWZxZG-d1Oj8C4GsCvK0kZmXayP-Wsjaldg0N&_nc_ohc=bqbkbY6zqwkQ7kNvgGplD_U&_nc_oc=AdhjpyXFlJBTWq58oZ7dcksMR96tWAZkat2TF4SIqJNThHC2vDGyE7ICipwf0_ZWPUg&_nc_zt=23&_nc_ht=scontent.fbdo4-1.fna&_nc_gid=AKIOgPNm4AMSayIuXD1Wfnz&oh=00_AYDsKLq_j0nC_aPklTQCQHnBX_p8G1eMTj3J6qshhk8HIQ&oe=67C4E539",
+      image: "https://pbs.twimg.com/media/FtOzfPZaMAA2Xzy?format=jpg&name=medium",
       social: {
         facebook: "https://www.facebook.com/share/p/14z1fwtkLS/",
-        x: "",
+        x: "https://x.com/irmasman22garut/status/1644855912375660544",
         youtube: "https://youtube.com/shorts/asqv7fgb91A?si=GIeuCTq4Y09BdZt-",
-        tiktok: "",
+        tiktok: "https://vm.tiktok.com/ZSMyQgSuY/",
         download: {
           hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-3.jpg",
-          normal: "",
-          low: "https://scontent.fbdo4-1.fna.fbcdn.net/v/t39.30808-6/469428068_492392717151638_1653543523487171775_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHsGyjr8ykCNUUDXAmZQhGIO9oWG8NvCNE72hYbw28I0fA0sRvGWZxZG-d1Oj8C4GsCvK0kZmXayP-Wsjaldg0N&_nc_ohc=bqbkbY6zqwkQ7kNvgGplD_U&_nc_oc=AdhjpyXFlJBTWq58oZ7dcksMR96tWAZkat2TF4SIqJNThHC2vDGyE7ICipwf0_ZWPUg&_nc_zt=23&_nc_ht=scontent.fbdo4-1.fna&_nc_gid=AKIOgPNm4AMSayIuXD1Wfnz&oh=00_AYDsKLq_j0nC_aPklTQCQHnBX_p8G1eMTj3J6qshhk8HIQ&oe=67C4E539"
+          normal: "https://pbs.twimg.com/media/FtOzfPZaMAA2Xzy?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/FtOzfPZaMAA2Xzy?format=jpg&name=medium"
         }
       },
       author: "Perdiyana",
@@ -59,16 +59,16 @@ const quotes = [
     {
       title: "Quotes Part #4",
       text: "A P R I L<br>(A)ku hanya (P)erlu (R)idha (IL)lahi.",
-      image: "https://scontent.fbdo4-1.fna.fbcdn.net/v/t39.30808-6/469420729_492392803818296_8427881708012038563_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeElVxcojD9MA52inkzHnJ405sv1xOS9L2vmy_XE5L0vayUHUaNg5F9bjLzXZuivOMwAoUMeCjqrgSZKpLKoXTOj&_nc_ohc=9HQGHo83Y_UQ7kNvgGeGZTl&_nc_oc=AdjLnqVjRR3AWcQLYUSNrYlYBrXqVmBHcasMy1gP9iwdmvlLNK-71fL1beVN_Cv6kT8&_nc_zt=23&_nc_ht=scontent.fbdo4-1.fna&_nc_gid=AnsGmGW7ic1XzmcrHt3ov8_&oh=00_AYAc14ubeAdPXASye48Mnme22mb2CzYkbOeXpKUkYna9jw&oe=67C4F4D4",
+      image: "https://pbs.twimg.com/media/FtO0uRHakAMYyul?format=jpg&name=medium",
       social: {
         facebook: "https://www.facebook.com/share/p/19uAMC3FUH/",
-        x: "",
+        x: "https://x.com/irmasman22garut/status/1644857012088610818",
         youtube: "https://youtube.com/shorts/R0s5szUO0LY?si=4yFUgmrhhgOLPHXt",
-        tiktok: "",
+        tiktok: "https://vm.tiktok.com/ZSMyQGoyG/",
         download: {
           hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-4.jpg",
-          normal: "",
-          low: "https://scontent.fbdo4-1.fna.fbcdn.net/v/t39.30808-6/469420729_492392803818296_8427881708012038563_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeElVxcojD9MA52inkzHnJ405sv1xOS9L2vmy_XE5L0vayUHUaNg5F9bjLzXZuivOMwAoUMeCjqrgSZKpLKoXTOj&_nc_ohc=9HQGHo83Y_UQ7kNvgGeGZTl&_nc_oc=AdjLnqVjRR3AWcQLYUSNrYlYBrXqVmBHcasMy1gP9iwdmvlLNK-71fL1beVN_Cv6kT8&_nc_zt=23&_nc_ht=scontent.fbdo4-1.fna&_nc_gid=AnsGmGW7ic1XzmcrHt3ov8_&oh=00_AYAc14ubeAdPXASye48Mnme22mb2CzYkbOeXpKUkYna9jw&oe=67C4F4D4"
+          normal: "https://pbs.twimg.com/media/FtO0uRHakAMYyul?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/FtO0uRHakAMYyul?format=jpg&name=medium"
         }
       },
       author: "Rangga Fajar Oktriansyah",
@@ -78,16 +78,16 @@ const quotes = [
     {
       title: "Quotes Part #5",
       text: "Seseorang bisa sukses karena dia mau berproses. Seseorang bisa pintar karena dia mau belajar. Seseorang bisa hebat karena dia terus mengukur bakat. Seseorang bisa jenius karena dia mau serius.",
-      image: "https://scontent.fbdo4-1.fna.fbcdn.net/v/t39.30808-6/469370690_492392827151627_6783852636668159424_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHc4ic5w0zYPL42MVv5p1ZdrYZ7o5Aw-CmthnujkDD4KRnyLZU1OURjaz-yg6Z-p_uREsXNczJSjvf7a95YOloz&_nc_ohc=-FrkQU_elhIQ7kNvgHFfEZf&_nc_oc=AdhA-j58yi5tCopgD2-wOShgMAZ3LkpJcFT_LYst7xNV_iBiD8lZ249qs29CuWpz0Jw&_nc_zt=23&_nc_ht=scontent.fbdo4-1.fna&_nc_gid=AdBDSQGfSTir1in57xcB8br&oh=00_AYBz-fQKhPC5VDYvdDtkCNse2qcegJ_2wWvAnH18xF4TAQ&oe=67C4D42E",
+      image: "https://pbs.twimg.com/media/FtO5qbhaUAEL3xh?format=jpg&name=medium",
       social: {
         facebook: "https://www.facebook.com/share/p/17whDM5Qx6/",
-        x: "",
+        x: "https://x.com/irmasman22garut/status/1644862443473207297",
         youtube: "https://youtube.com/shorts/Gkcigzx9-K8?si=qwc47oCdb0uKh72f",
-        tiktok: "",
+        tiktok: "https://vm.tiktok.com/ZSMyCYAjY/",
         download: {
           hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-5.jpg",
-          normal: "",
-          low: "https://scontent.fbdo4-1.fna.fbcdn.net/v/t39.30808-6/469370690_492392827151627_6783852636668159424_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeHc4ic5w0zYPL42MVv5p1ZdrYZ7o5Aw-CmthnujkDD4KRnyLZU1OURjaz-yg6Z-p_uREsXNczJSjvf7a95YOloz&_nc_ohc=-FrkQU_elhIQ7kNvgHFfEZf&_nc_oc=AdhA-j58yi5tCopgD2-wOShgMAZ3LkpJcFT_LYst7xNV_iBiD8lZ249qs29CuWpz0Jw&_nc_zt=23&_nc_ht=scontent.fbdo4-1.fna&_nc_gid=AdBDSQGfSTir1in57xcB8br&oh=00_AYBz-fQKhPC5VDYvdDtkCNse2qcegJ_2wWvAnH18xF4TAQ&oe=67C4D42E"
+          normal: "https://pbs.twimg.com/media/FtO5qbhaUAEL3xh?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/FtO5qbhaUAEL3xh?format=jpg&name=medium"
         }
       },
       author: "Irfan Nawawi (Alumni)",
