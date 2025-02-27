@@ -167,10 +167,12 @@ input[type="text"] {
   margin: 0;
   color: var(--text);
   padding-right: 1.9rem;
+  margin-top: 15px;
 }
 @media (min-width: 992px) {
   #search-form .form-control {
     padding-right: 2rem;
+    margin-top: 0;
   }
 }
 
