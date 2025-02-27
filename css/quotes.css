@@ -462,7 +462,7 @@ input[type="text"] {
   padding: 20px;
   border-radius: 8px;
   border: 1px solid var(--navbar-border-color);
-  width: 300px;
+  width: 330px;
   text-align: center;
   position: relative;
 }
