@@ -225,7 +225,7 @@
                 input.noWhatsApp.focus();
                 setTimeout(() => alert.noWhatsApp.empty(), 2500);
                 return false;
-            } else if (!(new RegExp("^[\-+ 0-9]+$", "g")).test(input.noWhatsApp.val())) {
+            } else if (!(new RegExp("^[+ 0-9-]+$", "g")).test(input.noWhatsApp.val())) {
                 alert.noWhatsApp.html(alertDanger("Silahkan masukkan nomor WhatsApp yang benar!"));
                 input.noWhatsApp.focus().val('');
                 setTimeout(() => alert.noWhatsApp.empty(), 2500);
