@@ -20,7 +20,7 @@ $(document).ready(function () {
     }
 
     let filtered = quotes.filter(q =>
-      q.title.toLowerCase().includes(value) || q.text.toLowerCase().includes(value) || q.author.toLowerCase().includes(value)
+      q.title.toLowerCase().includes(value) || q.text.replace("&ldquo;", "“").replace("&rdquo;", "”").toLowerCase().includes(value) || q.author.toLowerCase().includes(value)
     );
     if (filtered.length === 0) {
       $results.append('<div class="list-group-item">Tidak ditemukan quotes.</div>');
