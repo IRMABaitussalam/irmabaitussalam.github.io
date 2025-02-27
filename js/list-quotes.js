@@ -93,5 +93,24 @@ const quotes = [
       author: "Irfan Nawawi (Alumni)",
       date: "9 April 2023",
       url: "part-5"
+    },
+    {
+      title: "Quotes Part #6",
+      text: "Ketika aku tak mampu memaafkan seseorang maka aku sedih karena itu tanda lemah dan kotornya hatiku.",
+      image: "https://pbs.twimg.com/media/FtUC77qakAAGGGe?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/17iis65N4M/",
+        x: "https://x.com/irmasman22garut/status/1645224481764552705",
+        youtube: "https://youtube.com/shorts/tALU-meOKJc?si=6oA8Epfhrd_zSZ6g",
+        tiktok: "https://vm.tiktok.com/ZSMyGARkN/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-6.jpg",
+          normal: "https://pbs.twimg.com/media/FtUC77qakAAGGGe?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/FtUC77qakAAGGGe?format=jpg&name=medium"
+        }
+      },
+      author: "Prakarsa Putra Nusantara",
+      date: "10 April 2023",
+      url: "part-6"
     }
 ];
