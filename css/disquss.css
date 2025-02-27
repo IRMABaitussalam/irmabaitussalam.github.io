@@ -1,0 +1,70 @@
+/* ====== Warna Dasar Disqus ====== */
+#disqus_thread {
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background-color: var(--base);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* ====== Warna Judul & Teks ====== */
+#disqus_thread .post-title {
+  color: var(--text);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#disqus_thread .comment {
+  color: var(--text);
+}
+
+/* ====== Warna Tombol ====== */
+#disqus_thread .btn {
+  background-color: var(--base);
+  color: var(--text);
+  border-radius: 5px;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 7px 7px 15px var(--shadow-color), -7px -7px 15px var(--highlight-color);
+}
+
+#disqus_thread .btn:hover {
+  box-shadow: inset 7px 7px 15px var(--shadow-color), inset -7px -7px 15px var(--highlight-color);
+}
+
+/* ====== Warna Form Input ====== */
+#disqus_thread input[type="text"],
+#disqus_thread input[type="email"],
+#disqus_thread textarea {
+  background-color: var(--base);
+  color: var(--text);
+  border: 1px solid #444;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+#disqus_thread input[type="text"]:focus,
+#disqus_thread input[type="email"]:focus,
+#disqus_thread textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* ====== Warna Link ====== */
+#disqus_thread a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+#disqus_thread a:hover {
+  color: var(--text);
+}
+
+/* ====== Warna Garis Pemisah ====== */
+#disqus_thread hr {
+  border: 0;
+  height: 1px;
+  background: var(--hr-border-color);
+}
