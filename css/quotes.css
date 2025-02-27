@@ -210,6 +210,7 @@ input[type="text"] {
   cursor: pointer;
   background-color: var(--navbar-bg-color);
   color: var(--text);
+  backdrop-filter: none;
 }
 #search-results .list-group-item:hover {
   background: var(--base);
