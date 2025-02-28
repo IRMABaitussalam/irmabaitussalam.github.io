@@ -107,15 +107,15 @@
   <!-- Custom JS -->
   <script src="../js/theme.js"></script>
   <script>
-    function escapeHtml(unsafe) {
-      return unsafe
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-    }
-
+    function escapeHtml(unsafe) {
+      return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
     $(document).ready(function() {
       $('#currentYear').text(new Date().getFullYear());
       $('#navbarNav').on('show.bs.collapse', function () {
