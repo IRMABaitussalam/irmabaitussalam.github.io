@@ -155,7 +155,7 @@
         if (found) {
           $("#no-results").addClass("d-none");
         } else {
-          $("#no-results").text(`Quotes dengan kata kunci "${$(this).val()}" tidak ditemukan.`);
+          $("#no-results").html(`Quotes dengan kata kunci "<span class="fw-bold">${$(this).val()}</span>" tidak ditemukan.`);
           $("#no-results").removeClass("d-none");
         }
       });
