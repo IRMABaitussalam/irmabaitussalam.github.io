@@ -519,3 +519,34 @@ input[type="text"] {
     margin-top: 4em;
   }
 }
+
+
+
+.quote-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .quote-text {
+    -webkit-line-clamp: 1;
+  }
+}
+
+.quote-list {
+  cursor: pointer;
+  overflow-y: auto;
+  max-height: 500px;
+  
+}
+
+#quote.card {
+  background: var(--base);
+  box-shadow: none;
+  border-radius: 0;
+  border: 1px solid var(--navbar-border-color) !important;
+}
+#quote.card:hover {
+  box-shadow: inset 7px 7px 15px var(--shadow-color), inset -7px -7px 15px var(--highlight-color);
+}
