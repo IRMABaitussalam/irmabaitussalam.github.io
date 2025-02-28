@@ -473,5 +473,62 @@ const quotes = [
       author: "Rangga Fajar Oktariansyah",
       date: "30 Juli 2023",
       url: "part-25"
+    },
+    {
+      title: "Quotes Part #26",
+      text: "Semua orang bisa menemani senangmu. Tapi tidak semua orang bisa menemani susahmu.",
+      image: "https://pbs.twimg.com/media/Gk19GxmaoAIkRk8?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/15Fn3zLid1/",
+        x: "https://x.com/irmasman22garut/status/1895308883993993704",
+        youtube: "",
+        tiktok: "",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-26.png",
+          normal: "https://pbs.twimg.com/media/Gk19GxmaoAIkRk8?format=png&name=large",
+          low: "https://pbs.twimg.com/media/Gk19GxmaoAIkRk8?format=png&name=medium"
+        }
+      },
+      author: "Dapit Agusdian",
+      date: "10 Februari 2024",
+      url: "part-26"
+    },
+    {
+      title: "Quotes Part #27",
+      text: "Sibuk nyari obat karena hidup berantakan, padahal obat dari hidup yang berantakan adalah memperbaiki Sholat.",
+      image: "https://pbs.twimg.com/media/Gk19qkWX0AAVPHx?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/1BCkXBaeGn/",
+        x: "https://x.com/irmasman22garut/status/1895309559469875649",
+        youtube: "",
+        tiktok: "",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-27.png",
+          normal: "https://pbs.twimg.com/media/Gk19qkWX0AAVPHx?format=png&name=large",
+          low: "https://pbs.twimg.com/media/Gk19qkWX0AAVPHx?format=png&name=medium"
+        }
+      },
+      author: "Rangga Fajar Oktariansyah",
+      date: "11 Februari 2024",
+      url: "part-27"
+    },
+    {
+      title: "Quotes Part #28",
+      text: "Masa iya Cinderella pacaran? Yang bener aja, rugi dong.",
+      image: "https://pbs.twimg.com/media/Gk1-CxkWcAAFJq_?format=jpg&name=medium",
+      social: {
+        facebook: "https://web.facebook.com/share/p/1JPKz9fe3B/",
+        x: "https://x.com/irmasman22garut/status/1895310024664403987",
+        youtube: "",
+        tiktok: "",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-28.png",
+          normal: "https://pbs.twimg.com/media/Gk1-CxkWcAAFJq_?format=png&name=large",
+          low: "https://pbs.twimg.com/media/Gk1-CxkWcAAFJq_?format=png&name=medium"
+        }
+      },
+      author: "Gilang Ramdani",
+      date: "12 Februari 2024",
+      url: "part-28"
     }
 ];
