@@ -378,5 +378,100 @@ const quotes = [
       author: "Prakarsa Putra Nusantara",
       date: "28 April 2023",
       url: "part-20"
+    },
+    {
+      title: "Quotes Part #21",
+      text: "Orang yang bersyukur ialah orang yang menggunakan nikmat sesuai kemauan orang yang memberikan nikmat.",
+      image: "https://pbs.twimg.com/media/Fu294a3agAArwXW?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/1AHwaWZSdg/",
+        x: "https://x.com/irmasman22garut/status/1652185433126895616",
+        youtube: "https://youtube.com/shorts/P8h4pjuOm8c?si=HwmCPJHUgiXMq_65",
+        tiktok: "https://vm.tiktok.com/ZSMfK3QkC/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-21.jpg",
+          normal: "https://pbs.twimg.com/media/Fu294a3agAArwXW?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/Fu294a3agAArwXW?format=jpg&name=medium"
+        }
+      },
+      author: "Rahmawati",
+      date: "29 April 2023",
+      url: "part-21"
+    },
+    {
+      title: "Quotes Part #22",
+      text: "Banyak orang yang malu untuk melakukan kebaikan. Tapi, ketika melakukan keburukan, ia tidak malu, meskipun dilihat orang lain.",
+      image: "https://pbs.twimg.com/media/Fu8LqhpaAAA7O5R?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/1KnEQZbWTR/",
+        x: "https://x.com/irmasman22garut/status/1652552794304548864",
+        youtube: "https://youtube.com/shorts/-Z0y6JK2WMc?si=FrzYDUiWlM9IxmOt",
+        tiktok: "https://vm.tiktok.com/ZSMfKVYVn/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-22.jpg",
+          normal: "https://pbs.twimg.com/media/Fu8LqhpaAAA7O5R?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/Fu8LqhpaAAA7O5R?format=jpg&name=medium"
+        }
+      },
+      author: "Rangga Fajar Oktariansyah",
+      date: "30 April 2023",
+      url: "part-22"
+    },
+    {
+      title: "Quotes Part #23",
+      text: "Jangan pernah bahwa jalan hidupmu akan seperti jalan hidup orang lain. Perjalanan hidup yang kamu miliki merupakan sesuatu yang unik, seperti dirimu.",
+      image: "https://pbs.twimg.com/media/Fu8MHqvaEAAFLDD?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/19ypsZNVtP/",
+        x: "https://x.com/irmasman22garut/status/1652553276456591361",
+        youtube: "https://youtube.com/shorts/ipuAqmjSkqE?si=W4AIxSpwHJ1mbOhd",
+        tiktok: "https://vm.tiktok.com/ZSMfELvQM/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-23.jpg",
+          normal: "https://pbs.twimg.com/media/Fu8MHqvaEAAFLDD?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/Fu8MHqvaEAAFLDD?format=jpg&name=medium"
+        }
+      },
+      author: "Perdiyana",
+      date: "30 April 2023",
+      url: "part-23"
+    },
+    {
+      title: "Quotes Part #24",
+      text: "Jangan pernah menyesali masa lalu yang pernah terjadi sebelumnya, tetapi belajarlah dari masa lalu tersebut.",
+      image: "https://pbs.twimg.com/media/FvRP6sPaIAAui8p?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/1BahLC771i/",
+        x: "https://x.com/irmasman22garut/status/1654034850775703553",
+        youtube: "https://youtube.com/shorts/ZV4IN05Km9E?si=BE7tsUBU-s8SWWXa",
+        tiktok: "https://vm.tiktok.com/ZSMfEgFSr/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-24.jpg",
+          normal: "https://pbs.twimg.com/media/FvRP6sPaIAAui8p?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/FvRP6sPaIAAui8p?format=jpg&name=medium"
+        }
+      },
+      author: "Perdiyana",
+      date: "4 Mei 2023",
+      url: "part-24"
+    },
+    {
+      title: "Quotes Part #25",
+      text: "Sholat saja masih ditinggalkan, wajar saja jika hidup masih berantakan.",
+      image: "https://pbs.twimg.com/media/F2ZewCoaYAADQfk?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/1A7XZF9pz4/",
+        x: "https://x.com/irmasman22garut/status/1686139298255683584",
+        youtube: "https://youtube.com/shorts/9iPCvp3vLi8?si=oc3q0fyHuzvWnTpx",
+        tiktok: "https://vm.tiktok.com/ZSMfEGoo7/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-25.jpg",
+          normal: "https://pbs.twimg.com/media/F2ZewCoaYAADQfk?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/F2ZewCoaYAADQfk?format=jpg&name=medium"
+        }
+      },
+      author: "Rangga Fajar Oktariansyah",
+      date: "30 Juli 2023",
+      url: "part-25"
     }
 ];
