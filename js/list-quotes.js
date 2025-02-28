@@ -188,5 +188,195 @@ const quotes = [
       author: "Nur Anisa",
       date: "12 April 2023",
       url: "part-10"
+    },
+    {
+      title: "Quotes Part #11",
+      text: "Kehidupan merupakan roda yang berputar. Kadang kala kita berada diatas kadang juga kita berada dibawah.",
+      image: "https://pbs.twimg.com/media/FteZHbJacAIzECk?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/18kJy7EsoX/",
+        x: "https://x.com/irmasman22garut/status/1645952553530847232",
+        youtube: "https://youtube.com/shorts/RP29xYGJYlw?si=X8Y320gTj813JHvt",
+        tiktok: "https://vm.tiktok.com/ZSMfn4ULG/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-11.jpg",
+          normal: "https://pbs.twimg.com/media/FteZHbJacAIzECk?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/FteZHbJacAIzECk?format=jpg&name=medium"
+        }
+      },
+      author: "Rahmawati",
+      date: "12 April 2023",
+      url: "part-11"
+    },
+    {
+      title: "Quotes Part #12",
+      text: "Semangat!!! Tetap menjadi manusia versi terbaikmu setiap hari, badan boleh lelah, mata boleh basah, tapi hati jangan pernah menyerah.",
+      image: "https://pbs.twimg.com/media/Fttxg8cacAABjbU?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/18PmGrSQ6Y/",
+        x: "https://x.com/irmasman22garut/status/1647034917669466112",
+        youtube: "https://youtube.com/shorts/82SMC07NwR8?si=KU-Nn80hwtcnqD_o",
+        tiktok: "https://vm.tiktok.com/ZSMfnqH29/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-12.jpg",
+          normal: "https://pbs.twimg.com/media/Fttxg8cacAABjbU?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/Fttxg8cacAABjbU?format=jpg&name=medium"
+        }
+      },
+      author: "Nazmi Nurul Izzati",
+      date: "15 April 2023",
+      url: "part-12"
+    },
+    {
+      title: "Quotes Part #13",
+      text: "Jika kamu mendengar nasihat yang menyinggung dirimu, artinya itu memang untukmu. Sebab obat jika terkena luka pasti perih dahulu.",
+      image: "https://pbs.twimg.com/media/FttyGHiakAAIiQ_?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/19xqmG1rsD/",
+        x: "https://x.com/irmasman22garut/status/1647035551227473920",
+        youtube: "https://youtube.com/shorts/7KplSuaNusI?si=xMCZgu-DSAXTCCMj",
+        tiktok: "https://vm.tiktok.com/ZSMfnHSbT/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-13.jpg",
+          normal: "https://pbs.twimg.com/media/FttyGHiakAAIiQ_?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/FttyGHiakAAIiQ_?format=jpg&name=medium"
+        }
+      },
+      author: "Prakarsa Putra Nusantara",
+      date: "15 April 2023",
+      url: "part-13"
+    },
+    {
+      title: "Quotes Part #14",
+      text: "Iblis hanya tidak mau bersujud kepada Nabi Adam. Sedangkan kita (manusia) ada yang tidak mau bersujud kepada Sang Pencipta (Allah).",
+      image: "https://pbs.twimg.com/media/FttyZ--aIAAbQ0_?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/1BT4ivknga/",
+        x: "https://x.com/irmasman22garut/status/1647035893449101312",
+        youtube: "https://youtube.com/shorts/6QBpwvUtKaQ?si=cgWhzUxvyHtGNyW4",
+        tiktok: "https://vm.tiktok.com/ZSMfnTGPX/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-14.jpg",
+          normal: "https://pbs.twimg.com/media/FttyZ--aIAAbQ0_?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/FttyZ--aIAAbQ0_?format=jpg&name=medium"
+        }
+      },
+      author: "Rangga Fajar Oktariansyah",
+      date: "15 April 2023",
+      url: "part-14"
+    },
+    {
+      title: "Quotes Part #15",
+      text: "Pacaran itu memanglah haram, tapi Rasulullah tidak melarang umatnya untuk mencintai.",
+      image: "https://pbs.twimg.com/media/FudWZBoacAAjL-7?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/1BvvVQMRH4/",
+        x: "https://x.com/irmasman22garut/status/1650382790117179392",
+        youtube: "https://youtube.com/shorts/VQgtTnCedwM?si=1ZxXuvzvwNfPiidp",
+        tiktok: "https://vm.tiktok.com/ZSMfnc61m/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-15.jpg",
+          normal: "https://pbs.twimg.com/media/FudWZBoacAAjL-7?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/FudWZBoacAAjL-7?format=jpg&name=medium"
+        }
+      },
+      author: "Rahmawati",
+      date: "24 April 2023",
+      url: "part-15"
+    },
+    {
+      title: "Quotes Part #16",
+      text: "Kelak pakaian kita pun sama, kain kafan. Tempat kita pun sama, di dalam tanah yang tertutup papan. Lantas, apa yang patut disombongkan dan dibanggakan? Bahkan, ketika semua pergi meninggalkan, yang setia menemani hanyalah amalan.",
+      image: "https://pbs.twimg.com/media/FudW1IeaYAALnS5?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/1NBBzj1FUQ/",
+        x: "https://x.com/irmasman22garut/status/1650383271891701760",
+        youtube: "https://youtube.com/shorts/Rv0uStpapj0?si=NX3vbV6cq24VE14I",
+        tiktok: "https://vm.tiktok.com/ZSMfnGJFL/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-16.jpg",
+          normal: "https://pbs.twimg.com/media/FudW1IeaYAALnS5?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/FudW1IeaYAALnS5?format=jpg&name=medium"
+        }
+      },
+      author: "Rangga Fajar Oktariansyah",
+      date: "24 April 2023",
+      url: "part-16"
+    },
+    {
+      title: "Quotes Part #17",
+      text: "Jadikan tangisanmu sebagai kekuatan dan senyummu sebagai langkah untuk bangkit dari tangisanmu.",
+      image: "https://pbs.twimg.com/media/FuiUcC5aYAAWzMm?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/1FE3oDinYi/",
+        x: "https://x.com/irmasman22garut/status/1650732495963590657",
+        youtube: "https://youtube.com/shorts/jklOkabzr4E?si=TMsNOwSYi7z-IDSB",
+        tiktok: "https://vm.tiktok.com/ZSMf76Ee7/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-17.jpg",
+          normal: "https://pbs.twimg.com/media/FuiUcC5aYAAWzMm?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/FuiUcC5aYAAWzMm?format=jpg&name=medium"
+        }
+      },
+      author: "Wina Purnamasari",
+      date: "25 April 2023",
+      url: "part-17"
+    },
+    {
+      title: "Quotes Part #18",
+      text: "Hidup ini akan bahagia apabila kita mau berusaha dan mensyukuri apa yang kita rasakan dan apa yang kita miliki.",
+      image: "https://pbs.twimg.com/media/FuowFKLaIAAMlq_?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/1BFmP7xshp/",
+        x: "https://x.com/irmasman22garut/status/1651185098866458625",
+        youtube: "https://youtube.com/shorts/4zLDn7efOAI?si=1Jdy4wakCenzIHXD",
+        tiktok: "https://vm.tiktok.com/ZSMf7Akv3/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-18.jpg",
+          normal: "https://pbs.twimg.com/media/FuowFKLaIAAMlq_?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/FuowFKLaIAAMlq_?format=jpg&name=medium"
+        }
+      },
+      author: "Wina Purnamasari",
+      date: "26 April 2023",
+      url: "part-18"
+    },
+    {
+      title: "Quotes Part #19",
+      text: "Jangan sampai keberuntungan orang lain membuat kita merasa kurang beruntung. Ingat, siapa yang bersyukur maka Allah akan tambahkan nikmat padanya.",
+      image: "https://pbs.twimg.com/media/FusgEm6aYAEt5vc?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/1C9NpUYxmP/",
+        x: "https://x.com/irmasman22garut/status/1651449336973361153",
+        youtube: "https://youtube.com/shorts/nKQD0hSJgYg?si=fxcrEAHPq_RmeSS8",
+        tiktok: "https://vm.tiktok.com/ZSMfvJYus/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-19.jpg",
+          normal: "https://pbs.twimg.com/media/FusgEm6aYAEt5vc?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/FusgEm6aYAEt5vc?format=jpg&name=medium"
+        }
+      },
+      author: "Rangga Fajar Oktariansyah",
+      date: "27 April 2023",
+      url: "part-19"
+    },
+    {
+      title: "Quotes Part #20",
+      text: "Barang siapa yang mengenal dirinya, maka ia akan sibuk memperbaikinya tanpa memperdulikan cacat dan aib orang lain.",
+      image: "https://pbs.twimg.com/media/FuyFBUmagAA6l7w?format=jpg&name=medium",
+      social: {
+        facebook: "https://www.facebook.com/share/p/15jLC9iy6n/",
+        x: "https://x.com/irmasman22garut/status/1651841723885289472",
+        youtube: "https://youtube.com/shorts/PLtqz_t5Hok?si=B_SfKhaVT3DiU64w",
+        tiktok: "https://vm.tiktok.com/ZSMf7ox7n/",
+        download: {
+          hd: "https://irmabaitussalam.github.io/quote-images/quotes-part-20.jpg",
+          normal: "https://pbs.twimg.com/media/FuyFBUmagAA6l7w?format=jpg&name=large",
+          low: "https://pbs.twimg.com/media/FuyFBUmagAA6l7w?format=jpg&name=medium"
+        }
+      },
+      author: "Prakarsa Putra Nusantara",
+      date: "28 April 2023",
+      url: "part-20"
     }
 ];
