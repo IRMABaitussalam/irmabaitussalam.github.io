@@ -550,3 +550,9 @@ input[type="text"] {
 #quote.card:hover {
   box-shadow: inset 7px 7px 15px var(--shadow-color), inset -7px -7px 15px var(--highlight-color);
 }
+
+.alert-warning {
+  border: none;
+  border-radius: 5px;
+  background: var(--yellow);
+}
