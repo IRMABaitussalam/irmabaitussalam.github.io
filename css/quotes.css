@@ -202,7 +202,7 @@ input[type="text"] {
   #search-results {
     width: 700px;
     transform: translateX(-460px);
-    max-height: 800px;
+    max-height: 600px;
   }
 }
 #search-results .list-group-item {
