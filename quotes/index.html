@@ -109,6 +109,12 @@
   <script>
     $(document).ready(function() {
       $('#currentYear').text(new Date().getFullYear());
+      $('#navbarNav').on('show.bs.collapse', function () {
+        $('#hamburger').addClass('open');
+      });
+      $('#navbarNav').on('hide.bs.collapse', function () {
+        $('#hamburger').removeClass('open');
+      });
 
       let content = "";
       for (let i = 0; i < quotes.length; i++) {
