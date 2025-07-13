@@ -1251,3 +1251,126 @@ input[type="text"]#captcha-input:focus {
         width: 100%;
     }
 }
+
+/* Spinner style */
+#loadingSpinner {
+  position: fixed;
+  z-index: 9999;
+  backdrop-filter: blur(5px);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner-overlay {
+  text-align: center;
+}
+
+.spinner-3d {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  left: 10%;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  animation: rotate-scene 6s linear infinite;
+}
+
+.ring {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  background: var(--navbar-bg-color); /* warna dasar neumorphic */
+  box-shadow:
+    6px 6px 12px var(--shadow-color),  /* shadow gelap kanan bawah */
+    -6px -6px 12px var(--highlight-color); /* highlight terang kiri atas */
+}
+
+.ring::before,
+.ring::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 8px solid transparent;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+
+.ring-x {
+  transform: rotateX(70deg);
+}
+.ring-x::before {
+  border-top: 8px solid var(--lavender);
+  animation: spin-x 1.5s linear infinite;
+  box-shadow: 0 0 12px rgba(0,198,255,0.5);
+}
+.ring-x::after {
+  border-bottom: 8px solid var(--sky);
+  animation: spin-x-reverse 1.5s linear infinite;
+  box-shadow: 0 0 12px rgba(255,222,89,0.5);
+}
+
+.ring-y {
+  transform: rotateY(70deg);
+}
+.ring-y::before {
+  border-left: 8px solid var(--lavender);
+  animation: spin-y 2s linear infinite;
+  box-shadow: 0 0 12px rgba(255,154,158,0.5);
+}
+.ring-y::after {
+  border-right: 8px solid var(--sky);
+  animation: spin-y-reverse 2s linear infinite;
+  box-shadow: 0 0 12px rgba(106,130,251,0.5);
+}
+
+.ring-x::before,
+.ring-x::after,
+.ring-y::before,
+.ring-y::after {
+  box-shadow:
+    inset 3px 3px 6px var(--shadow-color),
+    inset -3px -3px 6px var(--highlight-color);
+}
+
+.spinner-text {
+  margin-top: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-shadow: 0 0 5px var(--text1);
+}
+
+/* Spin animation */
+@keyframes spin-x {
+  0% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(360deg); }
+}
+@keyframes spin-x-reverse {
+  0% { transform: rotateZ(360deg); }
+  100% { transform: rotateZ(0deg); }
+}
+
+@keyframes spin-y {
+  0% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(360deg); }
+}
+@keyframes spin-y-reverse {
+  0% { transform: rotateZ(360deg); }
+  100% { transform: rotateZ(0deg); }
+}
+
+@keyframes rotate-scene {
+  0% { transform: rotateX(0deg) rotateY(0deg); }
+  100% { transform: rotateX(360deg) rotateY(360deg); }
+}
