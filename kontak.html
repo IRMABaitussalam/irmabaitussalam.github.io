@@ -105,17 +105,16 @@
                     </ul>
                 </div>
 
-                <div class="tab-content mt-3" id="pesan-form-content">
+                <div class="tab-content mt-3" id="message-form-content">
                     <div class="tab-pane fade show active" id="email-form-tab" role="tabpanel" aria-labelledby="email-tab">
-                        <form name="email-form" action="https://formsubmit.co/irmabaitussalam22garut@gmail.com" method="POST" onSubmit="return validateEmailForm();">
-                            <input type="hidden" name="_autoresponse" value="Terima kasih! Pesan kamu telah kami terima. Kami akan segera menanggapinya.">
+                        <form name="email-form">
                             <div class="form-group">
                                 <label for="name">Nama Lengkap <span class="red-color">*</span></label>
                                 <input type="text" id="name" name="name" placeholder="Contoh: Gilang Ramdani">
                                 <div id="alert-1"></div>
                             </div>
                             <div class="form-group mail-input">
-                                <label for="email-address">Alamat Email <span class="red-color">*</span></label>
+                                <label for="email">Alamat Email <span class="red-color">*</span></label>
                                 <div class="mail-container">
                                     <span class="mail-icon">
                                         <i class="ti ti-mail"></i>
@@ -125,12 +124,12 @@
                                 <div id="alert-2"></div>
                             </div>
                             <div class="form-group">
-                                <label for="name">Alasan Menghubungi</label>
-                                <input type="text" id="subject" name="_subject" placeholder="Contoh: Pertanyaan Umum">
+                                <label for="subject">Alasan Menghubungi</label>
+                                <input type="text" id="subject" name="subject" placeholder="Contoh: Pertanyaan Umum">
                             </div>
                             <div class="form-group">
-                                <label for="pesan">Tulis Pesanmu <span class="red-color">*</span></label>
-                                <textarea id="pesan" name="pesan" placeholder="Ketik..." rows="5"></textarea>
+                                <label for="message">Tulis Pesanmu <span class="red-color">*</span></label>
+                                <textarea id="message" name="message" placeholder="Ketik..." rows="5"></textarea>
                                 <div id="alert-3"></div>
                             </div>
                             <div class="form-group">
@@ -148,15 +147,13 @@
                                 <label class="check-box"><input type="checkbox" id="agree" name="agree" value="false"></input><span class="checkmark"></span> Dengan mengklik tombol &ldquo;Kirim Sekarang&rdquo;, Anda sudah menyutujui <a href="/syarat-ketentuan">Syarat Ketentuan</a>, <a href="/kebijakan-privasi">Kebijakan Privasi</a>, dan <a href="/pedoman-komunitas">Pedoman Komunitas</a> kami.</label>
                                 <div id="alert-5"></div>
                             </div>
-                            <input type="hidden" name="_captcha" value="false"></input>
-                            <input type="hidden" name="_template" value="box"></input>
                             <input type="hidden" name="_next" value="https://irmabaitussalam.github.io/K3JNvhvGWqsuvNbbMVoUa4L6aJhz0VC1zIRj1EE8TXO8ns2SPD"></input>
                             <button type="submit" class="icon-text-btn mb-4">Kirim Sekarang</button>
-                            <div id="alert-success"></div>
+                            <div id="alert-success-or-failed"></div>
                         </form>
                     </div>
                     <div class="tab-pane fade" id="whatsapp-form-tab" role="tabpanel" aria-labelledby="whatsapp-tab">
-                        <form name="whatsapp-form" action="" method="POST" onSubmit="return validateWAForm();">
+                        <form name="whatsapp-form" action="javascript:void(0);" method="GET" onSubmit="return validateWAForm();">
                             <div class="form-group">
                                 <label for="name2">Nama Lengkap <span class="red-color">*</span></label>
                                 <input type="text" id="name2" name="name" placeholder="Contoh: Gilang Ramdani">
@@ -173,12 +170,12 @@
                                 <div id="alert-2"></div>
                             </div>
                             <div class="form-group">
-                                <label for="name">Alasan Menghubungi</label>
-                                <input type="text" id="subject" name="_subject" placeholder="Contoh: Pertanyaan Umum">
+                                <label for="subject2">Alasan Menghubungi</label>
+                                <input type="text" id="subject2" name="subject" placeholder="Contoh: Pertanyaan Umum">
                             </div>
                             <div class="form-group">
-                                <label for="pesan2">Tulis Pesanmu <span class="red-color">*</span></label>
-                                <textarea id="pesan2" name="pesan" placeholder="Ketik..." rows="5"></textarea>
+                                <label for="message2">Tulis Pesanmu <span class="red-color">*</span></label>
+                                <textarea id="message2" name="message" placeholder="Ketik..." rows="5"></textarea>
                                 <div id="alert-3"></div>
                             </div>
                             <div class="form-group">
@@ -197,7 +194,7 @@
                                 <div id="alert-5"></div>
                             </div>
                             <button type="submit" class="icon-text-btn mb-4">Kirim Sekarang</button>
-                            <div id="alert-success"></div>
+                            <div id="alert-success-or-failed"></div>
                         </form>
                     </div>
                 </div>
@@ -214,6 +211,16 @@
         </footer>
     </div>
 
+    <div id="loadingSpinner" style="display: none;">
+        <div class="spinner-overlay">
+            <div class="spinner-3d">
+                <div class="ring ring-x"></div>
+                <div class="ring ring-y"></div>
+            </div>
+            <p class="spinner-text">Mengirim pesan...</p>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha256-whL0tQWoY1Ku1iskqPFvmZ+CHsvmRWx/PIoEvIeWh4I=" crossorigin="anonymous"></script>
@@ -228,7 +235,7 @@
             const input = {
                 nama: $('form[name="email-form"] [name="name"]'),
                 alamatEmail: $('form[name="email-form"] [name="email"]'),
-                pesan: $('form[name="email-form"] [name="pesan"]'),
+                pesan: $('form[name="email-form"] [name="message"]'),
                 captcha: $('form[name="email-form"] [name="captcha-input"]'),
                 agree: $('form[name="email-form"] #agree')
             };
@@ -238,8 +245,7 @@
                 alamatEmail: $('form[name="email-form"] #alert-2'),
                 pesan: $('form[name="email-form"] #alert-3'),
                 captcha: $('form[name="email-form"] #alert-4'),
-                agree: $('form[name="email-form"] #alert-5'),
-                success: $('form[name="email-form"] #alert-success')
+                agree: $('form[name="email-form"] #alert-5')
             };
 
             if (input.nama.val() === "") {
@@ -295,10 +301,6 @@
                 return false;
             }
 
-            alert.success.html(alertSuccess("Terkirim!"));
-            setTimeout(() => alert.success.empty(), 18000);
-
-            generateCaptcha('form[name="email-form"] #mainCaptcha');
             return true;
         }
 
@@ -312,8 +314,8 @@
             const input = {
                 nama: $('form[name="whatsapp-form"] [name="name"]'),
                 noWhatsApp: $('form[name="whatsapp-form"] [name="no-whatsapp"]'),
-                subject: $('form[name="whatsapp-form"] [name="_subject"]'),
-                pesan: $('form[name="whatsapp-form"] [name="pesan"]'),
+                subject: $('form[name="whatsapp-form"] [name="subject"]'),
+                pesan: $('form[name="whatsapp-form"] [name="message"]'),
                 captcha: $('form[name="whatsapp-form"] [name="captcha-input"]'),
                 agree: $('form[name="whatsapp-form"] #agree')
             };
@@ -391,17 +393,57 @@
             }
             const blanter = waLink + '?phone=' + phone + '&text=' + encodeURIComponent(message);
 
+            $("#loadingSpinner").fadeIn();
+            setTimeout(function () {
+                $("#loadingSpinner").fadeOut();
+                alert.success.html(alertSuccess("Terkirim! Silahkan buka aplikasi WhatsApp Anda!"));
+                setTimeout(() => alert.success.empty(), 18000);
+            }, 1200);
             window.open(blanter, '_blank');
 
-            alert.success.html(alertSuccess("Terkirim! Silahkan buka aplikasi WhatsApp Anda!"));
-            setTimeout(() => alert.success.empty(), 18000);
-
             generateCaptcha('form[name="whatsapp-form"] #mainCaptcha');
-            $('form[name="whatsapp-form"]').reset();
+            $('form[name="whatsapp-form"]')[0].reset();
             return false;
         }
         generateCaptcha('form[name="email-form"] #mainCaptcha');
         generateCaptcha('form[name="whatsapp-form"] #mainCaptcha');
+    </script>
+    <!-- Kirim pesan via email -->
+    <script>
+        $(document).ready(function () {
+            $('form[name="email-form"]').on('submit', function (e) {
+                e.preventDefault();
+
+                if (!validateEmailForm()) return;
+
+                var form = $(this);
+                var formData = form.serialize();
+
+                $.ajax({
+                    url: "https://script.google.com/macros/s/AKfycbwLkE2nFTCu87gYniSIsPQNUtq0CamRq-ZP8CnIaedvELdG0eELvCN3O5ClwU5uEw4P/exec",
+                    method: "POST",
+                    data: formData,
+                    beforeSend: function () {
+                        $("#loadingSpinner").fadeIn();
+                    },
+                    success: function (response) {
+                        form.trigger("reset");
+                        generateCaptcha('form[name="email-form"] #mainCaptcha');
+
+                        setTimeout(function () {
+                            $("#loadingSpinner").fadeOut();
+                            $('form[name="email-form"] #alert-success-or-failed').html(alertSuccess("Terkirim"));
+                            setTimeout(() => $('form[name="email-form"] #alert-success-or-failed').empty(), 2500);
+                            window.location.href = "https://irmabaitussalam.github.io/K3JNvhvGWqsuvNbbMVoUa4L6aJhz0VC1zIRj1EE8TXO8ns2SPD";
+                        }, 500);
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Gagal mengirim:", error);
+                        $('form[name="pendaftaran"] #alert-success-or-failed').html(alertDanger("Terjadi kesalahan saat mengirim pesan. Silakan coba lagi."));
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
