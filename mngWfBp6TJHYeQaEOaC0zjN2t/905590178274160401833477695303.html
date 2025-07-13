@@ -146,9 +146,9 @@
     <div id="loadingSpinner" style="display: none;">
         <div class="spinner-overlay">
             <div class="spinner-3d">
-      <div class="ring ring-x"></div>
-      <div class="ring ring-y"></div>
-    </div>
+                <div class="ring ring-x"></div>
+                <div class="ring ring-y"></div>
+            </div>
             <p class="spinner-text">Mengirim data...</p>
         </div>
     </div>
@@ -312,7 +312,7 @@
                     },
                     error: function (xhr, status, error) {
                         console.error("Gagal mengirim:", error);
-                        $('form[name="pendaftaran"] #alert-success-or-failed').html(alertDanger("Terjadi kesalahan saat mengirim data. Silakan coba lagi.");
+                        $('form[name="pendaftaran"] #alert-success-or-failed').html(alertDanger("Terjadi kesalahan saat mengirim data. Silakan coba lagi."));
                     }
                 });
             });
