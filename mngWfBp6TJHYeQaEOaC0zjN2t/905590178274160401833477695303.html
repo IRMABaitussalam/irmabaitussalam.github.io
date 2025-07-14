@@ -256,7 +256,7 @@
             }
 
             if (input.captcha.val() === "") {
-                alert.captcha.html(alertDanger("Silahkan masukkan code Captchanya!"));
+                alert.captcha.html(alertDanger("Silahkan masukkan kode Captchanya!"));
                 input.captcha.focus().val('');
                 setTimeout(() => alert.captcha.empty(), 2500);
                 return false;
@@ -270,7 +270,7 @@
             }
 
             if (input.captcha.val() !== captcha.val()) {
-                alert.captcha.html(alertDanger("Captcha salah. Silahkan masukkan code Captcha yang benar!"));
+                alert.captcha.html(alertDanger("Captcha salah. Silahkan masukkan kode Captcha yang benar!"));
                 input.captcha.focus().val('');
                 generateCaptcha('form[name="pendaftaran"] #mainCaptcha');
                 setTimeout(() => alert.captcha.empty(), 2500);
@@ -293,7 +293,7 @@
                 var formData = form.serialize();
 
                 $.ajax({
-                    url: "https://script.google.com/macros/s/AKfycbyfiEABcJuZyws2HKD6dDXssAHkj6jTCX9n2hI8hN3zu1i51h_bhh86VGtOMFRmpphi/exec",
+                    url: atob("aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J5ZmlFQUJjSnVaeXdzMkhLRDZkRFhzc0FIa2o2alRDWDluMmhJOGhOM3p1MWk1MWhfYmhoODZWR3RPTUZSbXBwaGkvZXhlYw=="),
                     method: "POST",
                     data: formData,
                     beforeSend: function () {
