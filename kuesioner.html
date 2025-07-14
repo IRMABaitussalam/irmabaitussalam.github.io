@@ -76,7 +76,7 @@
             <div class="mb-5 mt-5" align="left">
                 <h5 class="text-left text1-color mb-3">Formulir Kuesioner</h5>
                 <hr>
-                <form name="kuesioner" action="https://formsubmit.co/irmabaitussalam22garut@gmail.com" method="POST" onSubmit="return validateForms();">
+                <form name="kuesioner">
                     <div class="form-group">
                         <label for="name">Nama Lengkap <span class="red-color">*</span></label>
                         <input type="text" id="name" name="name" placeholder="Contoh: Gilang Ramdani">
@@ -133,12 +133,8 @@
                         <label class="check-box"><input type="checkbox" id="agree" name="agree" value="false"></input><span class="checkmark"></span> Dengan mengklik tombol &ldquo;Kirim Sekarang&rdquo;, Anda sudah menyutujui <a href="/syarat-ketentuan">Syarat Ketentuan</a>, <a href="/kebijakan-privasi">Kebijakan Privasi</a>, dan <a href="/pedoman-komunitas">Pedoman Komunitas</a> kami.</label>
                         <div id="alert-9"></div>
                     </div>
-                    <input type="hidden" name="_captcha" value="false"></input>
-                    <input type="hidden" name="_template" value="box"></input>
-                    <input type="hidden" name="_subject" value="Kuesioner IRMA Baitussalam"></input>
-                    <input type="hidden" name="_next" value="https://irmabaitussalam.github.io/RpslGamWsNPUra1fYa4fuSHm18e32GsBtzKL6PdzeTXOa8FzXx"></input>
                     <button type="submit" class="icon-text-btn mb-4">Kirim Sekarang</button>
-                    <div id="alert-success"></div>
+                    <div id="alert-success-or-failed"></div>
                 </form>
             </div>
             <div class="content">
@@ -153,8 +149,17 @@
         </footer>
     </div>
 
+    <div id="loadingSpinner" style="display: none;">
+        <div class="spinner-overlay">
+            <div class="spinner-3d">
+                <div class="ring ring-x"></div>
+                <div class="ring ring-y"></div>
+            </div>
+            <p class="spinner-text">Mengirim kuesioner...</p>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js" integrity="sha256-whL0tQWoY1Ku1iskqPFvmZ+CHsvmRWx/PIoEvIeWh4I=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.min.js" integrity="sha256-QjIXq/h3XOotww+h/j4cXiTcNZqA8cN60pqGCUv+gdE=" crossorigin="anonymous"></script>
     <script src="./plugins/jquery-mask-input/jquery.mask.min.js"></script>
@@ -185,7 +190,6 @@
             saran: $('form[name="kuesioner"] #alert-7'),
             captcha: $('form[name="kuesioner"] #alert-8'),
             agree: $('form[name="kuesioner"] #alert-9'),
-            success: $('form[name="kuesioner"] #alert-success')
         };
 
         function validateForms() {
@@ -254,7 +258,7 @@
             }
 
             if (input.captcha.val() === "") {
-                alert.captcha.html(alertDanger("Silahkan masukkan code Captchanya!"));
+                alert.captcha.html(alertDanger("Silahkan masukkan kode Captchanya!"));
                 input.captcha.focus().val('');
                 setTimeout(() => alert.captcha.empty(), 2500);
                 return false;
@@ -268,20 +272,55 @@
             }
 
             if (input.captcha.val() !== captcha.val()) {
-                alert.captcha.html(alertDanger("Captcha salah. Silahkan masukkan code Captcha yang benar!"));
+                alert.captcha.html(alertDanger("Captcha salah. Silahkan masukkan kode Captcha yang benar!"));
                 input.captcha.focus().val('');
                 generateCaptcha('form[name="kuesioner"] #mainCaptcha');
                 setTimeout(() => alert.captcha.empty(), 2500);
                 return false;
             }
 
-            alert.success.html(alertSuccess("Terkirim"));
-            setTimeout(() => alert.success.empty(), 2500);
-
-            generateCaptcha('form[name="kuesioner"] #mainCaptcha');
             return true;
         }
         generateCaptcha('form[name="kuesioner"] #mainCaptcha');
+    </script>
+    <!-- Kirim data -->
+    <script>
+        $(document).ready(function () {
+            $('form[name="kuesioner"]').on('submit', function (e) {
+                e.preventDefault();
+
+                if (!validateForms()) return;
+
+                var form = $(this);
+                var formData = form.serialize();
+
+                $.ajax({
+                    url: "https://script.google.com/macros/s/AKfycbzQEdAkCkhAkG49kzJo36mdy3Hr4pQNTufEJoqibgqWpqYkGM_byo8zz1lKKXpP61I/exec",
+                    method: "POST",
+                    data: formData,
+                    beforeSend: function () {
+                        $("#loadingSpinner").fadeIn();
+                    },
+                    success: function (response) {
+                        form.trigger("reset");
+                        generateCaptcha('form[name="kuesioner"] #mainCaptcha');
+
+                        setTimeout(function () {
+                            $("#loadingSpinner").fadeOut();
+                            $('form[name="kuesioner"] #alert-success-or-failed').html(alertSuccess("Terkirim"));
+                            setTimeout(() => $('form[name="kuesioner"] #alert-success-or-failed').empty(), 2500);
+                            window.location.href = "https://irmabaitussalam.github.io/RpslGamWsNPUra1fYa4fuSHm18e32GsBtzKL6PdzeTXOa8FzXx";
+                        }, 500);
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Failed sent:", error);
+                        $("#loadingSpinner").fadeOut();
+                        $('form[name="kuesioner"] #alert-success-or-failed').html(alertDanger("Terjadi kesalahan saat mengirim kuesioner. Silakan coba lagi."));
+                        setTimeout(() => $('form[name="kuesioner"] #alert-success-or-failed').empty(), 2500);
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
