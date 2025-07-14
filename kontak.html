@@ -309,7 +309,7 @@
             if (new RegExp("Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini", "i").test(navigator.userAgent)) {
                 waLink = "whatsapp://send";
             }
-            const phone = "6285860536014";
+            const phone = atob("NjI4NTg2MDUzNjAxNA==");
             const captcha = $('form[name="whatsapp-form"] #mainCaptcha');
             const input = {
                 nama: $('form[name="whatsapp-form"] [name="name"]'),
@@ -417,7 +417,7 @@
                 var formData = form.serialize();
 
                 $.ajax({
-                    url: "https://script.google.com/macros/s/AKfycbwLkE2nFTCu87gYniSIsPQNUtq0CamRq-ZP8CnIaedvELdG0eELvCN3O5ClwU5uEw4P/exec",
+                    url: atob("aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J3TGtFMm5GVEN1ODdnWW5pU0lzUFFOVXRxMENhbVJxLVpQOENuSWFlZHZFTGRHMGVFTHZDTjNPNUNsd1U1dUV3NFAvZXhlYw=="),
                     method: "POST",
                     data: formData,
                     beforeSend: function () {
