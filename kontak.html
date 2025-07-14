@@ -326,7 +326,7 @@
                 pesan: $('form[name="whatsapp-form"] #alert-3'),
                 captcha: $('form[name="whatsapp-form"] #alert-4'),
                 agree: $('form[name="whatsapp-form"] #alert-5'),
-                success: $('form[name="whatsapp-form"] #alert-success')
+                success: $('form[name="whatsapp-form"] #alert-success-or-failed')
             };
 
             if (input.nama.val() === "") {
@@ -394,15 +394,12 @@
             const blanter = waLink + '?phone=' + phone + '&text=' + encodeURIComponent(message);
 
             $("#loadingSpinner").fadeIn();
-            setTimeout(function () {
-                $("#loadingSpinner").fadeOut();
-                alert.success.html(alertSuccess("Terkirim! Silahkan buka aplikasi WhatsApp Anda!"));
-                setTimeout(() => alert.success.empty(), 18000);
-            }, 1200);
-            window.open(blanter, '_blank');
-
+            setTimeout(() => $("#loadingSpinner").fadeOut(), Math.floor(Math.random() * 2500) + 1400);
+            setTimeout(() => alert.success.html(alertSuccess(`Terkirim! Silahkan buka aplikasi <a href="${blanter}" style="color:var(--blue);text-decoration:underline;">WhatsApp</a> Anda!`)), 1500);
             generateCaptcha('form[name="whatsapp-form"] #mainCaptcha');
             $('form[name="whatsapp-form"]')[0].reset();
+            setTimeout(() => window.open(blanter, '_blank'), 2500);
+            setTimeout(() => alert.success.empty(), 10000);
             return false;
         }
         generateCaptcha('form[name="email-form"] #mainCaptcha');
