@@ -147,7 +147,6 @@
                                 <label class="check-box"><input type="checkbox" id="agree" name="agree" value="false"></input><span class="checkmark"></span> Dengan mengklik tombol &ldquo;Kirim Sekarang&rdquo;, Anda sudah menyutujui <a href="/syarat-ketentuan">Syarat Ketentuan</a>, <a href="/kebijakan-privasi">Kebijakan Privasi</a>, dan <a href="/pedoman-komunitas">Pedoman Komunitas</a> kami.</label>
                                 <div id="alert-5"></div>
                             </div>
-                            <input type="hidden" name="_next" value="https://irmabaitussalam.github.io/K3JNvhvGWqsuvNbbMVoUa4L6aJhz0VC1zIRj1EE8TXO8ns2SPD"></input>
                             <button type="submit" class="icon-text-btn mb-4">Kirim Sekarang</button>
                             <div id="alert-success-or-failed"></div>
                         </form>
@@ -435,8 +434,10 @@
                         }, 500);
                     },
                     error: function (xhr, status, error) {
-                        console.error("Gagal mengirim:", error);
-                        $('form[name="pendaftaran"] #alert-success-or-failed').html(alertDanger("Terjadi kesalahan saat mengirim pesan. Silakan coba lagi."));
+                        console.error("Failed sent:", error);
+                        $("#loadingSpinner").fadeOut();
+                        $('form[name="email-form"] #alert-success-or-failed').html(alertDanger("Terjadi kesalahan saat mengirim pesan. Silakan coba lagi."));
+                        setTimeout(() => $('form[name="email-form"] #alert-success-or-failed').empty(), 2500);
                     }
                 });
             });
