@@ -192,71 +192,71 @@
 
         function validateForms() {
             if (input.nama.val() === "") {
-                alert.nama.html(alertDanger("Silahkan masukkan nama lengkap Anda!"));
+                alert.nama.html(alertDanger("Silakan masukkan nama lengkap Anda!"));
                 input.nama.focus();
                 setTimeout(() => alert.nama.empty(), 2500);
                 return false;
             } else if (!validName(input.nama.val())) {
-                alert.nama.html(alertDanger("Silahkan masukkan nama Anda dengan benar!"));
+                alert.nama.html(alertDanger("Silakan masukkan nama Anda dengan benar!"));
                 input.nama.focus();
                 setTimeout(() => alert.nama.empty(), 2500);
                 return false;
             }
 
             if (input.kelas.val() === "") {
-                alert.kelas.html(alertDanger("Silahkan masukkan kelas Anda saat ini!"));
+                alert.kelas.html(alertDanger("Silakan masukkan kelas Anda saat ini!"));
                 input.kelas.focus();
                 setTimeout(() => alert.kelas.empty(), 2500);
                 return false;
             }
 
             if (input.asalSekolah.val() === "") {
-                alert.asalSekolah.html(alertDanger("Silahkan masukkan nama asal sekolah Anda!"));
+                alert.asalSekolah.html(alertDanger("Silakan masukkan nama asal sekolah Anda!"));
                 input.asalSekolah.focus();
                 setTimeout(() => alert.asalSekolah.empty(), 2500);
                 return false;
             } else if (!validSchoolName(input.asalSekolah.val())) {
-                alert.asalSekolah.html(alertDanger("Silahkan masukkan nama asal sekolah Anda dengan benar!"));
+                alert.asalSekolah.html(alertDanger("Silakan masukkan nama asal sekolah Anda dengan benar!"));
                 input.asalSekolah.focus();
                 setTimeout(() => alert.asalSekolah.empty(), 2500);
                 return false;
             }
 
             if (input.nisn.val() === "") {
-                alert.nisn.html(alertDanger("Silahkan masukkan Nomor Induk Siswa Nasioanl (NISN) Anda!"));
+                alert.nisn.html(alertDanger("Silakan masukkan Nomor Induk Siswa Nasioanl (NISN) Anda!"));
                 input.nisn.focus();
                 setTimeout(() => alert.nisn.empty(), 2500);
                 return false;
             }
 
             if (input.alamat.val() === "") {
-                alert.alamat.html(alertDanger("Silahkan masukkan alamat Anda!"));
+                alert.alamat.html(alertDanger("Silakan masukkan alamat Anda!"));
                 input.alamat.focus();
                 setTimeout(() => alert.alamat.empty(), 2500);
                 return false;
             }
 
             if (input.noWhatsApp.val() === "") {
-                alert.noWhatsApp.html(alertDanger("Silahkan masukkan nomor WhatsApp Anda!"));
+                alert.noWhatsApp.html(alertDanger("Silakan masukkan nomor WhatsApp Anda!"));
                 input.noWhatsApp.focus();
                 setTimeout(() => alert.noWhatsApp.empty(), 2500);
                 return false;
             } else if (!(new RegExp("^[+ 0-9-]+$", "g")).test(input.noWhatsApp.val())) {
-                alert.noWhatsApp.html(alertDanger("Silahkan masukkan nomor WhatsApp yang benar!"));
+                alert.noWhatsApp.html(alertDanger("Silakan masukkan nomor WhatsApp yang benar!"));
                 input.noWhatsApp.focus().val('');
                 setTimeout(() => alert.noWhatsApp.empty(), 2500);
                 return false;
             }
 
             if (input.alasan.val() === "") {
-                alert.alasan.html(alertDanger("Silahkan tuliskan alasan Anda untuk masuk ke Ekstrakurikuler IRMA Baitussalam!"));
+                alert.alasan.html(alertDanger("Silakan tuliskan alasan Anda untuk masuk ke Ekstrakurikuler IRMA Baitussalam!"));
                 input.alasan.focus();
                 setTimeout(() => alert.alasan.empty(), 2500);
                 return false;
             }
 
             if (input.captcha.val() === "") {
-                alert.captcha.html(alertDanger("Silahkan masukkan kode Captchanya!"));
+                alert.captcha.html(alertDanger("Silakan masukkan kode Captchanya!"));
                 input.captcha.focus().val('');
                 setTimeout(() => alert.captcha.empty(), 2500);
                 return false;
@@ -270,7 +270,7 @@
             }
 
             if (input.captcha.val() !== captcha.val()) {
-                alert.captcha.html(alertDanger("Captcha salah. Silahkan masukkan kode Captcha yang benar!"));
+                alert.captcha.html(alertDanger("Captcha salah. Silakan masukkan kode Captcha yang benar!"));
                 input.captcha.focus().val('');
                 generateCaptcha('form[name="pendaftaran"] #mainCaptcha');
                 setTimeout(() => alert.captcha.empty(), 2500);
