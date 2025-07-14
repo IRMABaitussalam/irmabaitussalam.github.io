@@ -248,19 +248,19 @@
             };
 
             if (input.nama.val() === "") {
-                alert.nama.html(alertDanger("Silahkan masukkan nama lengkap Anda!"));
+                alert.nama.html(alertDanger("Silakan masukkan nama lengkap Anda!"));
                 input.nama.focus();
                 setTimeout(() => alert.nama.empty(), 2500);
                 return false;
             } else if (!validName(input.nama.val())) {
-                alert.nama.html(alertDanger("Silahkan masukkan nama Anda dengan benar!"));
+                alert.nama.html(alertDanger("Silakan masukkan nama Anda dengan benar!"));
                 input.nama.focus();
                 setTimeout(() => alert.nama.empty(), 2500);
                 return false;
             }
 
             if (input.alamatEmail.val() === "") {
-                alert.alamatEmail.html(alertDanger("Silahkan masukkan alamat email Anda!"));
+                alert.alamatEmail.html(alertDanger("Silakan masukkan alamat email Anda!"));
                 input.alamatEmail.focus();
                 setTimeout(() => alert.alamatEmail.empty(), 2500);
                 return false;
@@ -272,14 +272,14 @@
             }
 
             if (input.pesan.val() === "") {
-                alert.pesan.html(alertDanger("Silahkan ketikkan pesanmu!"));
+                alert.pesan.html(alertDanger("Silakan ketikkan pesanmu!"));
                 input.pesan.focus();
                 setTimeout(() => alert.pesan.empty(), 2500);
                 return false;
             }
 
             if (input.captcha.val() === "") {
-                alert.captcha.html(alertDanger("Silahkan masukkan kode Captchanya!"));
+                alert.captcha.html(alertDanger("Silakan masukkan kode Captchanya!"));
                 input.captcha.focus().val('');
                 setTimeout(() => alert.captcha.empty(), 2500);
                 return false;
@@ -293,7 +293,7 @@
             }
 
             if (input.captcha.val() !== captcha.val()) {
-                alert.captcha.html(alertDanger("Captcha salah. Silahkan masukkan kode Captcha yang benar!"));
+                alert.captcha.html(alertDanger("Captcha salah. Silakan masukkan kode Captcha yang benar!"));
                 input.captcha.focus().val('');
                 generateCaptcha('form[name="email-form"] #mainCaptcha');
                 setTimeout(() => alert.captcha.empty(), 2500);
@@ -329,12 +329,12 @@
             };
 
             if (input.nama.val() === "") {
-                alert.nama.html(alertDanger("Silahkan masukkan nama lengkap Anda!"));
+                alert.nama.html(alertDanger("Silakan masukkan nama lengkap Anda!"));
                 input.nama.focus();
                 setTimeout(() => alert.nama.empty(), 2500);
                 return false;
             } else if (!validName(input.nama.val())) {
-                alert.nama.html(alertDanger("Silahkan masukkan nama Anda dengan benar!"));
+                alert.nama.html(alertDanger("Silakan masukkan nama Anda dengan benar!"));
                 input.nama.focus();
                 setTimeout(() => alert.nama.empty(), 2500);
                 return false;
@@ -342,21 +342,21 @@
 
 
             if (input.noWhatsApp.val() === "") {
-                alert.noWhatsApp.html(alertDanger("Silahkan masukkan nomor WhatsApp Anda!"));
+                alert.noWhatsApp.html(alertDanger("Silakan masukkan nomor WhatsApp Anda!"));
                 input.noWhatsApp.focus();
                 setTimeout(() => alert.noWhatsApp.empty(), 2500);
                 return false;
             }
 
             if (input.pesan.val() === "") {
-                alert.pesan.html(alertDanger("Silahkan ketikkan pesanmu!"));
+                alert.pesan.html(alertDanger("Silakan ketikkan pesanmu!"));
                 input.pesan.focus();
                 setTimeout(() => alert.pesan.empty(), 2500);
                 return false;
             }
 
             if (input.captcha.val() === "") {
-                alert.captcha.html(alertDanger("Silahkan masukkan kode Captchanya!"));
+                alert.captcha.html(alertDanger("Silakan masukkan kode Captchanya!"));
                 input.captcha.focus().val('');
                 setTimeout(() => alert.captcha.empty(), 2500);
                 return false;
@@ -370,7 +370,7 @@
             }
 
             if (input.captcha.val() !== captcha.val()) {
-                alert.captcha.html(alertDanger("Captcha salah. Silahkan masukkan kode Captcha yang benar!"));
+                alert.captcha.html(alertDanger("Captcha salah. Silakan masukkan kode Captcha yang benar!"));
                 input.captcha.focus().val('');
                 generateCaptcha('form[name="whatsapp-form"] #mainCaptcha');
                 setTimeout(() => alert.captcha.empty(), 2500);
@@ -394,7 +394,7 @@
 
             $("#loadingSpinner").fadeIn();
             setTimeout(() => $("#loadingSpinner").fadeOut(), Math.floor(Math.random() * 2500) + 1400);
-            setTimeout(() => alert.success.html(alertSuccess(`Terkirim! Silahkan buka aplikasi <a href="${blanter}" style="color:var(--blue);text-decoration:underline;">WhatsApp</a> Anda!`)), 1500);
+            setTimeout(() => alert.success.html(alertSuccess(`Terkirim! Silakan buka aplikasi <a href="${blanter}" style="color:var(--blue);text-decoration:underline;">WhatsApp</a> Anda!`)), 1500);
             generateCaptcha('form[name="whatsapp-form"] #mainCaptcha');
             $('form[name="whatsapp-form"]')[0].reset();
             setTimeout(() => window.open(blanter, '_blank'), 2500);
