@@ -311,8 +311,10 @@
                         }, 500);
                     },
                     error: function (xhr, status, error) {
-                        console.error("Gagal mengirim:", error);
+                        console.error("Failed sent:", error);
+                        $("#loadingSpinner").fadeOut();
                         $('form[name="pendaftaran"] #alert-success-or-failed').html(alertDanger("Terjadi kesalahan saat mengirim data. Silakan coba lagi."));
+                        setTimeout(() => $('form[name="pendaftaran"] #alert-success-or-failed').empty(), 2500);
                     }
                 });
             });
