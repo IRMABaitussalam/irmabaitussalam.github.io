@@ -261,13 +261,6 @@
                 return false;
             }
 
-            if (input.instagram.val() !== "" && !validUsername(input.instagram.val())) {
-                alert.instagram.html(alertDanger("Silakan masukkan nama akun Instagram Anda dengan benar!"));
-                input.instagram.focus();
-                setTimeout(() => alert.instagram.empty(), 2500);
-                return false;
-            }
-
             if (input.alamatEmail.val() === "") {
                 alert.alamatEmail.html(alertDanger("Silakan masukkan alamat email Anda!"));
                 input.alamatEmail.focus();
@@ -277,6 +270,13 @@
                 alert.alamatEmail.html(alertDanger("Masukkan alamat email yang benar dan/atau sesuai format!"));
                 input.alamatEmail.focus();
                 setTimeout(() => alert.alamatEmail.empty(), 2500);
+                return false;
+            }
+
+            if (input.instagram.val() !== "" && !validUsername(input.instagram.val())) {
+                alert.instagram.html(alertDanger("Silakan masukkan nama akun Instagram Anda dengan benar!"));
+                input.instagram.focus();
+                setTimeout(() => alert.instagram.empty(), 2500);
                 return false;
             }
 
@@ -359,17 +359,17 @@
                 return false;
             }
 
-            if (input.instagram.val() !== "" && !validUsername(input.instagram.val())) {
-                alert.instagram.html(alertDanger("Silakan masukkan nama akun Instagram Anda dengan benar!"));
-                input.instagram.focus();
-                setTimeout(() => alert.instagram.empty(), 2500);
-                return false;
-            }
-
             if (input.noWhatsApp.val() === "") {
                 alert.noWhatsApp.html(alertDanger("Silakan masukkan nomor WhatsApp Anda!"));
                 input.noWhatsApp.focus();
                 setTimeout(() => alert.noWhatsApp.empty(), 2500);
+                return false;
+            }
+
+            if (input.instagram.val() !== "" && !validUsername(input.instagram.val())) {
+                alert.instagram.html(alertDanger("Silakan masukkan nama akun Instagram Anda dengan benar!"));
+                input.instagram.focus();
+                setTimeout(() => alert.instagram.empty(), 2500);
                 return false;
             }
 
